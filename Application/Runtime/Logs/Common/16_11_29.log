@@ -1,0 +1,12 @@
+[ 2016-11-29T12:50:18+08:00 ] ::1 /jxy/homework/firsthalf/57_A_1.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+ERR: 无法加载模块:Homework
+
+[ 2016-11-29T12:51:27+08:00 ] ::1 /jxy/homework/firsthalf/67_A_1.pdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+ERR: 无法加载模块:Homework
+

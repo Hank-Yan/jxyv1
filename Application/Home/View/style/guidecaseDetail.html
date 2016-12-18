@@ -1,0 +1,103 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="css/ccui.css" type="text/css"/>
+    <title>导学案详情</title>  
+    <style>
+        .dx_Btn {float: right;margin-right: 3%;}
+        .dx_Btn a { border: 1px solid #5e82cf;border-radius: 4px;color: #5e82cf;display: block;height: 35px;line-height: 35px;text-align: center;width: 108px;}
+        .dx_Btn a:hover {background: #5e82cf;color: #FFF;}
+        img{width:100%;}
+    </style>
+</head>
+<body>
+<div id="main_body">
+    <div class="wordpage">
+    <div class="selectarea" style="border-top:2px solid #5e82cf;">
+        <!-- <div class="selectout">
+            <select class="periodsel">
+                <option value="小学">小学</option>
+                <option value="初中" selected>初中</option>
+                <option value="高中">高中</option>
+            </select>
+            <div class="selectarrow">▼</div>
+        </div> -->
+        <!-- <div class="selectout">
+        <select class="gradesel">
+            <option value="七年七年">初中七年</option>
+            <option value="初中八年" selected>初中八年</option>
+            <option value="初中九年">初中九年</option>
+        </select>
+        <div class="selectarrow">▼</div>
+        </div> -->
+        <div class="selectout">
+            <select class="subjectsel">
+                <option value="" selected="">数学</option>
+                <option value="" >语文</option>
+                <option value="">英语</option>
+            </select>
+            <!-- <div class="selectarrow"></div> -->
+        </div>
+        <!-- <div class="selectout">
+        <select class="editionsel">
+            <option value="">人教社</option>
+            <option value="" selected>教材版本</option>
+            <option value="">鲁教版</option>
+        </select><div class="selectarrow">▼</div>
+        </div> -->
+        <!-- <div class="selectout">
+        <select class="classsel">
+            <option value=""selected>教材章节</option>
+            <option value="">知识点</option>
+        </select><div class="selectarrow">▼</div>
+        </div> -->
+        <!-- <div class="selectout">
+        <select class="typesel">
+            <option value="" selected>设置作业类型</option>
+            <option value="">资源</option>
+            <option value="">试卷</option>
+        </select><div class="selectarrow"></div>
+        </div> -->
+        <div class="dx_Btn">
+          <a class="dldxa" href="http://svr.forclass.net:8026/Files/导学案-初中数学.doc" target="_blank">下载</a>
+        </div>
+    </div>
+    <div id="wordframe" src="http://officeweb365.com/o/?i=6715&furl=http://svr.forclass.net:8026/Files/导学案-初中数学.doc">
+        
+    </div>
+    <!-- <div> 2015-12-28 22:32:43注销，不知道这两张图是干啥的
+        <div><img src="../../Images/zydx_pic1.jpg"></div>
+        <div><img src="../../Images/zydx_pic2.jpg"></div>
+    </div> -->
+</div>
+</div>
+ 
+<script type="text/javascript" src="../js/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script type="text/javascript" src="../js/seajs.config.js"></script>
+<script type="text/javascript">
+    seajs.use("student");
+</script>    
+<!-- //     $(function() {
+//         var frame = window.parent.document.getElementById("pageframe");
+//         $(frame).height($("body").height() + 30);
+//         var url = getRequestParamValue("url");
+//         if (url != "") {
+//             $(".dldxa").attr("href", ("http://svr.forclass.net:8026/Files/" + url));
+//             url = "http://officeweb365.com/o/?i=6715&furl=http://svr.forclass.net:8026/Files/" + url;
+//             $("#wordframe").attr("src", url);
+//         } else {
+//             $("#wordframe").attr("src", "http://officeweb365.com/o/?i=6715&furl=http://svr.forclass.net:8026/Files/导学案-初中化学.doc");
+//         }
+//     });
+//     function getRequestParamValue(name) {
+//         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+//         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+//         var ret = regex.exec(location.search);
+//         return ret == null ? "" : decodeURIComponent(ret[1].replace(/\+/g, " "));
+//     } -->
+</body>
+</html>

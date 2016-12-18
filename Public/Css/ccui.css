@@ -1,0 +1,3527 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  outline: none;
+  webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+div {
+  webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* mobile firefox too! */
+}
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 14px;
+}
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #FFFFFF;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.2857em;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-weight: normal;
+  padding: 0em;
+}
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.714rem;
+}
+h3 {
+  font-size: 1.28rem;
+}
+h4 {
+  font-size: 1.071rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0em;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0em;
+}
+p {
+  margin: 0em 0em 1em;
+  line-height: 1.4285em;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e70bf;
+  text-decoration: none;
+}
+::-webkit-selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+::-moz-selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+::selection {
+  background-color: #CCE2FF;
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+.mask {
+  width: 100%;
+  margin-top: -100px;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  overflow: hidden;
+  background: #1B1C1D;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.hm_wrapper .hm_f_logo {
+  text-align: center;
+  margin: 0 auto;
+  height: 290.4px;
+}
+.hm_wrapper .hm_f_logo img {
+  width: 130px;
+  height: 130px;
+}
+.hm_wrapper .hm_f_logo .forClass {
+  font-size: 3em;
+  padding: 3% 0;
+}
+.hm_wrapper #form1 {
+  background: #5e82cf;
+  width: 100%;
+  height: 383px;
+}
+.hm_wrapper #form1 .fc_loginarea {
+  height: 193.6px;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable {
+  height: 85px;
+  width: 100%;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable td {
+  width: 59%;
+  text-align: right;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable #logpassword,
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable #logusername {
+  height: 50px;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable .hm_name_tip {
+  font-size: 40px;
+  color: #ffffff;
+  display: block;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable .hm_pwd_tip {
+  font-size: 40px;
+  color: #ffffff;
+  display: block;
+}
+.hm_wrapper #form1 .fc_loginarea .hm_operations .logtable #btnLogin {
+  color: #000;
+  width: 503px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 10px;
+  text-align: center;
+  background: #fef68a;
+  font-size: 40px;
+  margin: 5% 31%;
+}
+#main_body .t-worklist table {
+  width: 100%;
+  font-size: 2vw;
+}
+#main_body .t-worklist table tr {
+  width: 100%;
+  height: 30px;
+}
+#main_body .t-worklist table tr a {
+  display: inline-block;
+  width: 110%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+#main_body .hw_list .hw_worksubj_math,
+#main_body .hw_list .hw_worksubj_eng,
+#main_body .hw_list .hw_worksubj_chi {
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main_body .hw_list .hw_worksubj_math {
+  background: url("../images/math.jpg") 0 center no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+#main_body .hw_list .hw_worksubj_eng {
+  background: url("../images/english.jpg") 0 center no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+#main_body .hw_list .hw_worksubj_chi {
+  background: url("../images/chinese.jpg") 0 center no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+#header {
+  background: #5e82d0;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+#header .logo {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 13px;
+  left: 2%;
+}
+#header .logodesc {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  color: #fff;
+}
+.navibar {
+  text-align: center;
+  width: 100%;
+  height: 70px;
+}
+.navibar .navitem {
+  width: 50%;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  vertical-align: middle;
+  float: left;
+}
+.navibar .navitem .navimg.tnavitem1 {
+  margin-top: 1.5%;
+  background-image: url("../images/headImg.jpg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+}
+.navibar .navitem .navimg.tnavitem3 {
+  margin-top: 1.5%;
+  background-image: url("../images/groupImg.jpg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+}
+.navibar .navitem .navinfo,
+.navibar .navitem .navimg.tnavitem3,
+.navibar .navitem .navimg.tnavitem1 {
+  display: inline-block;
+}
+.navibar .navitem .navinfo {
+  font-size: 20px;
+  height: 50px;
+  line-height: 63px;
+  margin: -7% 0 0 4%;
+}
+.navibar .navitem .navinfo .itemname.username {
+  margin: 38% 0 0 0;
+}
+.navibar .navitem .navinfo .userrole {
+  margin: -100% 0 0 0;
+}
+.navibar .navitem .itemname {
+  font-size: 20px;
+  display: -webkit-inline-box;
+  vertical-align: middle;
+  margin: -6% 0 0 5%;
+}
+.currdate {
+  width: 30%;
+  margin: -8.1% 34% 0 34.5%;
+  background: #5e82d0;
+  border-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+}
+.weektitle {
+  width: 100%;
+}
+.weektitle .btnc,
+.weektitle .btnc.btnhigh {
+  border: 1px solid #5e82d0;
+  width: 28%;
+  display: inline-block;
+  font-size: 8px;
+  border-radius: 8px;
+  margin: 0 2%;
+  padding: 5px 0.15%;
+}
+.weektitle .btnc.btnhigh {
+  background: #5e82d0;
+}
+.teamenu {
+  background: #fff;
+  width: 100%;
+  height: 82px;
+  margin: 0;
+}
+.teamenu .yearinfo {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  width: 100%;
+  font-size: 10px;
+}
+.teamenu .yearinfo .years,
+.teamenu .yearinfo .months,
+.teamenu .yearinfo .weeks,
+.teamenu .yearinfo .weeksubject {
+  display: inline-flex;
+}
+.teamenu .yearinfo .months,
+.teamenu .yearinfo .years {
+  width: 14%;
+}
+.teamenu .yearinfo .months .curryear,
+.teamenu .yearinfo .years .curryear,
+.teamenu .yearinfo .months .currmonth,
+.teamenu .yearinfo .years .currmonth {
+  margin: 0 3px;
+}
+.teamenu .yearinfo .months .dateorder .date-c.dateup,
+.teamenu .yearinfo .years .dateorder .date-c.dateup,
+.teamenu .yearinfo .months .dateorder .date-c.dateup.datedownenable,
+.teamenu .yearinfo .years .dateorder .date-c.dateup.datedownenable {
+  width: 14px;
+  height: 10px;
+  margin: 10px 0 0 4px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #5e82d0;
+}
+.teamenu .yearinfo .months .dateorder .date-c.datedown.datedownenable,
+.teamenu .yearinfo .years .dateorder .date-c.datedown.datedownenable {
+  width: 14px;
+  height: 10px;
+  margin: 10px 0  10px 4px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #5e82d0;
+}
+.teamenu .yearinfo .weeks {
+  width: 38%;
+}
+.teamenu .yearinfo .weeks .weekitem,
+.teamenu .yearinfo .weeks .subjitem {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.teamenu .yearinfo .weeks .weekitem.selweekitem,
+.teamenu .yearinfo .weeks .subjitem.selweekitem {
+  color: #ed6000;
+}
+.teamenu .yearinfo .weeksubject {
+  width: 30%;
+}
+.teamenu .yearinfo .weeksubject .selectout {
+  width: 48%;
+  display: inline-flex;
+  border-radius: 17px;
+  border: 1px solid #5e82d0;
+}
+.teamenu .yearinfo .weeksubject .selectout .periodsel,
+.teamenu .yearinfo .weeksubject .selectout .subjectsel {
+  background: transparent;
+  border: 0;
+}
+.teamenu .yearinfo .weeksubject .selectout .selectarrow {
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  margin: 8px 10% 10px -15%;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #5e82d0;
+}
+.teamenu .datebar {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 7px;
+  width: 100%;
+}
+.teamenu .datebar .weekday {
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  width: 14%;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+}
+.teamenu .datebar .weekday.gap1,
+.teamenu .datebar .weekday.wday1 {
+  background: #613f8c;
+}
+.teamenu .datebar .weekday.gap2,
+.teamenu .datebar .weekday.wday2 {
+  background: #f4211c;
+}
+.teamenu .datebar .weekday.gap3,
+.teamenu .datebar .weekday.wday3 {
+  background: #ed6000;
+}
+.teamenu .datebar .weekday.gap4,
+.teamenu .datebar .weekday.wday4 {
+  background: #ffbd39;
+}
+.teamenu .datebar .weekday.gap5,
+.teamenu .datebar .weekday.wday5 {
+  background: #71ce05;
+}
+.teamenu .datebar .weekday.gap6,
+.teamenu .datebar .weekday.wday6 {
+  background: #49e7ff;
+}
+.teamenu .datebar .weekday.gap7,
+.teamenu .datebar .weekday.wday7 {
+  background: #6855f2;
+}
+.toolvs {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+.toolvs .toolvs_txt {
+  background: #fff;
+  margin-right: 2%;
+  border: 1px solid;
+  border-radius: 8px;
+  line-height: 50px;
+  font-size: 2vw;
+}
+.toolvs .toolvs_txt div,
+.toolvs .toolvs_txt #toolvs_info {
+  display: inline-block;
+}
+.toolvs .toolvs_txt #toolvs_code {
+  color: #af1f28;
+  height: 50px;
+  width: 35%;
+}
+.toolvs .toolvs_btn {
+  text-align: center;
+  border-radius: 8px;
+  font-size: 3vw;
+  background: #4ec9b0;
+  margin-left: 10px;
+}
+.middle table {
+  font-size: 10px;
+  width: 100%;
+}
+.middle table .menubar-h {
+  margin-left: 5%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+.middle table .menubar-h .menuitem {
+  width: 25%;
+  text-align: center;
+  margin: 0 2%;
+}
+.middle table .menubar-h .menuitem .mitemimg,
+.middle table .menubar-h .menuitem .mitemtext {
+  display: inline-flex;
+}
+.middle table .menubar-h .menuitem .mitemtext {
+  width: 13%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.middle table .menubar-h .menuitem .mitemimg.menuitem1 {
+  margin-top: 5px;
+  background-image: url("../images/menuitem1_1.jpg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.middle table .menubar-h .menuitem .mitemimg.menuitem2 {
+  margin-top: 5px;
+  background-image: url("../images/menuitem2.jpg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.middle table .menubar-h .menuitem .mitemimg.menuitem3 {
+  margin-top: 5px;
+  background-image: url("../images/menuitem3.jpg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.middle table .menubar-h .menuitem .mitemimg.menuitem4 {
+  margin-top: 5px;
+  background-image: url("../images/menuitem4.jpg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+.middle table .menubar-h .menuitem.selmenu {
+  color: #ed6000;
+}
+.middle table .menubar-v {
+  font-size: 2vw;
+  text-align: center;
+}
+.middle table .menubar-v .menu-v-item {
+  border-radius: 7px;
+  margin-top: 18px;
+  margin-right: 1%;
+  background: #fff;
+  display: block;
+  background: 1px solid;
+}
+.middle table .menubar-btm .mbtn-top {
+  width: 100%;
+  text-align: center;
+}
+.middle table .menubar-btm .mbtn-top .mbar-nav {
+  width: 4%;
+  height: 40px;
+  background: url("../images/expandBottom.png") 0 center no-repeat;
+  background-size: 100% 40px;
+  margin: 0 47%;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area a {
+  text-align: center;
+  display: inline-flex;
+  margin: 0;
+  width: 12%;
+  font-size: 1.9vw;
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 0 2%;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-1 {
+  color: #613f8c;
+  border-color: #613f8c;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-2 {
+  color: #ea077f;
+  border-color: #ea077f;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-3 {
+  color: #f7474c;
+  border-color: #f7474c;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-4 {
+  color: #ed6000;
+  border-color: #ed6000;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-5 {
+  color: #ffbd39;
+  border-color: #ffbd39;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-6 {
+  color: #71ce05;
+  border-color: #71ce05;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-7 {
+  color: #59bda1;
+  border-color: #59bda1;
+}
+.middle table .menubar-btm .mbtn-top .mbar-area .menu-b-item.mbi-8 {
+  color: #6855f2;
+  border-color: #6855f2;
+}
+.middle table tbody {
+  border: 1px solid red;
+}
+.middle table tbody tr {
+  border: 1px solid red;
+}
+.middle table tbody tr td {
+  border: 1px solid red;
+}
+body {
+  position: fixed;
+  font-family: "Microsoft YaHei";
+  margin: 0 auto;
+  padding: 0;
+  background: #f6f6f6;
+}
+.topMask {
+  position: fixed;
+  left: 48.5%;
+  top: 0;
+  width: 6.544%;
+  height: 8.5vh;
+  background: #B97A57;
+  opacity: 0.5;
+  border-radius: 7px;
+}
+.yanshizhuti {
+  text-align: center;
+  font-size: 3vw;
+  width: 100%;
+}
+.headInfo {
+  color: #fff;
+  width: 100%;
+  height: 8.5vh;
+}
+.headInfo .festival,
+.headInfo .classNum {
+  text-align: center;
+  float: left;
+  display: inline-block;
+}
+.headInfo .festival {
+  cursor: pointer;
+  background: #483224;
+  font-size: 1.4vw;
+  width: 6%;
+  height: 8.5vh;
+  line-height: 3.5vh;
+  padding-top: 1vh;
+}
+.headInfo .weekInfo {
+  width: 88%;
+  float: left;
+}
+.headInfo .weekInfo .weekNum {
+  height: 8.5vh;
+  line-height: 8.5vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.headInfo .weekInfo .weekDayNum {
+  height: 5.44vh;
+  line-height: 5.44vh;
+  width: 114%;
+  margin-left: -7%;
+}
+.headInfo .weekInfo .weekNum span,
+.headInfo .weekInfo .weekDayNum span {
+  color: #fff;
+  border-radius: 7px;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  line-height: 5.44vh;
+  height: 5.44vh;
+}
+.headInfo .weekInfo .weekNum span {
+  background: #B97A57;
+  margin: 1.555vh 0;
+  width: 4.08%;
+  font-size: 1.3vw;
+}
+.headInfo .weekInfo .weekNum span.selected {
+  color: #000;
+  width: 6.16%;
+  font-weight: bold;
+  height: 5.44vh;
+  line-height: 5.44vh;
+  margin: 1.555vh 0;
+  font-size: 1.65vw;
+}
+.headInfo .weekInfo .weekDayNum span {
+  background: #92D050;
+  width: 17%;
+  margin: 0;
+  font-size: 1.85vw;
+}
+.headInfo .weekInfo .weekDayNum .weekend {
+  width: 7.5%;
+}
+.headInfo .weekInfo .weekDayNum span.selected {
+  height: 7.77vh;
+  line-height: 3.11vh;
+  margin: 2px auto;
+}
+.headInfo .weekInfo .weekNum .selected,
+.headInfo .weekInfo .weekDayNum .selected {
+  font-size: 1.85vw;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+.headInfo .classNum {
+  cursor: pointer;
+  background: #B97A57;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 1.4vw;
+  width: 6%;
+  height: 8.5vh;
+  line-height: 3.5vh;
+  padding-top: 1vh;
+}
+.midInfo {
+  display: none;
+  width: 100%;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-voerflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 4.66vh;
+  line-height: 4.66vh;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #49e7ff;
+}
+.midInfo .preClass,
+.midInfo .curClass,
+.midInfo .nextClass {
+  margin: 0 4%;
+  display: inline-block;
+  border-radius: 10px;
+  width: 25%;
+}
+.midInfo .preClass,
+.midInfo .nextClass,
+.midInfo .curClass {
+  background: #70ad47;
+  color: #000;
+}
+.maskCapterTitle {
+  margin-top: -0.1%;
+  position: fixed;
+  left: 0;
+  top: 8.5vh;
+  width: 100vw;
+  height: 9.33vh;
+}
+.maskCapterTitle .toLeft,
+.maskCapterTitle .capterName,
+.maskCapterTitle .toRight {
+  display: inline-block;
+  float: left;
+}
+.maskCapterTitle .toLeft,
+.maskCapterTitle .toRight {
+  cursor: pointer;
+  width: 3%;
+  max-height: 6.33vh;
+}
+.maskCapterTitle .toLeft {
+  background: url('../images/toLeft1.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 3% 0 29%;
+  height: 5vh;
+}
+.maskCapterTitle .toRight {
+  background: url('../images/toRight1.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 0 0 3%;
+  height: 5vh;
+}
+.maskCapterTitle .capterName {
+  text-align: center;
+  width: 30%;
+  margin: 5px 0;
+  height: 7.77vh;
+  line-height: 3.6vh;
+  background: #B97A57;
+  color: #fff;
+  font-size: 1.6vw;
+  white-space: normal;
+  border-radius: 3px;
+}
+.maskCapterTitle .shengzi {
+  z-index: -1;
+  width: 15%;
+  height: 69%;
+  background: #B97A57;
+  margin: 3% 42.5%;
+  position: relative;
+}
+.mainContent {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  color: #000;
+  height: 93.3vh;
+  background: url('../images/capterBar.jpg') 0 center no-repeat;
+  background-size: 100% 2%;
+  background-position: 0 4%;
+}
+.mainContent .classCon {
+  width: 2510%;
+}
+.mainContent .classCon {
+  display: block;
+}
+.mainContent .classCon .capter.t21h {
+  width: 10.83%;
+}
+.mainContent .classCon .capter.t22h {
+  width: 10%;
+}
+.mainContent .classCon .capter.t23h {
+  width: 5%;
+}
+.mainContent .classCon .capter.t24h {
+  width: 8.3%;
+}
+.mainContent .classCon .capter.t25h {
+  width: 14.17%;
+}
+.mainContent .classCon .capter.t26h {
+  width: 9.17%;
+}
+.mainContent .classCon .capter.t27h {
+  width: 5%;
+}
+.mainContent .classCon .capter.t28h {
+  width: 7.5%;
+}
+.mainContent .classCon .capter.t29h {
+  width: 12.5%;
+}
+.mainContent .classCon .capter.t30h {
+  width: 10.83%;
+}
+.mainContent .classCon .capter.t31h {
+  width: 6.7%;
+}
+.mainContent .classCon .capter.t32h {
+  width: 7.5%;
+}
+.mainContent .classCon .capter.t32h .capterTitle {
+  width: 100%;
+}
+.mainContent .classCon .capter.t32h .capterTitle .capterDetail .capterUl,
+.mainContent .classCon .capter.t32h .capterTitle .capterDetailKnowledge .capterUl,
+.mainContent .classCon .capter.t32h .capterTitle .classSummary .capterUl {
+  width: 100%;
+}
+.mainContent .classCon .capter.t32h .capterTitle .capterDetail .capterUl li,
+.mainContent .classCon .capter.t32h .capterTitle .capterDetailKnowledge .capterUl li,
+.mainContent .classCon .capter.t32h .capterTitle .classSummary .capterUl li {
+  width: 5.26%;
+}
+.mainContent .classCon .capter.t33h {
+  width: 5%;
+}
+.mainContent .classCon .capter.t34h {
+  width: 20%;
+}
+.mainContent .classCon .capter.t35h {
+  width: 27.5%;
+}
+.mainContent .classCon .capter.t36h {
+  width: 10.83%;
+}
+.mainContent .classCon .capter.t37h {
+  width: 29.17%;
+}
+.mainContent .classCon .capter {
+  position: relative;
+  display: inline-block;
+  height: 93.3vh;
+  float: left;
+  overflow: hidden;
+}
+.mainContent .classCon .capter .capterTitle {
+  margin-top: -0.1%;
+  display: block;
+  width: 100%;
+  height: 9.33vh;
+}
+.mainContent .classCon .capter .capterTitle .toLeft,
+.mainContent .classCon .capter .capterTitle .capterName,
+.mainContent .classCon .capter .capterTitle .toRight {
+  display: inline-block;
+  float: left;
+}
+.mainContent .classCon .capter .capterTitle .toLeft,
+.mainContent .classCon .capter .capterTitle .toRight {
+  width: 3%;
+  max-height: 6.33vh;
+}
+.mainContent .classCon .capter .capterTitle .toLeft {
+  background: url('../images/toLeft1.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 3% 0 29%;
+  height: 6.33vh;
+}
+.mainContent .classCon .capter .capterTitle .toRight {
+  background: url('../images/toRight1.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 0 0 3%;
+  height: 6.33vh;
+}
+.mainContent .classCon .capter .capterTitle .capterName {
+  text-align: center;
+  width: 30%;
+  margin: 5px 0;
+  height: 7.77vh;
+  line-height: 3.6vh;
+  background: #B97A57;
+  color: #fff;
+  font-size: 1.6vw;
+  white-space: normal;
+  border-radius: 3px;
+}
+.mainContent .classCon .capter .capterTitle .capterName.fuxi {
+  line-height: 7.77vh;
+}
+.mainContent .classCon .capter .capterTitle .shengzi {
+  z-index: -1;
+  display: inline-block;
+  margin-left: 42%;
+  margin-top: -3%;
+  width: 15%;
+  height: 34%;
+  background: #B97A57;
+  position: relative;
+}
+.mainContent .classCon .capter .capterDetail,
+.mainContent .classCon .capter .capterDetailKnowledge,
+.mainContent .classCon .capter .classSummary {
+  height: 77.76vh;
+  width: 100%;
+  background: url('../images/addDelBar.png') no-repeat;
+  background-size: 97% 2%;
+  background-position: 23% 1.3%;
+}
+.mainContent .classCon .capter .capterDetail .capterUl,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl,
+.mainContent .classCon .capter .classSummary .capterUl {
+  width: 100%;
+  margin-left: -0.05%;
+  display: inline-flex;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li,
+.mainContent .classCon .capter .classSummary .capterUl li {
+  display: inline-block;
+  float: left;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addOrDel,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addOrDel,
+.mainContent .classCon .capter .classSummary .capterUl li .addOrDel {
+  border-radius: 100px;
+  background: #B97A57;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #fff;
+  width: 20%;
+  margin: 0 -7%;
+  height: 3.8vh;
+  line-height: 3.11vh;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .classCategory,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .classCategory,
+.mainContent .classCon .capter .classSummary .capterUl li .classCategory {
+  color: #124934;
+  line-height: 100%;
+  width: 20%;
+  font-size: 1.5vw;
+  margin: -6% -7% 0;
+  background: #B97A57;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .classContent,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .classContent,
+.mainContent .classCon .capter .classSummary .capterUl li .classContent {
+  background: #B97A57;
+  line-height: 100%;
+  padding-top: 14%;
+  height: 29vh;
+  width: 20%;
+  color: #fff;
+  font-size: 1.28vw;
+  margin: 0 -7%;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-voerflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addHomework,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addHomework,
+.mainContent .classCon .capter .classSummary .capterUl li .addHomework,
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect,
+.mainContent .classCon .capter .capterDetail .capterUl li .addPaper,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addPaper,
+.mainContent .classCon .capter .classSummary .capterUl li .addPaper,
+.mainContent .classCon .capter .capterDetail .capterUl li .addDefect,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addDefect,
+.mainContent .classCon .capter .classSummary .capterUl li .addDefect {
+  height: 9vh;
+  padding-top: 5%;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .classSummary .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .capterDetail .capterUl li .classCategory,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .classCategory,
+.mainContent .classCon .capter .classSummary .capterUl li .classCategory {
+  height: 7vh;
+  padding-top: 7%;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addSuggest,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addSuggest,
+.mainContent .classCon .capter .classSummary .capterUl li .addSuggest {
+  padding-top: 3%;
+  height: 5vh;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addHomework,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addHomework,
+.mainContent .classCon .capter .classSummary .capterUl li .addHomework,
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect,
+.mainContent .classCon .capter .capterDetail .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .classSummary .capterUl li .addTeamEvaluate,
+.mainContent .classCon .capter .capterDetail .capterUl li .addSuggest,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addSuggest,
+.mainContent .classCon .capter .classSummary .capterUl li .addSuggest,
+.mainContent .classCon .capter .capterDetail .capterUl li .addPaper,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addPaper,
+.mainContent .classCon .capter .classSummary .capterUl li .addPaper,
+.mainContent .classCon .capter .capterDetail .capterUl li .addDefect,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addDefect,
+.mainContent .classCon .capter .classSummary .capterUl li .addDefect {
+  background: #B97A57;
+  font-size: 1.3vw;
+  width: 29%;
+  margin-left: -12%;
+  line-height: 100%;
+  color: #124934;
+  cursor: pointer;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addSuggest,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addSuggest,
+.mainContent .classCon .capter .classSummary .capterUl li .addSuggest,
+.mainContent .classCon .capter .capterDetail .capterUl li .addHomework span,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addHomework span,
+.mainContent .classCon .capter .classSummary .capterUl li .addHomework span,
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect span,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect span,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect span,
+.mainContent .classCon .capter .capterDetail .capterUl li .addDefect span,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addDefect span,
+.mainContent .classCon .capter .classSummary .capterUl li .addDefect span,
+.mainContent .classCon .capter .capterDetail .capterUl li .addPaper span,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addPaper span,
+.mainContent .classCon .capter .classSummary .capterUl li .addPaper span {
+  color: #fff;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addSuggest label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addSuggest label,
+.mainContent .classCon .capter .classSummary .capterUl li .addSuggest label,
+.mainContent .classCon .capter .capterDetail .capterUl li .addHomework span label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addHomework span label,
+.mainContent .classCon .capter .classSummary .capterUl li .addHomework span label,
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect span label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect span label,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect span label,
+.mainContent .classCon .capter .capterDetail .capterUl li .addDefect span label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addDefect span label,
+.mainContent .classCon .capter .classSummary .capterUl li .addDefect span label,
+.mainContent .classCon .capter .capterDetail .capterUl li .addPaper span label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addPaper span label,
+.mainContent .classCon .capter .classSummary .capterUl li .addPaper span label {
+  display: inline-block;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addSuggest a,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addSuggest a,
+.mainContent .classCon .capter .classSummary .capterUl li .addSuggest a,
+.mainContent .classCon .capter .capterDetail .capterUl li .addHomework span a,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addHomework span a,
+.mainContent .classCon .capter .classSummary .capterUl li .addHomework span a,
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect span a,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect span a,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect span a,
+.mainContent .classCon .capter .capterDetail .capterUl li .addDefect span a,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addDefect span a,
+.mainContent .classCon .capter .classSummary .capterUl li .addDefect span a,
+.mainContent .classCon .capter .capterDetail .capterUl li .addPaper span a,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addPaper span a,
+.mainContent .classCon .capter .classSummary .capterUl li .addPaper span a {
+  display: block;
+  color: #fff;
+}
+.mainContent .classCon .capter .capterDetail .capterUl li .addCorrect span label,
+.mainContent .classCon .capter .capterDetailKnowledge .capterUl li .addCorrect span label,
+.mainContent .classCon .capter .classSummary .capterUl li .addCorrect span label {
+  font-size: 1.1vw;
+}
+.mainContent .classCon .capter .capterDetailKnowledge {
+  background: url('../images/addDelBar.png') no-repeat;
+  background-size: 68% 2%;
+  background-position: 47% 1.3%;
+}
+.mainContent .classCon .capter .classSummary .capterUl {
+  margin-top: -9%;
+}
+.mainContent .classCon .capter .classSummary .sumClassCategory {
+  height: 34vh;
+  background: #B97A57;
+  color: #124934;
+  font-size: 1.5vw;
+  display: inline-block;
+  text-align: center;
+  width: 2.05vw;
+  line-height: 100%;
+  margin: 6.3vh 0 0 -3.3vw;
+}
+.mainContent .classCon .capter .classSummary .sumClassCategory label {
+  color: #fff;
+}
+.mainContent .classCon .capter .classSummary .sumClassCategory1 {
+  height: 34vh;
+  background: #B97A57;
+  color: #124934;
+  font-size: 1.5vw;
+  display: inline-block;
+  text-align: center;
+  width: 2.05vw;
+  line-height: 100%;
+  margin: 4.3vh 0 0 -3.3vw;
+}
+.mainContent .classCon .capter .classSummary .sumClassCategory1 label {
+  color: #fff;
+}
+.footInfo {
+  position: absolute;
+  left: 0;
+  top: 700px;
+  font-size: 1.5vw;
+  width: 100%;
+  height: 100px;
+}
+.footInfo .order {
+  margin: 10px auto;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto;
+}
+.footInfo .order div {
+  margin: 0 5%;
+  border-radius: 8px;
+  text-align: center;
+  background: #f18134;
+  display: inline-block;
+  float: left;
+  width: 20%;
+}
+.btn {
+  width: 2.7rem;
+  height: 1.9rem;
+  border-radius: 25%;
+  color: #fff;
+  /*background color:#008276;*/
+  margin-bottom: -1.6875rem;
+  margin-left: 1%;
+  margin-top: 8%;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btm {
+  width: 2.9rem;
+  height: 2.1rem;
+  border-radius: 25%;
+  color: #fff;
+  /*background color:#008276;*/
+  margin-bottom: -1.6875rem;
+  margin-left: -1%;
+  margin-top: -3%;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btc {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 100%;
+  color: #fff;
+  /*background color:#008276;*/
+  margin-bottom: -1.6875rem;
+  margin-left: -1%;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btj {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 100%;
+  color: #fff;
+  /*background color:#008276;*/
+  margin-bottom: -1.6875rem;
+  margin-left: -5%;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btw {
+  width: 3.0rem;
+  height: 1.85rem;
+  border-radius: 25%;
+  color: #fff;
+  /*background color:#008276;*/
+  margin-bottom: -1.6875rem;
+  margin-left: -4.4%;
+  margin-top: 5%;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btw t {
+  text-align: center;
+  margin-top: 50%;
+  width: 4rem;
+  line-height: 1.5rem;
+  transform: translate(-0.75rem, -0.75rem);
+  font-style: inherit;
+  white-space: nowrap;
+}
+.btw t:hover {
+  font-size: 120%;
+  font-weight: bold;
+}
+.btn i {
+  text-align: center;
+  margin-top: 18%;
+  margin-left: 46%;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  transform: translate(-0.75rem, -0.75rem);
+  font-style: inherit;
+  font-size: 24px;
+  display: inline-block;
+}
+.btn i:hover {
+  font-size: 200%;
+  font-style: 800px;
+  color: #FFFFFF;
+}
+.btm m {
+  text-align: center;
+  margin-top: 40%;
+  margin-left: -5.4%;
+  width: 4rem;
+  line-height: 1.5rem;
+  transform: translate(-0.75rem, -0.75rem);
+  font-style: inherit;
+}
+.btm m:hover {
+  font-size: 110%;
+  font-weight: bold;
+}
+.btc c {
+  text-align: center;
+  margin-top: 40%;
+  margin-left: -2.4%;
+  width: 4rem;
+  line-height: 1.5rem;
+  transform: translate(-0.75rem, -0.75rem);
+  font-style: inherit;
+}
+.btc c:hover {
+  font-size: 150%;
+  font-weight: bolder;
+}
+.btj d {
+  text-align: center;
+  margin-top: 40%;
+  margin-left: -2.4%;
+  width: 4rem;
+  line-height: 1.5rem;
+  transform: translate(-0.75rem, -0.75rem);
+  font-style: 2.0vw;
+}
+.btj d:hover {
+  font-size: 200%;
+  font-weight: bolder;
+}
+.btn:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.btm:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.btc:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.btw:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.btj:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.confirm {
+  background: #124934;
+  color: #fff;
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 40%;
+  top: 50%;
+  width: 20%;
+  font-size: 1.5vw;
+  height: 100px;
+  z-index: 101;
+}
+.confirm span,
+.confirm p {
+  height: 35px;
+  line-height: 35px;
+}
+.confirm span {
+  width: 30%;
+  margin: 0 10%;
+  display: inline-block;
+  float: left;
+  border-radius: 7px;
+  border: 1px solid #000;
+}
+.addCorrectTable0 table,
+.addCorrectTable1 table,
+.addCorrectTable2 table,
+.addCorrectTable3 table,
+.addCorrectTable4 table,
+.addCorrectTable5 table,
+.addCorrectTable6 table,
+.addCorrectTable7 table,
+.addCorrectTable8 table,
+.addCorrectTable9 table,
+.addCorrectTable10 table,
+.addCorrectTable11 table,
+.addCorrectTable12 table,
+.addCorrectTable13 table,
+.addCorrectTable14 table,
+.addCorrectTable15 table,
+.addCorrectTable16 table,
+.addCorrectTable17 table,
+.addCorrectTable18 table,
+.addCorrectTable19 table,
+.addCorrectTable20 table,
+.addCorrectTable21 table,
+.addCorrectTable22 table,
+.addCorrectTable23 table,
+.addCorrectTable24 table,
+.addCorrectTable25 table,
+.addCorrectTable26 table,
+.addCorrectTable27 table,
+.addCorrectTable28 table,
+.addCorrectTable29 table,
+.addCorrectTable30 table,
+.addCorrectTable31 table,
+.addCorrectTable32 table,
+.addCorrectTable33 table,
+.addCorrectTable34 table,
+.addCorrectTable35 table,
+.addCorrectTable36 table,
+.addCorrectTable37 table,
+.addCorrectTable38 table,
+.addCorrectTable39 table,
+.addCorrectTable40 table,
+.addCorrectTable41 table,
+.addCorrectTable42 table,
+.addCorrectTable43 table,
+.addCorrectTable44 table,
+.addCorrectTable45 table,
+.addCorrectTable46 table,
+.addCorrectTable47 table,
+.addCorrectTable48 table,
+.addCorrectTable49 table,
+.addCorrectTable50 table,
+.addCorrectTable51 table,
+.addCorrectTable52 table,
+.addCorrectTable53 table,
+.addCorrectTable54 table,
+.addCorrectTable55 table,
+.addCorrectTable56 table,
+.addCorrectTable57 table,
+.addCorrectTable58 table,
+.addCorrectTable59 table,
+.addCorrectTable60 table,
+.addCorrectTable61 table,
+.addCorrectTable62 table,
+.addCorrectTable63 table,
+.addCorrectTable64 table,
+.addCorrectTable65 table,
+.addCorrectTable66 table,
+.addCorrectTable67 table,
+.addCorrectTable68 table,
+.addCorrectTable69 table,
+.addCorrectTable70 table,
+.addCorrectTable71 table,
+.addCorrectTable72 table,
+.addCorrectTable73 table,
+.addCorrectTable74 table,
+.addCorrectTable75 table,
+.addCorrectTable76 table,
+.addCorrectTable77 table,
+.addCorrectTable78 table,
+.addCorrectTable79 table,
+.addCorrectTable80 table,
+.addCorrectTable81 table,
+.addCorrectTable82 table,
+.addCorrectTable83 table,
+.addCorrectTable84 table,
+.addCorrectTable85 table,
+.addCorrectTable86 table,
+.addCorrectTable87 table,
+.addCorrectTable88 table,
+.addCorrectTable89 table,
+.addCorrectTable90 table,
+.addCorrectTable91 table,
+.addCorrectTable92 table,
+.addCorrectTable93 table,
+.addCorrectTable94 table,
+.addCorrectTable95 table,
+.addCorrectTable96 table,
+.addCorrectTable97 table,
+.addCorrectTable98 table,
+.addCorrectTable99 table,
+.addCorrectTable100 table,
+.addCorrectTable101 table,
+.addCorrectTable102 table,
+.addCorrectTable103 table,
+.addCorrectTable104 table,
+.addCorrectTable105 table,
+.addCorrectTable106 table,
+.addCorrectTable107 table,
+.addCorrectTable108 table,
+.addCorrectTable109 table,
+.addCorrectTable110 table,
+.addCorrectTable111 table,
+.addCorrectTable112 table,
+.addCorrectTable113 table,
+.addCorrectTable114 table,
+.addCorrectTable115 table,
+.addCorrectTable116 table,
+.addCorrectTable117 table,
+.addCorrectTable118 table,
+.addCorrectTable119 table,
+.addCorrectTable120 table,
+.addCorrectTable121 table,
+.addCorrectTable122 table,
+.addCorrectTable123 table,
+.addCorrectTable124 table,
+.addCorrectTable125 table,
+.addCorrectTable126 table,
+.addCorrectTable127 table,
+.addCorrectTable128 table,
+.addCorrectTable129 table,
+.addCorrectTable130 table,
+.addCorrectTable131 table,
+.addCorrectTable132 table,
+.addCorrectTable133 table,
+.addCorrectTable134 table,
+.addCorrectTable135 table,
+.addCorrectTable136 table,
+.addCorrectTable137 table,
+.addCorrectTable138 table,
+.addCorrectTable139 table,
+.addCorrectTable140 table,
+.addCorrectTable141 table,
+.addCorrectTable142 table,
+.addCorrectTable143 table,
+.addCorrectTable144 table,
+.addCorrectTable145 table,
+.addCorrectTable146 table,
+.addCorrectTable147 table,
+.addCorrectTable148 table,
+.addCorrectTable149 table,
+.addCorrectTable150 table,
+.addCorrectTable151 table,
+.addCorrectTable152 table,
+.addCorrectTable153 table,
+.addCorrectTable154 table,
+.addCorrectTable155 table,
+.addCorrectTable156 table,
+.addCorrectTable157 table,
+.addCorrectTable158 table,
+.addCorrectTable159 table,
+.addCorrectTable160 table,
+.addCorrectTable161 table,
+.addCorrectTable162 table,
+.addCorrectTable163 table,
+.addCorrectTable164 table,
+.addCorrectTable165 table,
+.addCorrectTable166 table,
+.addCorrectTable167 table,
+.addCorrectTable168 table,
+.addCorrectTable169 table,
+.addCorrectTable170 table,
+.addCorrectTable171 table,
+.addCorrectTable172 table,
+.addCorrectTable173 table,
+.addCorrectTable174 table,
+.addCorrectTable175 table,
+.addCorrectTable176 table,
+.addCorrectTable177 table,
+.addCorrectTable178 table,
+.addCorrectTable179 table,
+.addCorrectTable180 table,
+.addCorrectTable181 table,
+.addCorrectTable182 table,
+.addCorrectTable183 table,
+.addCorrectTable184 table,
+.addCorrectTable185 table,
+.addCorrectTable186 table,
+.addCorrectTable187 table,
+.addCorrectTable188 table,
+.addCorrectTable189 table,
+.addCorrectTable190 table,
+.addCorrectTable191 table,
+.addCorrectTable192 table,
+.addCorrectTable193 table,
+.addCorrectTable194 table,
+.addCorrectTable195 table,
+.addCorrectTable196 table,
+.addCorrectTable197 table,
+.addCorrectTable198 table,
+.addCorrectTable199 table,
+.addCorrectTable200 table,
+.addCorrectTable201 table,
+.addCorrectTable202 table,
+.addCorrectTable203 table,
+.addCorrectTable204 table,
+.addCorrectTable205 table,
+.addCorrectTable206 table,
+.addCorrectTable207 table,
+.addCorrectTable208 table,
+.addCorrectTable209 table,
+.addCorrectTable210 table,
+.addCorrectTable211 table,
+.addCorrectTable212 table,
+.addCorrectTable213 table,
+.addCorrectTable214 table,
+.addCorrectTable215 table,
+.addCorrectTable216 table,
+.addCorrectTable217 table,
+.addCorrectTable218 table,
+.addCorrectTable219 table,
+.addCorrectTable220 table,
+.addCorrectTable221 table,
+.addCorrectTable222 table,
+.addCorrectTable223 table,
+.addCorrectTable224 table,
+.addCorrectTable225 table,
+.addCorrectTable226 table,
+.addCorrectTable227 table,
+.addCorrectTable228 table,
+.addCorrectTable229 table,
+.addCorrectTable230 table,
+.addCorrectTable231 table,
+.addCorrectTable232 table,
+.addCorrectTable233 table,
+.addCorrectTable234 table,
+.addCorrectTable235 table,
+.addCorrectTable236 table,
+.addCorrectTable237 table,
+.addCorrectTable238 table,
+.addCorrectTable239 table {
+  width: 100%;
+  height: 20px;
+}
+.addCorrectTable0,
+.addCorrectTable1,
+.addCorrectTable2,
+.addCorrectTable3,
+.addCorrectTable4,
+.addCorrectTable5,
+.addCorrectTable6,
+.addCorrectTable7,
+.addCorrectTable8,
+.addCorrectTable9,
+.addCorrectTable10,
+.addCorrectTable11,
+.addCorrectTable12,
+.addCorrectTable13,
+.addCorrectTable14,
+.addCorrectTable15,
+.addCorrectTable16,
+.addCorrectTable17,
+.addCorrectTable18,
+.addCorrectTable19,
+.addCorrectTable20,
+.addCorrectTable21,
+.addCorrectTable22,
+.addCorrectTable23,
+.addCorrectTable24,
+.addCorrectTable25,
+.addCorrectTable26,
+.addCorrectTable27,
+.addCorrectTable28,
+.addCorrectTable29,
+.addCorrectTable30,
+.addCorrectTable31,
+.addCorrectTable32,
+.addCorrectTable33,
+.addCorrectTable34,
+.addCorrectTable35,
+.addCorrectTable36,
+.addCorrectTable37,
+.addCorrectTable38,
+.addCorrectTable39,
+.addCorrectTable40,
+.addCorrectTable41,
+.addCorrectTable42,
+.addCorrectTable43,
+.addCorrectTable44,
+.addCorrectTable45,
+.addCorrectTable46,
+.addCorrectTable47,
+.addCorrectTable48,
+.addCorrectTable49,
+.addCorrectTable50,
+.addCorrectTable51,
+.addCorrectTable52,
+.addCorrectTable53,
+.addCorrectTable54,
+.addCorrectTable55,
+.addCorrectTable56,
+.addCorrectTable57,
+.addCorrectTable58,
+.addCorrectTable59,
+.addCorrectTable60,
+.addCorrectTable61,
+.addCorrectTable62,
+.addCorrectTable63,
+.addCorrectTable64,
+.addCorrectTable65,
+.addCorrectTable66,
+.addCorrectTable67,
+.addCorrectTable68,
+.addCorrectTable69,
+.addCorrectTable70,
+.addCorrectTable71,
+.addCorrectTable72,
+.addCorrectTable73,
+.addCorrectTable74,
+.addCorrectTable75,
+.addCorrectTable76,
+.addCorrectTable77,
+.addCorrectTable78,
+.addCorrectTable79,
+.addCorrectTable80,
+.addCorrectTable81,
+.addCorrectTable82,
+.addCorrectTable83,
+.addCorrectTable84,
+.addCorrectTable85,
+.addCorrectTable86,
+.addCorrectTable87,
+.addCorrectTable88,
+.addCorrectTable89,
+.addCorrectTable90,
+.addCorrectTable91,
+.addCorrectTable92,
+.addCorrectTable93,
+.addCorrectTable94,
+.addCorrectTable95,
+.addCorrectTable96,
+.addCorrectTable97,
+.addCorrectTable98,
+.addCorrectTable99,
+.addCorrectTable100,
+.addCorrectTable101,
+.addCorrectTable102,
+.addCorrectTable103,
+.addCorrectTable104,
+.addCorrectTable105,
+.addCorrectTable106,
+.addCorrectTable107,
+.addCorrectTable108,
+.addCorrectTable109,
+.addCorrectTable110,
+.addCorrectTable111,
+.addCorrectTable112,
+.addCorrectTable113,
+.addCorrectTable114,
+.addCorrectTable115,
+.addCorrectTable116,
+.addCorrectTable117,
+.addCorrectTable118,
+.addCorrectTable119,
+.addCorrectTable120,
+.addCorrectTable121,
+.addCorrectTable122,
+.addCorrectTable123,
+.addCorrectTable124,
+.addCorrectTable125,
+.addCorrectTable126,
+.addCorrectTable127,
+.addCorrectTable128,
+.addCorrectTable129,
+.addCorrectTable130,
+.addCorrectTable131,
+.addCorrectTable132,
+.addCorrectTable133,
+.addCorrectTable134,
+.addCorrectTable135,
+.addCorrectTable136,
+.addCorrectTable137,
+.addCorrectTable138,
+.addCorrectTable139,
+.addCorrectTable140,
+.addCorrectTable141,
+.addCorrectTable142,
+.addCorrectTable143,
+.addCorrectTable144,
+.addCorrectTable145,
+.addCorrectTable146,
+.addCorrectTable147,
+.addCorrectTable148,
+.addCorrectTable149,
+.addCorrectTable150,
+.addCorrectTable151,
+.addCorrectTable152,
+.addCorrectTable153,
+.addCorrectTable154,
+.addCorrectTable155,
+.addCorrectTable156,
+.addCorrectTable157,
+.addCorrectTable158,
+.addCorrectTable159,
+.addCorrectTable160,
+.addCorrectTable161,
+.addCorrectTable162,
+.addCorrectTable163,
+.addCorrectTable164,
+.addCorrectTable165,
+.addCorrectTable166,
+.addCorrectTable167,
+.addCorrectTable168,
+.addCorrectTable169,
+.addCorrectTable170,
+.addCorrectTable171,
+.addCorrectTable172,
+.addCorrectTable173,
+.addCorrectTable174,
+.addCorrectTable175,
+.addCorrectTable176,
+.addCorrectTable177,
+.addCorrectTable178,
+.addCorrectTable179,
+.addCorrectTable180,
+.addCorrectTable181,
+.addCorrectTable182,
+.addCorrectTable183,
+.addCorrectTable184,
+.addCorrectTable185,
+.addCorrectTable186,
+.addCorrectTable187,
+.addCorrectTable188,
+.addCorrectTable189,
+.addCorrectTable190,
+.addCorrectTable191,
+.addCorrectTable192,
+.addCorrectTable193,
+.addCorrectTable194,
+.addCorrectTable195,
+.addCorrectTable196,
+.addCorrectTable197,
+.addCorrectTable198,
+.addCorrectTable199,
+.addCorrectTable200,
+.addCorrectTable201,
+.addCorrectTable202,
+.addCorrectTable203,
+.addCorrectTable204,
+.addCorrectTable205,
+.addCorrectTable206,
+.addCorrectTable207,
+.addCorrectTable208,
+.addCorrectTable209,
+.addCorrectTable210,
+.addCorrectTable211,
+.addCorrectTable212,
+.addCorrectTable213,
+.addCorrectTable214,
+.addCorrectTable215,
+.addCorrectTable216,
+.addCorrectTable217,
+.addCorrectTable218,
+.addCorrectTable219,
+.addCorrectTable220,
+.addCorrectTable221,
+.addCorrectTable222,
+.addCorrectTable223,
+.addCorrectTable224,
+.addCorrectTable225,
+.addCorrectTable226,
+.addCorrectTable227,
+.addCorrectTable228,
+.addCorrectTable229,
+.addCorrectTable230,
+.addCorrectTable231,
+.addCorrectTable232,
+.addCorrectTable233,
+.addCorrectTable234,
+.addCorrectTable235,
+.addCorrectTable236,
+.addCorrectTable237,
+.addCorrectTable238,
+.addCorrectTable239,
+.selectCon,
+.addCorrectTable,
+.selectCon0,
+.selectCon1,
+.selectCon2,
+.selectCon3,
+.selectCon4,
+.selectCon5,
+.selectCon6,
+.selectCon7,
+.selectCon8,
+.selectCon9,
+.selectCon10,
+.selectCon11,
+.selectCon12,
+.selectCon13,
+.selectCon14,
+.selectCon15,
+.selectCon16 {
+  z-index: 102;
+  position: absolute;
+  display: none;
+  width: 26%;
+  height: 80%;
+  background: #124934;
+  color: #fff;
+  top: 105px;
+  left: 40%;
+}
+.addCorrectTable0 .back,
+.addCorrectTable1 .back,
+.addCorrectTable2 .back,
+.addCorrectTable3 .back,
+.addCorrectTable4 .back,
+.addCorrectTable5 .back,
+.addCorrectTable6 .back,
+.addCorrectTable7 .back,
+.addCorrectTable8 .back,
+.addCorrectTable9 .back,
+.addCorrectTable10 .back,
+.addCorrectTable11 .back,
+.addCorrectTable12 .back,
+.addCorrectTable13 .back,
+.addCorrectTable14 .back,
+.addCorrectTable15 .back,
+.addCorrectTable16 .back,
+.addCorrectTable17 .back,
+.addCorrectTable18 .back,
+.addCorrectTable19 .back,
+.addCorrectTable20 .back,
+.addCorrectTable21 .back,
+.addCorrectTable22 .back,
+.addCorrectTable23 .back,
+.addCorrectTable24 .back,
+.addCorrectTable25 .back,
+.addCorrectTable26 .back,
+.addCorrectTable27 .back,
+.addCorrectTable28 .back,
+.addCorrectTable29 .back,
+.addCorrectTable30 .back,
+.addCorrectTable31 .back,
+.addCorrectTable32 .back,
+.addCorrectTable33 .back,
+.addCorrectTable34 .back,
+.addCorrectTable35 .back,
+.addCorrectTable36 .back,
+.addCorrectTable37 .back,
+.addCorrectTable38 .back,
+.addCorrectTable39 .back,
+.addCorrectTable40 .back,
+.addCorrectTable41 .back,
+.addCorrectTable42 .back,
+.addCorrectTable43 .back,
+.addCorrectTable44 .back,
+.addCorrectTable45 .back,
+.addCorrectTable46 .back,
+.addCorrectTable47 .back,
+.addCorrectTable48 .back,
+.addCorrectTable49 .back,
+.addCorrectTable50 .back,
+.addCorrectTable51 .back,
+.addCorrectTable52 .back,
+.addCorrectTable53 .back,
+.addCorrectTable54 .back,
+.addCorrectTable55 .back,
+.addCorrectTable56 .back,
+.addCorrectTable57 .back,
+.addCorrectTable58 .back,
+.addCorrectTable59 .back,
+.addCorrectTable60 .back,
+.addCorrectTable61 .back,
+.addCorrectTable62 .back,
+.addCorrectTable63 .back,
+.addCorrectTable64 .back,
+.addCorrectTable65 .back,
+.addCorrectTable66 .back,
+.addCorrectTable67 .back,
+.addCorrectTable68 .back,
+.addCorrectTable69 .back,
+.addCorrectTable70 .back,
+.addCorrectTable71 .back,
+.addCorrectTable72 .back,
+.addCorrectTable73 .back,
+.addCorrectTable74 .back,
+.addCorrectTable75 .back,
+.addCorrectTable76 .back,
+.addCorrectTable77 .back,
+.addCorrectTable78 .back,
+.addCorrectTable79 .back,
+.addCorrectTable80 .back,
+.addCorrectTable81 .back,
+.addCorrectTable82 .back,
+.addCorrectTable83 .back,
+.addCorrectTable84 .back,
+.addCorrectTable85 .back,
+.addCorrectTable86 .back,
+.addCorrectTable87 .back,
+.addCorrectTable88 .back,
+.addCorrectTable89 .back,
+.addCorrectTable90 .back,
+.addCorrectTable91 .back,
+.addCorrectTable92 .back,
+.addCorrectTable93 .back,
+.addCorrectTable94 .back,
+.addCorrectTable95 .back,
+.addCorrectTable96 .back,
+.addCorrectTable97 .back,
+.addCorrectTable98 .back,
+.addCorrectTable99 .back,
+.addCorrectTable100 .back,
+.addCorrectTable101 .back,
+.addCorrectTable102 .back,
+.addCorrectTable103 .back,
+.addCorrectTable104 .back,
+.addCorrectTable105 .back,
+.addCorrectTable106 .back,
+.addCorrectTable107 .back,
+.addCorrectTable108 .back,
+.addCorrectTable109 .back,
+.addCorrectTable110 .back,
+.addCorrectTable111 .back,
+.addCorrectTable112 .back,
+.addCorrectTable113 .back,
+.addCorrectTable114 .back,
+.addCorrectTable115 .back,
+.addCorrectTable116 .back,
+.addCorrectTable117 .back,
+.addCorrectTable118 .back,
+.addCorrectTable119 .back,
+.addCorrectTable120 .back,
+.addCorrectTable121 .back,
+.addCorrectTable122 .back,
+.addCorrectTable123 .back,
+.addCorrectTable124 .back,
+.addCorrectTable125 .back,
+.addCorrectTable126 .back,
+.addCorrectTable127 .back,
+.addCorrectTable128 .back,
+.addCorrectTable129 .back,
+.addCorrectTable130 .back,
+.addCorrectTable131 .back,
+.addCorrectTable132 .back,
+.addCorrectTable133 .back,
+.addCorrectTable134 .back,
+.addCorrectTable135 .back,
+.addCorrectTable136 .back,
+.addCorrectTable137 .back,
+.addCorrectTable138 .back,
+.addCorrectTable139 .back,
+.addCorrectTable140 .back,
+.addCorrectTable141 .back,
+.addCorrectTable142 .back,
+.addCorrectTable143 .back,
+.addCorrectTable144 .back,
+.addCorrectTable145 .back,
+.addCorrectTable146 .back,
+.addCorrectTable147 .back,
+.addCorrectTable148 .back,
+.addCorrectTable149 .back,
+.addCorrectTable150 .back,
+.addCorrectTable151 .back,
+.addCorrectTable152 .back,
+.addCorrectTable153 .back,
+.addCorrectTable154 .back,
+.addCorrectTable155 .back,
+.addCorrectTable156 .back,
+.addCorrectTable157 .back,
+.addCorrectTable158 .back,
+.addCorrectTable159 .back,
+.addCorrectTable160 .back,
+.addCorrectTable161 .back,
+.addCorrectTable162 .back,
+.addCorrectTable163 .back,
+.addCorrectTable164 .back,
+.addCorrectTable165 .back,
+.addCorrectTable166 .back,
+.addCorrectTable167 .back,
+.addCorrectTable168 .back,
+.addCorrectTable169 .back,
+.addCorrectTable170 .back,
+.addCorrectTable171 .back,
+.addCorrectTable172 .back,
+.addCorrectTable173 .back,
+.addCorrectTable174 .back,
+.addCorrectTable175 .back,
+.addCorrectTable176 .back,
+.addCorrectTable177 .back,
+.addCorrectTable178 .back,
+.addCorrectTable179 .back,
+.addCorrectTable180 .back,
+.addCorrectTable181 .back,
+.addCorrectTable182 .back,
+.addCorrectTable183 .back,
+.addCorrectTable184 .back,
+.addCorrectTable185 .back,
+.addCorrectTable186 .back,
+.addCorrectTable187 .back,
+.addCorrectTable188 .back,
+.addCorrectTable189 .back,
+.addCorrectTable190 .back,
+.addCorrectTable191 .back,
+.addCorrectTable192 .back,
+.addCorrectTable193 .back,
+.addCorrectTable194 .back,
+.addCorrectTable195 .back,
+.addCorrectTable196 .back,
+.addCorrectTable197 .back,
+.addCorrectTable198 .back,
+.addCorrectTable199 .back,
+.addCorrectTable200 .back,
+.addCorrectTable201 .back,
+.addCorrectTable202 .back,
+.addCorrectTable203 .back,
+.addCorrectTable204 .back,
+.addCorrectTable205 .back,
+.addCorrectTable206 .back,
+.addCorrectTable207 .back,
+.addCorrectTable208 .back,
+.addCorrectTable209 .back,
+.addCorrectTable210 .back,
+.addCorrectTable211 .back,
+.addCorrectTable212 .back,
+.addCorrectTable213 .back,
+.addCorrectTable214 .back,
+.addCorrectTable215 .back,
+.addCorrectTable216 .back,
+.addCorrectTable217 .back,
+.addCorrectTable218 .back,
+.addCorrectTable219 .back,
+.addCorrectTable220 .back,
+.addCorrectTable221 .back,
+.addCorrectTable222 .back,
+.addCorrectTable223 .back,
+.addCorrectTable224 .back,
+.addCorrectTable225 .back,
+.addCorrectTable226 .back,
+.addCorrectTable227 .back,
+.addCorrectTable228 .back,
+.addCorrectTable229 .back,
+.addCorrectTable230 .back,
+.addCorrectTable231 .back,
+.addCorrectTable232 .back,
+.addCorrectTable233 .back,
+.addCorrectTable234 .back,
+.addCorrectTable235 .back,
+.addCorrectTable236 .back,
+.addCorrectTable237 .back,
+.addCorrectTable238 .back,
+.addCorrectTable239 .back,
+.selectCon .back,
+.addCorrectTable .back,
+.selectCon0 .back,
+.selectCon1 .back,
+.selectCon2 .back,
+.selectCon3 .back,
+.selectCon4 .back,
+.selectCon5 .back,
+.selectCon6 .back,
+.selectCon7 .back,
+.selectCon8 .back,
+.selectCon9 .back,
+.selectCon10 .back,
+.selectCon11 .back,
+.selectCon12 .back,
+.selectCon13 .back,
+.selectCon14 .back,
+.selectCon15 .back,
+.selectCon16 .back {
+  text-align: center;
+  float: right;
+  width: 4%;
+  height: 3%;
+  font-size: 1vw;
+  border-radius: 20%;
+  color: #000;
+  background: #dddddd;
+  margin: 3% 4% 0 0;
+  cursor: pointer;
+}
+.addCorrectTable0 select,
+.addCorrectTable1 select,
+.addCorrectTable2 select,
+.addCorrectTable3 select,
+.addCorrectTable4 select,
+.addCorrectTable5 select,
+.addCorrectTable6 select,
+.addCorrectTable7 select,
+.addCorrectTable8 select,
+.addCorrectTable9 select,
+.addCorrectTable10 select,
+.addCorrectTable11 select,
+.addCorrectTable12 select,
+.addCorrectTable13 select,
+.addCorrectTable14 select,
+.addCorrectTable15 select,
+.addCorrectTable16 select,
+.addCorrectTable17 select,
+.addCorrectTable18 select,
+.addCorrectTable19 select,
+.addCorrectTable20 select,
+.addCorrectTable21 select,
+.addCorrectTable22 select,
+.addCorrectTable23 select,
+.addCorrectTable24 select,
+.addCorrectTable25 select,
+.addCorrectTable26 select,
+.addCorrectTable27 select,
+.addCorrectTable28 select,
+.addCorrectTable29 select,
+.addCorrectTable30 select,
+.addCorrectTable31 select,
+.addCorrectTable32 select,
+.addCorrectTable33 select,
+.addCorrectTable34 select,
+.addCorrectTable35 select,
+.addCorrectTable36 select,
+.addCorrectTable37 select,
+.addCorrectTable38 select,
+.addCorrectTable39 select,
+.addCorrectTable40 select,
+.addCorrectTable41 select,
+.addCorrectTable42 select,
+.addCorrectTable43 select,
+.addCorrectTable44 select,
+.addCorrectTable45 select,
+.addCorrectTable46 select,
+.addCorrectTable47 select,
+.addCorrectTable48 select,
+.addCorrectTable49 select,
+.addCorrectTable50 select,
+.addCorrectTable51 select,
+.addCorrectTable52 select,
+.addCorrectTable53 select,
+.addCorrectTable54 select,
+.addCorrectTable55 select,
+.addCorrectTable56 select,
+.addCorrectTable57 select,
+.addCorrectTable58 select,
+.addCorrectTable59 select,
+.addCorrectTable60 select,
+.addCorrectTable61 select,
+.addCorrectTable62 select,
+.addCorrectTable63 select,
+.addCorrectTable64 select,
+.addCorrectTable65 select,
+.addCorrectTable66 select,
+.addCorrectTable67 select,
+.addCorrectTable68 select,
+.addCorrectTable69 select,
+.addCorrectTable70 select,
+.addCorrectTable71 select,
+.addCorrectTable72 select,
+.addCorrectTable73 select,
+.addCorrectTable74 select,
+.addCorrectTable75 select,
+.addCorrectTable76 select,
+.addCorrectTable77 select,
+.addCorrectTable78 select,
+.addCorrectTable79 select,
+.addCorrectTable80 select,
+.addCorrectTable81 select,
+.addCorrectTable82 select,
+.addCorrectTable83 select,
+.addCorrectTable84 select,
+.addCorrectTable85 select,
+.addCorrectTable86 select,
+.addCorrectTable87 select,
+.addCorrectTable88 select,
+.addCorrectTable89 select,
+.addCorrectTable90 select,
+.addCorrectTable91 select,
+.addCorrectTable92 select,
+.addCorrectTable93 select,
+.addCorrectTable94 select,
+.addCorrectTable95 select,
+.addCorrectTable96 select,
+.addCorrectTable97 select,
+.addCorrectTable98 select,
+.addCorrectTable99 select,
+.addCorrectTable100 select,
+.addCorrectTable101 select,
+.addCorrectTable102 select,
+.addCorrectTable103 select,
+.addCorrectTable104 select,
+.addCorrectTable105 select,
+.addCorrectTable106 select,
+.addCorrectTable107 select,
+.addCorrectTable108 select,
+.addCorrectTable109 select,
+.addCorrectTable110 select,
+.addCorrectTable111 select,
+.addCorrectTable112 select,
+.addCorrectTable113 select,
+.addCorrectTable114 select,
+.addCorrectTable115 select,
+.addCorrectTable116 select,
+.addCorrectTable117 select,
+.addCorrectTable118 select,
+.addCorrectTable119 select,
+.addCorrectTable120 select,
+.addCorrectTable121 select,
+.addCorrectTable122 select,
+.addCorrectTable123 select,
+.addCorrectTable124 select,
+.addCorrectTable125 select,
+.addCorrectTable126 select,
+.addCorrectTable127 select,
+.addCorrectTable128 select,
+.addCorrectTable129 select,
+.addCorrectTable130 select,
+.addCorrectTable131 select,
+.addCorrectTable132 select,
+.addCorrectTable133 select,
+.addCorrectTable134 select,
+.addCorrectTable135 select,
+.addCorrectTable136 select,
+.addCorrectTable137 select,
+.addCorrectTable138 select,
+.addCorrectTable139 select,
+.addCorrectTable140 select,
+.addCorrectTable141 select,
+.addCorrectTable142 select,
+.addCorrectTable143 select,
+.addCorrectTable144 select,
+.addCorrectTable145 select,
+.addCorrectTable146 select,
+.addCorrectTable147 select,
+.addCorrectTable148 select,
+.addCorrectTable149 select,
+.addCorrectTable150 select,
+.addCorrectTable151 select,
+.addCorrectTable152 select,
+.addCorrectTable153 select,
+.addCorrectTable154 select,
+.addCorrectTable155 select,
+.addCorrectTable156 select,
+.addCorrectTable157 select,
+.addCorrectTable158 select,
+.addCorrectTable159 select,
+.addCorrectTable160 select,
+.addCorrectTable161 select,
+.addCorrectTable162 select,
+.addCorrectTable163 select,
+.addCorrectTable164 select,
+.addCorrectTable165 select,
+.addCorrectTable166 select,
+.addCorrectTable167 select,
+.addCorrectTable168 select,
+.addCorrectTable169 select,
+.addCorrectTable170 select,
+.addCorrectTable171 select,
+.addCorrectTable172 select,
+.addCorrectTable173 select,
+.addCorrectTable174 select,
+.addCorrectTable175 select,
+.addCorrectTable176 select,
+.addCorrectTable177 select,
+.addCorrectTable178 select,
+.addCorrectTable179 select,
+.addCorrectTable180 select,
+.addCorrectTable181 select,
+.addCorrectTable182 select,
+.addCorrectTable183 select,
+.addCorrectTable184 select,
+.addCorrectTable185 select,
+.addCorrectTable186 select,
+.addCorrectTable187 select,
+.addCorrectTable188 select,
+.addCorrectTable189 select,
+.addCorrectTable190 select,
+.addCorrectTable191 select,
+.addCorrectTable192 select,
+.addCorrectTable193 select,
+.addCorrectTable194 select,
+.addCorrectTable195 select,
+.addCorrectTable196 select,
+.addCorrectTable197 select,
+.addCorrectTable198 select,
+.addCorrectTable199 select,
+.addCorrectTable200 select,
+.addCorrectTable201 select,
+.addCorrectTable202 select,
+.addCorrectTable203 select,
+.addCorrectTable204 select,
+.addCorrectTable205 select,
+.addCorrectTable206 select,
+.addCorrectTable207 select,
+.addCorrectTable208 select,
+.addCorrectTable209 select,
+.addCorrectTable210 select,
+.addCorrectTable211 select,
+.addCorrectTable212 select,
+.addCorrectTable213 select,
+.addCorrectTable214 select,
+.addCorrectTable215 select,
+.addCorrectTable216 select,
+.addCorrectTable217 select,
+.addCorrectTable218 select,
+.addCorrectTable219 select,
+.addCorrectTable220 select,
+.addCorrectTable221 select,
+.addCorrectTable222 select,
+.addCorrectTable223 select,
+.addCorrectTable224 select,
+.addCorrectTable225 select,
+.addCorrectTable226 select,
+.addCorrectTable227 select,
+.addCorrectTable228 select,
+.addCorrectTable229 select,
+.addCorrectTable230 select,
+.addCorrectTable231 select,
+.addCorrectTable232 select,
+.addCorrectTable233 select,
+.addCorrectTable234 select,
+.addCorrectTable235 select,
+.addCorrectTable236 select,
+.addCorrectTable237 select,
+.addCorrectTable238 select,
+.addCorrectTable239 select,
+.selectCon select,
+.addCorrectTable select,
+.selectCon0 select,
+.selectCon1 select,
+.selectCon2 select,
+.selectCon3 select,
+.selectCon4 select,
+.selectCon5 select,
+.selectCon6 select,
+.selectCon7 select,
+.selectCon8 select,
+.selectCon9 select,
+.selectCon10 select,
+.selectCon11 select,
+.selectCon12 select,
+.selectCon13 select,
+.selectCon14 select,
+.selectCon15 select,
+.selectCon16 select {
+  width: 120px;
+  appearance: none;
+  margin: 2% 33%;
+  padding: 0;
+  outline: none;
+  color: #000;
+  line-height: 25px;
+  border: #bfccdc 1px solid;
+  border-radius: 3px;
+  display: inline-block;
+  font: normal 12px/25px "微软雅黑", "SimSun", "宋体", "Arial";
+  background-size: 5px 5px, 5px 5px, 25px 25px, 1px 25px;
+  background-color: #fff;
+  background-image: repeating-linear-gradient(225deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), repeating-linear-gradient(135deg, #697b95 0%, #697b95 50%, transparent 50%, transparent 100%), linear-gradient(#FFFFFF 0%, #F8F9Fd, #EFFAFA 100%), repeating-linear-gradient(#bfccdc 0%, #bfccdc 100%);
+  background-repeat: no-repeat;
+  background-position: 101px 10px, 106px 10px, right top, 92px top;
+  -webkit-appearance: none;
+}
+.addCorrectTable0 label,
+.addCorrectTable1 label,
+.addCorrectTable2 label,
+.addCorrectTable3 label,
+.addCorrectTable4 label,
+.addCorrectTable5 label,
+.addCorrectTable6 label,
+.addCorrectTable7 label,
+.addCorrectTable8 label,
+.addCorrectTable9 label,
+.addCorrectTable10 label,
+.addCorrectTable11 label,
+.addCorrectTable12 label,
+.addCorrectTable13 label,
+.addCorrectTable14 label,
+.addCorrectTable15 label,
+.addCorrectTable16 label,
+.addCorrectTable17 label,
+.addCorrectTable18 label,
+.addCorrectTable19 label,
+.addCorrectTable20 label,
+.addCorrectTable21 label,
+.addCorrectTable22 label,
+.addCorrectTable23 label,
+.addCorrectTable24 label,
+.addCorrectTable25 label,
+.addCorrectTable26 label,
+.addCorrectTable27 label,
+.addCorrectTable28 label,
+.addCorrectTable29 label,
+.addCorrectTable30 label,
+.addCorrectTable31 label,
+.addCorrectTable32 label,
+.addCorrectTable33 label,
+.addCorrectTable34 label,
+.addCorrectTable35 label,
+.addCorrectTable36 label,
+.addCorrectTable37 label,
+.addCorrectTable38 label,
+.addCorrectTable39 label,
+.addCorrectTable40 label,
+.addCorrectTable41 label,
+.addCorrectTable42 label,
+.addCorrectTable43 label,
+.addCorrectTable44 label,
+.addCorrectTable45 label,
+.addCorrectTable46 label,
+.addCorrectTable47 label,
+.addCorrectTable48 label,
+.addCorrectTable49 label,
+.addCorrectTable50 label,
+.addCorrectTable51 label,
+.addCorrectTable52 label,
+.addCorrectTable53 label,
+.addCorrectTable54 label,
+.addCorrectTable55 label,
+.addCorrectTable56 label,
+.addCorrectTable57 label,
+.addCorrectTable58 label,
+.addCorrectTable59 label,
+.addCorrectTable60 label,
+.addCorrectTable61 label,
+.addCorrectTable62 label,
+.addCorrectTable63 label,
+.addCorrectTable64 label,
+.addCorrectTable65 label,
+.addCorrectTable66 label,
+.addCorrectTable67 label,
+.addCorrectTable68 label,
+.addCorrectTable69 label,
+.addCorrectTable70 label,
+.addCorrectTable71 label,
+.addCorrectTable72 label,
+.addCorrectTable73 label,
+.addCorrectTable74 label,
+.addCorrectTable75 label,
+.addCorrectTable76 label,
+.addCorrectTable77 label,
+.addCorrectTable78 label,
+.addCorrectTable79 label,
+.addCorrectTable80 label,
+.addCorrectTable81 label,
+.addCorrectTable82 label,
+.addCorrectTable83 label,
+.addCorrectTable84 label,
+.addCorrectTable85 label,
+.addCorrectTable86 label,
+.addCorrectTable87 label,
+.addCorrectTable88 label,
+.addCorrectTable89 label,
+.addCorrectTable90 label,
+.addCorrectTable91 label,
+.addCorrectTable92 label,
+.addCorrectTable93 label,
+.addCorrectTable94 label,
+.addCorrectTable95 label,
+.addCorrectTable96 label,
+.addCorrectTable97 label,
+.addCorrectTable98 label,
+.addCorrectTable99 label,
+.addCorrectTable100 label,
+.addCorrectTable101 label,
+.addCorrectTable102 label,
+.addCorrectTable103 label,
+.addCorrectTable104 label,
+.addCorrectTable105 label,
+.addCorrectTable106 label,
+.addCorrectTable107 label,
+.addCorrectTable108 label,
+.addCorrectTable109 label,
+.addCorrectTable110 label,
+.addCorrectTable111 label,
+.addCorrectTable112 label,
+.addCorrectTable113 label,
+.addCorrectTable114 label,
+.addCorrectTable115 label,
+.addCorrectTable116 label,
+.addCorrectTable117 label,
+.addCorrectTable118 label,
+.addCorrectTable119 label,
+.addCorrectTable120 label,
+.addCorrectTable121 label,
+.addCorrectTable122 label,
+.addCorrectTable123 label,
+.addCorrectTable124 label,
+.addCorrectTable125 label,
+.addCorrectTable126 label,
+.addCorrectTable127 label,
+.addCorrectTable128 label,
+.addCorrectTable129 label,
+.addCorrectTable130 label,
+.addCorrectTable131 label,
+.addCorrectTable132 label,
+.addCorrectTable133 label,
+.addCorrectTable134 label,
+.addCorrectTable135 label,
+.addCorrectTable136 label,
+.addCorrectTable137 label,
+.addCorrectTable138 label,
+.addCorrectTable139 label,
+.addCorrectTable140 label,
+.addCorrectTable141 label,
+.addCorrectTable142 label,
+.addCorrectTable143 label,
+.addCorrectTable144 label,
+.addCorrectTable145 label,
+.addCorrectTable146 label,
+.addCorrectTable147 label,
+.addCorrectTable148 label,
+.addCorrectTable149 label,
+.addCorrectTable150 label,
+.addCorrectTable151 label,
+.addCorrectTable152 label,
+.addCorrectTable153 label,
+.addCorrectTable154 label,
+.addCorrectTable155 label,
+.addCorrectTable156 label,
+.addCorrectTable157 label,
+.addCorrectTable158 label,
+.addCorrectTable159 label,
+.addCorrectTable160 label,
+.addCorrectTable161 label,
+.addCorrectTable162 label,
+.addCorrectTable163 label,
+.addCorrectTable164 label,
+.addCorrectTable165 label,
+.addCorrectTable166 label,
+.addCorrectTable167 label,
+.addCorrectTable168 label,
+.addCorrectTable169 label,
+.addCorrectTable170 label,
+.addCorrectTable171 label,
+.addCorrectTable172 label,
+.addCorrectTable173 label,
+.addCorrectTable174 label,
+.addCorrectTable175 label,
+.addCorrectTable176 label,
+.addCorrectTable177 label,
+.addCorrectTable178 label,
+.addCorrectTable179 label,
+.addCorrectTable180 label,
+.addCorrectTable181 label,
+.addCorrectTable182 label,
+.addCorrectTable183 label,
+.addCorrectTable184 label,
+.addCorrectTable185 label,
+.addCorrectTable186 label,
+.addCorrectTable187 label,
+.addCorrectTable188 label,
+.addCorrectTable189 label,
+.addCorrectTable190 label,
+.addCorrectTable191 label,
+.addCorrectTable192 label,
+.addCorrectTable193 label,
+.addCorrectTable194 label,
+.addCorrectTable195 label,
+.addCorrectTable196 label,
+.addCorrectTable197 label,
+.addCorrectTable198 label,
+.addCorrectTable199 label,
+.addCorrectTable200 label,
+.addCorrectTable201 label,
+.addCorrectTable202 label,
+.addCorrectTable203 label,
+.addCorrectTable204 label,
+.addCorrectTable205 label,
+.addCorrectTable206 label,
+.addCorrectTable207 label,
+.addCorrectTable208 label,
+.addCorrectTable209 label,
+.addCorrectTable210 label,
+.addCorrectTable211 label,
+.addCorrectTable212 label,
+.addCorrectTable213 label,
+.addCorrectTable214 label,
+.addCorrectTable215 label,
+.addCorrectTable216 label,
+.addCorrectTable217 label,
+.addCorrectTable218 label,
+.addCorrectTable219 label,
+.addCorrectTable220 label,
+.addCorrectTable221 label,
+.addCorrectTable222 label,
+.addCorrectTable223 label,
+.addCorrectTable224 label,
+.addCorrectTable225 label,
+.addCorrectTable226 label,
+.addCorrectTable227 label,
+.addCorrectTable228 label,
+.addCorrectTable229 label,
+.addCorrectTable230 label,
+.addCorrectTable231 label,
+.addCorrectTable232 label,
+.addCorrectTable233 label,
+.addCorrectTable234 label,
+.addCorrectTable235 label,
+.addCorrectTable236 label,
+.addCorrectTable237 label,
+.addCorrectTable238 label,
+.addCorrectTable239 label,
+.selectCon label,
+.addCorrectTable label,
+.selectCon0 label,
+.selectCon1 label,
+.selectCon2 label,
+.selectCon3 label,
+.selectCon4 label,
+.selectCon5 label,
+.selectCon6 label,
+.selectCon7 label,
+.selectCon8 label,
+.selectCon9 label,
+.selectCon10 label,
+.selectCon11 label,
+.selectCon12 label,
+.selectCon13 label,
+.selectCon14 label,
+.selectCon15 label,
+.selectCon16 label {
+  display: block;
+  line-height: 25px;
+  margin: 0 9%;
+}
+.addCorrectTable0 input.submit,
+.addCorrectTable1 input.submit,
+.addCorrectTable2 input.submit,
+.addCorrectTable3 input.submit,
+.addCorrectTable4 input.submit,
+.addCorrectTable5 input.submit,
+.addCorrectTable6 input.submit,
+.addCorrectTable7 input.submit,
+.addCorrectTable8 input.submit,
+.addCorrectTable9 input.submit,
+.addCorrectTable10 input.submit,
+.addCorrectTable11 input.submit,
+.addCorrectTable12 input.submit,
+.addCorrectTable13 input.submit,
+.addCorrectTable14 input.submit,
+.addCorrectTable15 input.submit,
+.addCorrectTable16 input.submit,
+.addCorrectTable17 input.submit,
+.addCorrectTable18 input.submit,
+.addCorrectTable19 input.submit,
+.addCorrectTable20 input.submit,
+.addCorrectTable21 input.submit,
+.addCorrectTable22 input.submit,
+.addCorrectTable23 input.submit,
+.addCorrectTable24 input.submit,
+.addCorrectTable25 input.submit,
+.addCorrectTable26 input.submit,
+.addCorrectTable27 input.submit,
+.addCorrectTable28 input.submit,
+.addCorrectTable29 input.submit,
+.addCorrectTable30 input.submit,
+.addCorrectTable31 input.submit,
+.addCorrectTable32 input.submit,
+.addCorrectTable33 input.submit,
+.addCorrectTable34 input.submit,
+.addCorrectTable35 input.submit,
+.addCorrectTable36 input.submit,
+.addCorrectTable37 input.submit,
+.addCorrectTable38 input.submit,
+.addCorrectTable39 input.submit,
+.addCorrectTable40 input.submit,
+.addCorrectTable41 input.submit,
+.addCorrectTable42 input.submit,
+.addCorrectTable43 input.submit,
+.addCorrectTable44 input.submit,
+.addCorrectTable45 input.submit,
+.addCorrectTable46 input.submit,
+.addCorrectTable47 input.submit,
+.addCorrectTable48 input.submit,
+.addCorrectTable49 input.submit,
+.addCorrectTable50 input.submit,
+.addCorrectTable51 input.submit,
+.addCorrectTable52 input.submit,
+.addCorrectTable53 input.submit,
+.addCorrectTable54 input.submit,
+.addCorrectTable55 input.submit,
+.addCorrectTable56 input.submit,
+.addCorrectTable57 input.submit,
+.addCorrectTable58 input.submit,
+.addCorrectTable59 input.submit,
+.addCorrectTable60 input.submit,
+.addCorrectTable61 input.submit,
+.addCorrectTable62 input.submit,
+.addCorrectTable63 input.submit,
+.addCorrectTable64 input.submit,
+.addCorrectTable65 input.submit,
+.addCorrectTable66 input.submit,
+.addCorrectTable67 input.submit,
+.addCorrectTable68 input.submit,
+.addCorrectTable69 input.submit,
+.addCorrectTable70 input.submit,
+.addCorrectTable71 input.submit,
+.addCorrectTable72 input.submit,
+.addCorrectTable73 input.submit,
+.addCorrectTable74 input.submit,
+.addCorrectTable75 input.submit,
+.addCorrectTable76 input.submit,
+.addCorrectTable77 input.submit,
+.addCorrectTable78 input.submit,
+.addCorrectTable79 input.submit,
+.addCorrectTable80 input.submit,
+.addCorrectTable81 input.submit,
+.addCorrectTable82 input.submit,
+.addCorrectTable83 input.submit,
+.addCorrectTable84 input.submit,
+.addCorrectTable85 input.submit,
+.addCorrectTable86 input.submit,
+.addCorrectTable87 input.submit,
+.addCorrectTable88 input.submit,
+.addCorrectTable89 input.submit,
+.addCorrectTable90 input.submit,
+.addCorrectTable91 input.submit,
+.addCorrectTable92 input.submit,
+.addCorrectTable93 input.submit,
+.addCorrectTable94 input.submit,
+.addCorrectTable95 input.submit,
+.addCorrectTable96 input.submit,
+.addCorrectTable97 input.submit,
+.addCorrectTable98 input.submit,
+.addCorrectTable99 input.submit,
+.addCorrectTable100 input.submit,
+.addCorrectTable101 input.submit,
+.addCorrectTable102 input.submit,
+.addCorrectTable103 input.submit,
+.addCorrectTable104 input.submit,
+.addCorrectTable105 input.submit,
+.addCorrectTable106 input.submit,
+.addCorrectTable107 input.submit,
+.addCorrectTable108 input.submit,
+.addCorrectTable109 input.submit,
+.addCorrectTable110 input.submit,
+.addCorrectTable111 input.submit,
+.addCorrectTable112 input.submit,
+.addCorrectTable113 input.submit,
+.addCorrectTable114 input.submit,
+.addCorrectTable115 input.submit,
+.addCorrectTable116 input.submit,
+.addCorrectTable117 input.submit,
+.addCorrectTable118 input.submit,
+.addCorrectTable119 input.submit,
+.addCorrectTable120 input.submit,
+.addCorrectTable121 input.submit,
+.addCorrectTable122 input.submit,
+.addCorrectTable123 input.submit,
+.addCorrectTable124 input.submit,
+.addCorrectTable125 input.submit,
+.addCorrectTable126 input.submit,
+.addCorrectTable127 input.submit,
+.addCorrectTable128 input.submit,
+.addCorrectTable129 input.submit,
+.addCorrectTable130 input.submit,
+.addCorrectTable131 input.submit,
+.addCorrectTable132 input.submit,
+.addCorrectTable133 input.submit,
+.addCorrectTable134 input.submit,
+.addCorrectTable135 input.submit,
+.addCorrectTable136 input.submit,
+.addCorrectTable137 input.submit,
+.addCorrectTable138 input.submit,
+.addCorrectTable139 input.submit,
+.addCorrectTable140 input.submit,
+.addCorrectTable141 input.submit,
+.addCorrectTable142 input.submit,
+.addCorrectTable143 input.submit,
+.addCorrectTable144 input.submit,
+.addCorrectTable145 input.submit,
+.addCorrectTable146 input.submit,
+.addCorrectTable147 input.submit,
+.addCorrectTable148 input.submit,
+.addCorrectTable149 input.submit,
+.addCorrectTable150 input.submit,
+.addCorrectTable151 input.submit,
+.addCorrectTable152 input.submit,
+.addCorrectTable153 input.submit,
+.addCorrectTable154 input.submit,
+.addCorrectTable155 input.submit,
+.addCorrectTable156 input.submit,
+.addCorrectTable157 input.submit,
+.addCorrectTable158 input.submit,
+.addCorrectTable159 input.submit,
+.addCorrectTable160 input.submit,
+.addCorrectTable161 input.submit,
+.addCorrectTable162 input.submit,
+.addCorrectTable163 input.submit,
+.addCorrectTable164 input.submit,
+.addCorrectTable165 input.submit,
+.addCorrectTable166 input.submit,
+.addCorrectTable167 input.submit,
+.addCorrectTable168 input.submit,
+.addCorrectTable169 input.submit,
+.addCorrectTable170 input.submit,
+.addCorrectTable171 input.submit,
+.addCorrectTable172 input.submit,
+.addCorrectTable173 input.submit,
+.addCorrectTable174 input.submit,
+.addCorrectTable175 input.submit,
+.addCorrectTable176 input.submit,
+.addCorrectTable177 input.submit,
+.addCorrectTable178 input.submit,
+.addCorrectTable179 input.submit,
+.addCorrectTable180 input.submit,
+.addCorrectTable181 input.submit,
+.addCorrectTable182 input.submit,
+.addCorrectTable183 input.submit,
+.addCorrectTable184 input.submit,
+.addCorrectTable185 input.submit,
+.addCorrectTable186 input.submit,
+.addCorrectTable187 input.submit,
+.addCorrectTable188 input.submit,
+.addCorrectTable189 input.submit,
+.addCorrectTable190 input.submit,
+.addCorrectTable191 input.submit,
+.addCorrectTable192 input.submit,
+.addCorrectTable193 input.submit,
+.addCorrectTable194 input.submit,
+.addCorrectTable195 input.submit,
+.addCorrectTable196 input.submit,
+.addCorrectTable197 input.submit,
+.addCorrectTable198 input.submit,
+.addCorrectTable199 input.submit,
+.addCorrectTable200 input.submit,
+.addCorrectTable201 input.submit,
+.addCorrectTable202 input.submit,
+.addCorrectTable203 input.submit,
+.addCorrectTable204 input.submit,
+.addCorrectTable205 input.submit,
+.addCorrectTable206 input.submit,
+.addCorrectTable207 input.submit,
+.addCorrectTable208 input.submit,
+.addCorrectTable209 input.submit,
+.addCorrectTable210 input.submit,
+.addCorrectTable211 input.submit,
+.addCorrectTable212 input.submit,
+.addCorrectTable213 input.submit,
+.addCorrectTable214 input.submit,
+.addCorrectTable215 input.submit,
+.addCorrectTable216 input.submit,
+.addCorrectTable217 input.submit,
+.addCorrectTable218 input.submit,
+.addCorrectTable219 input.submit,
+.addCorrectTable220 input.submit,
+.addCorrectTable221 input.submit,
+.addCorrectTable222 input.submit,
+.addCorrectTable223 input.submit,
+.addCorrectTable224 input.submit,
+.addCorrectTable225 input.submit,
+.addCorrectTable226 input.submit,
+.addCorrectTable227 input.submit,
+.addCorrectTable228 input.submit,
+.addCorrectTable229 input.submit,
+.addCorrectTable230 input.submit,
+.addCorrectTable231 input.submit,
+.addCorrectTable232 input.submit,
+.addCorrectTable233 input.submit,
+.addCorrectTable234 input.submit,
+.addCorrectTable235 input.submit,
+.addCorrectTable236 input.submit,
+.addCorrectTable237 input.submit,
+.addCorrectTable238 input.submit,
+.addCorrectTable239 input.submit,
+.selectCon input.submit,
+.addCorrectTable input.submit,
+.selectCon0 input.submit,
+.selectCon1 input.submit,
+.selectCon2 input.submit,
+.selectCon3 input.submit,
+.selectCon4 input.submit,
+.selectCon5 input.submit,
+.selectCon6 input.submit,
+.selectCon7 input.submit,
+.selectCon8 input.submit,
+.selectCon9 input.submit,
+.selectCon10 input.submit,
+.selectCon11 input.submit,
+.selectCon12 input.submit,
+.selectCon13 input.submit,
+.selectCon14 input.submit,
+.selectCon15 input.submit,
+.selectCon16 input.submit {
+  color: #000;
+  margin: 2% auto;
+  display: block;
+  border-radius: 5px;
+}
+.addCorrectTable0 #addForClass,
+.addCorrectTable1 #addForClass,
+.addCorrectTable2 #addForClass,
+.addCorrectTable3 #addForClass,
+.addCorrectTable4 #addForClass,
+.addCorrectTable5 #addForClass,
+.addCorrectTable6 #addForClass,
+.addCorrectTable7 #addForClass,
+.addCorrectTable8 #addForClass,
+.addCorrectTable9 #addForClass,
+.addCorrectTable10 #addForClass,
+.addCorrectTable11 #addForClass,
+.addCorrectTable12 #addForClass,
+.addCorrectTable13 #addForClass,
+.addCorrectTable14 #addForClass,
+.addCorrectTable15 #addForClass,
+.addCorrectTable16 #addForClass,
+.addCorrectTable17 #addForClass,
+.addCorrectTable18 #addForClass,
+.addCorrectTable19 #addForClass,
+.addCorrectTable20 #addForClass,
+.addCorrectTable21 #addForClass,
+.addCorrectTable22 #addForClass,
+.addCorrectTable23 #addForClass,
+.addCorrectTable24 #addForClass,
+.addCorrectTable25 #addForClass,
+.addCorrectTable26 #addForClass,
+.addCorrectTable27 #addForClass,
+.addCorrectTable28 #addForClass,
+.addCorrectTable29 #addForClass,
+.addCorrectTable30 #addForClass,
+.addCorrectTable31 #addForClass,
+.addCorrectTable32 #addForClass,
+.addCorrectTable33 #addForClass,
+.addCorrectTable34 #addForClass,
+.addCorrectTable35 #addForClass,
+.addCorrectTable36 #addForClass,
+.addCorrectTable37 #addForClass,
+.addCorrectTable38 #addForClass,
+.addCorrectTable39 #addForClass,
+.addCorrectTable40 #addForClass,
+.addCorrectTable41 #addForClass,
+.addCorrectTable42 #addForClass,
+.addCorrectTable43 #addForClass,
+.addCorrectTable44 #addForClass,
+.addCorrectTable45 #addForClass,
+.addCorrectTable46 #addForClass,
+.addCorrectTable47 #addForClass,
+.addCorrectTable48 #addForClass,
+.addCorrectTable49 #addForClass,
+.addCorrectTable50 #addForClass,
+.addCorrectTable51 #addForClass,
+.addCorrectTable52 #addForClass,
+.addCorrectTable53 #addForClass,
+.addCorrectTable54 #addForClass,
+.addCorrectTable55 #addForClass,
+.addCorrectTable56 #addForClass,
+.addCorrectTable57 #addForClass,
+.addCorrectTable58 #addForClass,
+.addCorrectTable59 #addForClass,
+.addCorrectTable60 #addForClass,
+.addCorrectTable61 #addForClass,
+.addCorrectTable62 #addForClass,
+.addCorrectTable63 #addForClass,
+.addCorrectTable64 #addForClass,
+.addCorrectTable65 #addForClass,
+.addCorrectTable66 #addForClass,
+.addCorrectTable67 #addForClass,
+.addCorrectTable68 #addForClass,
+.addCorrectTable69 #addForClass,
+.addCorrectTable70 #addForClass,
+.addCorrectTable71 #addForClass,
+.addCorrectTable72 #addForClass,
+.addCorrectTable73 #addForClass,
+.addCorrectTable74 #addForClass,
+.addCorrectTable75 #addForClass,
+.addCorrectTable76 #addForClass,
+.addCorrectTable77 #addForClass,
+.addCorrectTable78 #addForClass,
+.addCorrectTable79 #addForClass,
+.addCorrectTable80 #addForClass,
+.addCorrectTable81 #addForClass,
+.addCorrectTable82 #addForClass,
+.addCorrectTable83 #addForClass,
+.addCorrectTable84 #addForClass,
+.addCorrectTable85 #addForClass,
+.addCorrectTable86 #addForClass,
+.addCorrectTable87 #addForClass,
+.addCorrectTable88 #addForClass,
+.addCorrectTable89 #addForClass,
+.addCorrectTable90 #addForClass,
+.addCorrectTable91 #addForClass,
+.addCorrectTable92 #addForClass,
+.addCorrectTable93 #addForClass,
+.addCorrectTable94 #addForClass,
+.addCorrectTable95 #addForClass,
+.addCorrectTable96 #addForClass,
+.addCorrectTable97 #addForClass,
+.addCorrectTable98 #addForClass,
+.addCorrectTable99 #addForClass,
+.addCorrectTable100 #addForClass,
+.addCorrectTable101 #addForClass,
+.addCorrectTable102 #addForClass,
+.addCorrectTable103 #addForClass,
+.addCorrectTable104 #addForClass,
+.addCorrectTable105 #addForClass,
+.addCorrectTable106 #addForClass,
+.addCorrectTable107 #addForClass,
+.addCorrectTable108 #addForClass,
+.addCorrectTable109 #addForClass,
+.addCorrectTable110 #addForClass,
+.addCorrectTable111 #addForClass,
+.addCorrectTable112 #addForClass,
+.addCorrectTable113 #addForClass,
+.addCorrectTable114 #addForClass,
+.addCorrectTable115 #addForClass,
+.addCorrectTable116 #addForClass,
+.addCorrectTable117 #addForClass,
+.addCorrectTable118 #addForClass,
+.addCorrectTable119 #addForClass,
+.addCorrectTable120 #addForClass,
+.addCorrectTable121 #addForClass,
+.addCorrectTable122 #addForClass,
+.addCorrectTable123 #addForClass,
+.addCorrectTable124 #addForClass,
+.addCorrectTable125 #addForClass,
+.addCorrectTable126 #addForClass,
+.addCorrectTable127 #addForClass,
+.addCorrectTable128 #addForClass,
+.addCorrectTable129 #addForClass,
+.addCorrectTable130 #addForClass,
+.addCorrectTable131 #addForClass,
+.addCorrectTable132 #addForClass,
+.addCorrectTable133 #addForClass,
+.addCorrectTable134 #addForClass,
+.addCorrectTable135 #addForClass,
+.addCorrectTable136 #addForClass,
+.addCorrectTable137 #addForClass,
+.addCorrectTable138 #addForClass,
+.addCorrectTable139 #addForClass,
+.addCorrectTable140 #addForClass,
+.addCorrectTable141 #addForClass,
+.addCorrectTable142 #addForClass,
+.addCorrectTable143 #addForClass,
+.addCorrectTable144 #addForClass,
+.addCorrectTable145 #addForClass,
+.addCorrectTable146 #addForClass,
+.addCorrectTable147 #addForClass,
+.addCorrectTable148 #addForClass,
+.addCorrectTable149 #addForClass,
+.addCorrectTable150 #addForClass,
+.addCorrectTable151 #addForClass,
+.addCorrectTable152 #addForClass,
+.addCorrectTable153 #addForClass,
+.addCorrectTable154 #addForClass,
+.addCorrectTable155 #addForClass,
+.addCorrectTable156 #addForClass,
+.addCorrectTable157 #addForClass,
+.addCorrectTable158 #addForClass,
+.addCorrectTable159 #addForClass,
+.addCorrectTable160 #addForClass,
+.addCorrectTable161 #addForClass,
+.addCorrectTable162 #addForClass,
+.addCorrectTable163 #addForClass,
+.addCorrectTable164 #addForClass,
+.addCorrectTable165 #addForClass,
+.addCorrectTable166 #addForClass,
+.addCorrectTable167 #addForClass,
+.addCorrectTable168 #addForClass,
+.addCorrectTable169 #addForClass,
+.addCorrectTable170 #addForClass,
+.addCorrectTable171 #addForClass,
+.addCorrectTable172 #addForClass,
+.addCorrectTable173 #addForClass,
+.addCorrectTable174 #addForClass,
+.addCorrectTable175 #addForClass,
+.addCorrectTable176 #addForClass,
+.addCorrectTable177 #addForClass,
+.addCorrectTable178 #addForClass,
+.addCorrectTable179 #addForClass,
+.addCorrectTable180 #addForClass,
+.addCorrectTable181 #addForClass,
+.addCorrectTable182 #addForClass,
+.addCorrectTable183 #addForClass,
+.addCorrectTable184 #addForClass,
+.addCorrectTable185 #addForClass,
+.addCorrectTable186 #addForClass,
+.addCorrectTable187 #addForClass,
+.addCorrectTable188 #addForClass,
+.addCorrectTable189 #addForClass,
+.addCorrectTable190 #addForClass,
+.addCorrectTable191 #addForClass,
+.addCorrectTable192 #addForClass,
+.addCorrectTable193 #addForClass,
+.addCorrectTable194 #addForClass,
+.addCorrectTable195 #addForClass,
+.addCorrectTable196 #addForClass,
+.addCorrectTable197 #addForClass,
+.addCorrectTable198 #addForClass,
+.addCorrectTable199 #addForClass,
+.addCorrectTable200 #addForClass,
+.addCorrectTable201 #addForClass,
+.addCorrectTable202 #addForClass,
+.addCorrectTable203 #addForClass,
+.addCorrectTable204 #addForClass,
+.addCorrectTable205 #addForClass,
+.addCorrectTable206 #addForClass,
+.addCorrectTable207 #addForClass,
+.addCorrectTable208 #addForClass,
+.addCorrectTable209 #addForClass,
+.addCorrectTable210 #addForClass,
+.addCorrectTable211 #addForClass,
+.addCorrectTable212 #addForClass,
+.addCorrectTable213 #addForClass,
+.addCorrectTable214 #addForClass,
+.addCorrectTable215 #addForClass,
+.addCorrectTable216 #addForClass,
+.addCorrectTable217 #addForClass,
+.addCorrectTable218 #addForClass,
+.addCorrectTable219 #addForClass,
+.addCorrectTable220 #addForClass,
+.addCorrectTable221 #addForClass,
+.addCorrectTable222 #addForClass,
+.addCorrectTable223 #addForClass,
+.addCorrectTable224 #addForClass,
+.addCorrectTable225 #addForClass,
+.addCorrectTable226 #addForClass,
+.addCorrectTable227 #addForClass,
+.addCorrectTable228 #addForClass,
+.addCorrectTable229 #addForClass,
+.addCorrectTable230 #addForClass,
+.addCorrectTable231 #addForClass,
+.addCorrectTable232 #addForClass,
+.addCorrectTable233 #addForClass,
+.addCorrectTable234 #addForClass,
+.addCorrectTable235 #addForClass,
+.addCorrectTable236 #addForClass,
+.addCorrectTable237 #addForClass,
+.addCorrectTable238 #addForClass,
+.addCorrectTable239 #addForClass,
+.selectCon #addForClass,
+.addCorrectTable #addForClass,
+.selectCon0 #addForClass,
+.selectCon1 #addForClass,
+.selectCon2 #addForClass,
+.selectCon3 #addForClass,
+.selectCon4 #addForClass,
+.selectCon5 #addForClass,
+.selectCon6 #addForClass,
+.selectCon7 #addForClass,
+.selectCon8 #addForClass,
+.selectCon9 #addForClass,
+.selectCon10 #addForClass,
+.selectCon11 #addForClass,
+.selectCon12 #addForClass,
+.selectCon13 #addForClass,
+.selectCon14 #addForClass,
+.selectCon15 #addForClass,
+.selectCon16 #addForClass {
+  position: absolute;
+  margin: -7% 0 0 14%;
+  color: #000;
+}
+.selectCon.show {
+  display: block;
+}
+.chgClass {
+  position: absolute;
+  left: 0;
+  top: 49%;
+  width: 3%;
+  height: 20%;
+  color: red;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+.viewPlan {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 2.5%;
+  height: 35%;
+  color: #fff;
+  background: #5d4e47;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+.createPlan {
+  font-size: 1.5vw;
+  color: red;
+  background: #ffe777;
+  border-radius: 5px;
+  border: 2px solid;
+  margin: 0 auto;
+  width: 10%;
+  height: 5%;
+}
+.planTable {
+  margin: 0;
+  padding: 0;
+  font-family: "MicrosoftYaHei";
+}
+.planTable .titleTop {
+  width: 100%;
+  background: #ffe777;
+  height: 20px;
+  text-align: center;
+  border: 1px solid;
+}
+.planTable ul {
+  margin-left: -2.8%;
+  margin-bottom: 1.4%;
+  margin-top: 0;
+}
+.planTable ul li {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.planTable ul li .left {
+  width: 10%;
+  line-height: 50px;
+}
+.planTable ul li .right {
+  width: 90%;
+}
+.planTable ul li .left,
+.planTable ul li .right {
+  display: inline-block;
+  float: left;
+  height: 50px;
+  border: 1px solid;
+}
+.planTable ul li .left.list,
+.planTable ul li .right.list {
+  height: 60px;
+}
+.planTable ul li .right.list p {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.planTable .listTitle {
+  width: 100%;
+}
+.planTable .listTitle li {
+  display: inline-block;
+  margin: 0 0;
+  border: 1px solid;
+  width: 15%;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+}

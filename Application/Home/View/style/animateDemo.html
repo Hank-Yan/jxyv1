@@ -1,0 +1,66 @@
+<div style="width:200px;height:200px;background:Red;position:absolute;left:10px;top:10px;" id="div1">
+div1</div>
+<br><br>
+<div style="width:200px;height:200px;background:green;position:absolute;left:500px;top:300px;" id="div2">
+div2</div>
+<br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR>
+<input name="tt" type="button" id="tt" value="交换位置" onclick="changePos()">
+<script>
+function getPos(obj){
+var top=0,left=0;
+if(obj){
+ while(obj.offsetParent){
+      top += obj.offsetTop;
+      left += obj.offsetLeft;
+      obj = obj.offsetParent;
+   }
+ }
+ return[top,left];
+}
+var flag;
+function changePos(){
+clearTimeout(flag);
+var obj1=document.getElementById("div1");
+var obj2=document.getElementById("div2");
+var a=getPos(obj1);
+var b=getPos(obj2);
+var t=5;
+var l=9;
+var Tflag=false;
+var Lflag=false;
+    function move(){
+	  if(a[0]<=b[0]){
+	    var c=getPos(obj1)[0]-b[0]<t?t:getPos(obj1)[0]-b[0];
+		var d=getPos(obj2)[0]-a[0]>t?t:getPos(obj2)[0]-a[0];	
+		if(getPos(obj1)[0]<b[0]){obj1.style.top=getPos(obj1)[0]+c;}
+		if(getPos(obj2)[0]>a[0]){obj2.style.top=getPos(obj2)[0]-d;}
+	  }else{
+	    var c=getPos(obj1)[0]-b[0]>t?t:getPos(obj1)[0]-b[0];		
+		var d=getPos(obj2)[0]-a[0]<t?t:getPos(obj2)[0]-a[0];			
+		if(getPos(obj1)[0]>b[0]){obj1.style.top=getPos(obj1)[0]-c;}
+		if(getPos(obj2)[0]<a[0]){obj2.style.top=getPos(obj2)[0]+d;}
+	  }
+	  if(getPos(obj1)[0]==b[0]&&getPos(obj2)[0]==a[0]){
+	    Tflag=true;
+	  }
+	  if(a[1]<=b[1]){
+	    var c=getPos(obj1)[1]-b[1]<l?l:getPos(obj1)[1]-b[1];
+		var d=getPos(obj2)[1]-a[1]>l?l:getPos(obj2)[1]-a[1];	
+		if(getPos(obj1)[1]<b[1]){obj1.style.left=getPos(obj1)[1]+c;}
+		if(getPos(obj2)[1]>a[1]){obj2.style.left=getPos(obj2)[1]-d;}	  	
+	  }else{
+	    var c=getPos(obj1)[1]-b[1]>l?l:getPos(obj1)[1]-b[1];
+		var d=getPos(obj2)[1]-a[1]<l?l:getPos(obj2)[1]-a[1];	
+		if(getPos(obj1)[1]>b[1]){obj1.style.left=getPos(obj1)[1]-c;}
+		if(getPos(obj2)[1]<a[1]){obj2.style.left=getPos(obj2)[1]+d;}	 
+	  }
+	 if(getPos(obj1)[1]==b[1]&&getPos(obj2)[1]==a[1]){
+	    Lflag=true;
+	  }
+	  if(!(Tflag&&Lflag)){
+	  flag=setTimeout(move,15);        
+	  }
+	}
+  move();	
+}
+</script>

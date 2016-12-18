@@ -1,0 +1,3 @@
+@magnifyingGlass: "../images/magnifyingGlass.png";
+@borderColor: rgb(212, 212, 212);
+@searchFocusColor: rgb(252, 77, 68);

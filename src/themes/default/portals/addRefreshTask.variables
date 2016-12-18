@@ -1,0 +1,4 @@
+@buttonFontColor:rgb(124, 124, 124);
+@buttonBackgroundColor:rgb(255, 76, 61);
+@borderColor: rgb(212, 212, 212);
+@borderRadius: 5px;

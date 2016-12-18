@@ -1,0 +1,72 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+    .videos2,.videos3
+    {
+        display:none;
+    }
+    img{width:100%;}
+</style>
+</head><body><div class="sampleQuanzi">
+    <div class="quanzititle">
+        <div class="quanziimg"></div> &nbsp;&nbsp;&nbsp;&nbsp;示范教研圈
+    </div>
+    <div class="searcharea" style="text-align:left;">
+        <input type="text" class="searchrestxt">
+        <input type="file" id="filesel" style="position:absolute;right:10000px;">
+        <label class="searchlabel"></label>
+        <label class="btnc uplresource" onclick="javascript:location.href='/Teacher/UploadSample'">上传新资源</label>
+    </div>
+    <table cellpadding="0" cellspacing="0" width="100%" style="margin-top:50px;">
+        <tbody><tr>
+            <td width="20%" valign="middle" align="center">
+                <div class="videonavarea">
+                    <br><br><br><br>
+                    <div class="btnc classnav btnhigh" index="1">公开课 </div><br><br>
+                    <div class="btnc classnav" index="2">示范课 </div><br><br>
+                    <div class="btnc classnav" index="3">培 &nbsp;&nbsp;训 </div>
+                </div>
+            </td>
+            <td>
+                <div class="videosarea">
+                    <div class="videos1">
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img1.JPG"></a><a class="videoitem" href="javascript:"><img src="../../Images/video_img2.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img5.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img4.JPG"></a>
+                    </div>
+                    <div class="videos2">
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img5.JPG"></a><a class="videoitem" href="javascript:"><img src="../../Images/video_img4.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img2.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img3.JPG"></a>
+                    </div>
+                    <div class="videos3">
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img4.JPG"></a><a class="videoitem" href="javascript:"><img src="../../Images/video_img5.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img2.JPG"></a>
+                        <a class="videoitem" href="javascript:"><img src="../../Images/video_img1.JPG"></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+    
+    
+    <div id="pager">
+        &lt; 1 &gt;
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        //location.reload();
+        var frame = window.parent.document.getElementById("pageframe");
+        $(frame).height($("body").height());
+    });
+    $(".classnav").click(function() {
+        var index = $(this).attr("index");
+        $(".videos" + index + "").show().siblings().hide();
+        if (!$(this).hasClass("btnhigh")) {
+            $(this).addClass("btnhigh").siblings().removeClass("btnhigh");
+        }
+    })
+</script>
+</body></html>

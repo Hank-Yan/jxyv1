@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="css/ccui.css" type="text/css"/>
+    <title>学生主页</title>   
+</head>
+
+<body>
+    <div class="page">
+        <div id="header">
+            <div class="header-top">
+                <a href="">
+                    <img src="./images/logo.png" alt="" class="logo">
+                    <div class="logodesc">
+                        <div class="logochinese">天津全媒体同步高效辅学系统</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="main">
+
+<div class="maincontent">
+    <div class="topinfo"></div>
+    <div class="navibar">
+        <!-- <a class="navitem" href="/Student/HomeworkSpace?pagename=StudentName" target="pageframe"> -->
+        <a class="navitem" href="settingStu.html" target="pageframe">
+            <div class="navimg tnavitem1"></div>
+            <div class="navinfo">
+                <div class="itemname username">刘强</div>
+                <div class="userrole">学生</div>
+            </div>
+        </a>
+        <!-- <a class="navitem" href="/Student/HomeworkSpace?pagename=ClassActive" target="pageframe"> -->
+        <a class="navitem" href="teamDynamicStu.html" target="pageframe">
+            <div class="navimg tnavitem3"></div>
+            <span class="itemname">班组动态</span>
+        </a>
+    </div>
+    <div class="currdate">第二十一章 一元二次方程</div>
+    <div class="teamenu">
+        <div class="yearinfo">
+            <div class="years">
+                <span class="curryear">2015</span>年 
+                <div class="dateorder">
+                    <div class="date-c dateup" id="yearUp"></div>
+                    <div class="date-c datedown datedownenable" id="yearDown"></div>
+                </div>
+            </div>
+            <div class="months">
+                <span class="currmonth">12</span>月 
+                <div class="dateorder">
+                    <div class="date-c dateup datedownenable" id="monthUp"></div>
+                    <div class="date-c datedown datedownenable" id="monthDown"></div>
+                </div>
+            </div>
+            <div class="weeks">
+                <div class="subjitem">语文</div>
+                <div class="subjitem selweekitem">数学</div>
+                <div class="subjitem">英语</div>
+                <div class="subjitem">物理</div>
+            </div>
+        </div>
+        <div class="datebar">
+            <div class="weekday wday1" assignment="第一单元 -- 窃读记1" gap="1">11.13(星期五)</div>
+            <div class="weekday wday2" assignment="第一单元 -- 窃读记2" gap="2">11.14(星期六)</div>
+            <div class="weekday wday3" assignment="第一单元 -- 小苗与大树的对话1" gap="3">11.15(星期日)</div>
+            <div class="weekday wday4" assignment="第一单元 -- 走遍天下书为侣1" gap="4">11.16(星期一)</div>
+            <div class="weekday wday5" assignment="第一单元 -- 走遍天下书为侣2" gap="5">11.17(星期二)</div>
+            <div class="weekday wday6" assignment="第一单元 -- 我的长生果1" gap="6">11.18(星期三)</div>
+            <div class="weekday wday7" assignment="第二单元 -- 古诗词三首1" gap="7">11.19(星期四)</div>
+        </div>
+    </div>
+    <table class="toolvs">
+		<tbody>
+            <tr>
+			<td valign="top">
+				<div class="toolvs_txt">					
+					<div>请输入书中的微视频数字串码</div>
+					<input id="toolvs_code" type="text" maxlength="14">
+					<div id="toolvs_info">目前共有65869段微视频</div>
+				</div>
+			</td>
+			<td class="toolvs_td" valign="top">
+				<div class="toolvs_btn">点击观看</div>
+			</td>
+		  </tr>
+	   </tbody>
+    </table>
+    <div class="middle">
+        <table class="middletb" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td colspan="2">
+                    <div class="menubar-h">
+                        <a class="menuitem selmenu" href="homeworkListStu.html" target="pageframe">
+                            <div class="mitemimg menuitem1"></div>
+                            <div class="mitemtext">今日作业</div>
+                        </a>
+                        <a class="menuitem" href="guidecaseList.html" target="pageframe">
+                            <div class="mitemimg menuitem2"></div>
+                            <div class="mitemtext">今日导学</div>
+                        </a>
+                        <a class="menuitem" href="commentList.html" target="pageframe">
+                            <div class="mitemimg menuitem3"></div>
+                            <div class="mitemtext">今日批注</div>
+                        </a>
+                        <a class="menuitem" href="microLessonList.html" target="pageframe">
+                            <div class="mitemimg menuitem4"></div>
+                            <div class="mitemtext">今日微课</div>
+                        </a>
+                        <div class="menu-h-shadow"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="2%" style="position:relative;">
+                    <div class="menubar-v">
+                        <a class="menu-v-item" href="homeworkSpace.html" target="pageframe">
+                            作业空间
+                        </a>
+                        <a class="menu-v-item" href="homeworkGuidence.html" target="pageframe">
+                            作业导学
+                        </a>
+                        <a class="menu-v-item" href="errorManage.html" target="pageframe">
+                            错题本
+                        </a>
+                        <!-- <a class="menu-v-item" href="/Student/HomeworkSpace?pagename=Homework" target="pageframe">
+                            测评
+                        </a> -->
+                        <a class="menu-v-item" href="exam.html" target="pageframe">
+                            测评
+                        </a>
+                        <a class="menu-v-item" href="interestGroup.html" target="pageframe">
+                            兴趣小组圈
+                        </a>
+                        <div class="menu-v-shadow"></div>
+                    </div>
+                </td>
+                <td valign="top">
+                    <!--<iframe id="pageframe" name="pageframe" width="100%" src="/Student/Jrzy" style="height: 930px;"></iframe>-->
+                    <iframe id="pageframe" name="pageframe" width="100%" src="homeworkListStu.html" style="height: 744px;"></iframe>
+                    <br>
+                    <div class="menubar-btm">
+                        <div class="mbtn-top">
+                            <div class="mbar-nav" title="展开"></div>
+                            <div class="mbar-area" style="display:none;">
+                                <a class="menu-b-item mbi-1" href="newQuestion.html" target="pageframe">新问题</a>
+                                <!-- <a class="menu-b-item mbi-2" href="newShot.html" target="">新拍</a> -->
+                                <a class="menu-b-item mbi-2" href="newSubmit.html" target="pageframe">新拍</a>
+                                <a class="menu-b-item mbi-3" href="newSubmit.html" target="pageframe">新提交</a>
+                                <a class="menu-b-item mbi-4" href="interestGroup.html" target="pageframe">小组</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+<div id="dlgVideo">
+	<div id="tvs_bar" class="modal_title_bar">
+		<div class="modal_title_text">点滴学习</div>
+		<div class="modal_title_btn">
+			<a id="video_close" href="javascript:" class="modal_tigan_btn modal_close"></a>
+		</div>
+	</div>
+	<div class="modal_body">
+		<div id="videoContainer">
+			<iframe id="vs_frame" frameborder="0" scrolling="no" src=""></iframe>
+		</div>
+	</div>
+</div>
+
+<!--<script src="../../Scripts/jquery.blockUI.js" type="text/javascript"></script>-->
+<!--<script src="../../Scripts/videodlg.js" type="text/javascript"></script>-->
+        </div>
+    </div>
+<script type="text/javascript" src="../js/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script type="text/javascript" src="../js/seajs.config.js"></script>
+<script type="text/javascript">
+    seajs.use("student");
+</script>
+</body>
+</html>

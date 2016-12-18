@@ -1,0 +1,528 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<link href="../../Content/Site1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../Content/student1.css">
+    <link href="../../Content/HomeSpace.css" rel="stylesheet" type="text/css">
+<style>
+.qljTop {height:88px;width: 94%;margin-left: auto;margin-right: auto;border-bottom: 1px solid #efefef;}
+.qljTop h1 {display: inline-block;margin:0;line-height: 88px;margin-left: 17px;}
+.qljTop a {font-size: 14px;color: #88A2DB;margin-top: 40px;}
+.qljTop a:hover {text-decoration: underline;}
+.qljTop .rt {float:right;}
+.qresolve_sn,.qresolve_content {color: #737373;}
+</style>
+<script>
+    
+</script>
+    </head><body><div id="main_body">
+            <div class="qljTop">
+	<h1>错题管理</h1>
+	<a href="/Student/cttj" class="rt">错题统计 &gt;&gt;</a>
+</div>
+<div id="farea">
+	<!-- <div class="subjectcontainer" style="height:auto;min-height:40px">
+		<div class="subjectcommon subjecthigh" value="1" title="小学">
+			小学
+		</div>
+		<div title="初中" class="subjectcommon" value="2">
+			初中
+		</div>
+		<div title="高中" class="subjectcommon" value="3">
+			高中
+		</div>
+	</div> -->
+	
+	<div class="classxcontainer">
+		<div title="语文" class="classxcommon classxhigh" value="1">
+			语文
+		</div>
+		<div class="classxcommon" value="2" title="数学">
+			数学
+		</div>
+		<div title="英语" class="classxcommon" value="3">
+			英语
+		</div>
+		<div title="物理" class="classxcommon" value="4">
+			物理
+		</div>
+		<div title="化学" class="classxcommon" value="5">
+			化学
+		</div>
+	</div>
+	<!-- <div class="classxcontainer">
+		<div title="人教版" class="classxcommon classxhigh" value="1">
+			人教版
+		</div>
+		<div class="classxcommon" value="2" title="鲁教版">
+			鲁教版
+		</div>
+	</div> -->
+	
+	<!-- 
+	<div class="classxcontainer">
+		<div title="七年级上" class="classxcommon classxhigh" value="1">
+			七年级上
+		</div>
+		<div class="classxcommon" value="2" title="七年级下">
+			七年级下
+		</div>
+		<div class="classxcommon" value="3" title="八年级上">
+			八年级上
+		</div>
+		<div class="classxcommon" value="4" title="八年级下">
+			八年级下
+		</div>
+		<div class="classxcommon" value="5" title="九年级">
+			九年级
+		</div>
+	</div>
+	-->
+	<!--
+	<div class="classxcontainer" id="tmLx">
+		<div title="错题" class="classxcommon classxhigh" value="1">
+			错题
+		</div>
+		<div class="classxcommon" value="2" title="收藏">
+			收藏
+		</div>
+		<div class="classxcommon" value="3" title="备注">
+			备注
+		</div>
+	</div> -->
+	<div id="crumpath">
+		<span id="crumbefore">已选条件</span>： <!-- <span id="xueduan">小学</span>、--> <span id="kemu">语文</span><!--、 <span id="banben">人教版</span>、 <span id="nianji">七年级上</span>、 <span id="classx">题型</span>、 <span id="source">错题</span> -->
+	</div>
+</div>
+<div id="main_body" style="margin-top:15px">
+	<div id="main_body_r">
+		<div id="mBody_rTit">
+		</div>
+		<div style="width:100%;margin-top:-1px">
+			<div class="contentofmain" id="ctCtb">
+				<div class="jiaocaimulu" style="float:left;width: 165px;">
+					教材目录
+				</div>
+				<div class="tiheader" style="float:left;width: auto;">
+									<span class="subcontainer">共<span class="ticount">3</span>道题</span>
+								</div>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+				<tbody>
+				<tr>
+					<td valign="top" class="custd1" style="border: 1px solid #F1F1F1;">
+						<div class="ctsc_left" style="position:relative;top:32px">
+							
+							<div class="unitcontainer">
+								<div class="unitcommon1" title="1.1 正数和负数" value="5">
+									1.1 正数和负数
+									<div class="rightdown">
+									</div>
+									<ul class="menu_ul">
+										<li title="填空题">
+										<div class="unitcommon1li" isover="false" value="84" subcount="0">
+											填空题
+										</div>
+										</li>
+									</ul>
+									<div class="first-level-shadow">
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td valign="top" style="border: 1px solid #F1F1F1;">
+						<div class="paperarea">
+							<div id="paperlist" style="margin-top:30px">
+								
+								<div class="nodata" style="width:100%;height:720px;margin:12px auto 0;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+								</div>
+								<div class="ccppart">
+									<div class="ppart" id="part1">
+										<div class="ptype" data-id="5">
+											<div class="ptype_title">
+												<div class="ptype_sn">
+													I
+												</div>
+												<div class="ptype_txt">
+													基础知识
+												</div>
+											</div>
+											<div class="pgroup" data-id="1194">
+												<div class="pgroup_sn">
+													一、根据题意，填写正确答案。
+												</div>
+												<div class="pgroup_container">
+													<div class="pgroup_txt">
+													</div>
+													<div class="question" id="q14437" data-sn="1" data-snshow="1" isobject="true" data-score="0" data-time="0" iscorrect="false" iscloze="true" classidx="1">
+														<div class="question_sn">
+															
+														</div>
+														<div class="qbody_container" style="width:605px">
+															<div class="question_body">
+																<div class="qoption_container">
+																	<div class="qoption ticloze" data-oid="72184">
+																		<div class="qoption_content">
+																			1.设向东走为正，那么向东走20m记作(+20)m，向西走20m记作(-20)m；-30m表示(向西走30m)，+60m表示(向东走60m).<br>
+																			小锦囊: 用正负数表示具有相反意义的量时，选择恰当的“基准”可以大大简化运算，需注意并不是所有的基准都是0.
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="question_resolve">
+															<div class="qresolve_row">
+																<span class="qresolve_sn">来　　源:</span><span class="qresolve_content">第一单元 一 散步</span>
+															</div>
+															<div class="qresolve_row">
+																<span class="qresolve_sn">备　　注:</span><span class="qresolve_body qljQresolve_gray"></span>
+															</div>
+														</div>
+														<div class="icon_container">
+															<div class="icon_bar">
+																<div class="titipiconscommon collect" data-qid="14437">
+																</div>
+																<div class="icon-tip">
+																</div>
+																<div class="titipiconscommon delete" data-qid="14437">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<!-- 
+				<div id="pagearea" style="margin:30px 0 30px 350px;font-size:18px">
+					<div style="font-size:14px">
+						<span index="0" class="previouspagegroup pagefirst"></span><span class="pageicon page-previous" data="previous"></span><span class="prevarea" style="display:none">...</span><span id="pagelist" class="pagesout"><a href="javascript:" class="pagelink pagelinkhigh" style="color:#fff">1</a></span><span class="nextarea" style="display:none">...</span><span class="pageicon page-next" data="next"></span><span index="1" class="previouspagegroup pagelast"></span><span class="turnto" style="margin-left:30px">转到</span><input type="text" class="pageinput" id="jumptotxt"><span class="txtpage">页/</span><span id="totalpage">1</span><span id="goto" class="pageconfirm">确定</span><span id="pagewarn"></span>
+					</div>
+				</div>
+				-->
+				
+				<div class="unitTip">
+					<div style="">
+					</div>
+				</div>
+			</div>
+			<div class="contentofmain" id="scCtb" style="display: none;">
+				<div class="jiaocaimulu" style="float:left;width: 165px;">
+					教材目录
+				</div>
+				<div class="tiheader" style="float:left;width: auto;">
+									<span class="subcontainer">共<span class="ticount">3</span>道题</span>
+								</div>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+				<tbody>
+				<tr>
+					<td valign="top" class="custd1" style="border: 1px solid #F1F1F1;">
+						<div class="ctsc_left" style="position:relative;top:32px">
+							
+							<div class="unitcontainer">
+								<div class="unitcommon1" title="1.1 正数和负数" value="5">
+									1.2 负数和正数
+									<div class="rightdown">
+									</div>
+									<ul class="menu_ul">
+										<li title="填空题">
+										<div class="unitcommon1li" isover="false" value="84" subcount="0">
+											填空题
+										</div>
+										</li>
+									</ul>
+									<div class="first-level-shadow">
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td valign="top" style="border: 1px solid #F1F1F1;">
+						<div class="paperarea">
+							<div id="Div3" style="margin-top:30px">
+								
+								<div class="nodata" style="width:100%;height:720px;margin:12px auto 0;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+								</div>
+								<div class="ccppart">
+									<div class="ppart" id="Div4">
+										<div class="ptype" data-id="5">
+											<div class="ptype_title">
+												<div class="ptype_sn">
+													I
+												</div>
+												<div class="ptype_txt">
+													基础知识
+												</div>
+											</div>
+											<div class="pgroup" data-id="1194">
+												<div class="pgroup_sn">
+													一、根据题意，填写正确答案。
+												</div>
+												<div class="pgroup_container">
+													<div class="pgroup_txt">
+													</div>
+													<div class="question" id="Div5" data-sn="1" data-snshow="1" isobject="true" data-score="0" data-time="0" iscorrect="false" iscloze="true" classidx="1">
+														<div class="question_sn">
+															
+														</div>
+														<div class="qbody_container" style="width:605px">
+															<div class="question_body">
+																<div class="qoption_container">
+																	<div class="qoption ticloze" data-oid="72184">
+																		<div class="qoption_content">
+																			1.设向东走为正，那么向东走20m记作(+20)m，向西走20m记作(-20)m；-30m表示(向西走30m)，+60m表示(向东走60m).<br>
+																			小锦囊: 用正负数表示具有相反意义的量时，选择恰当的“基准”可以大大简化运算，需注意并不是所有的基准都是0.
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="question_resolve">
+															<div class="qresolve_row">
+																<span class="qresolve_sn">来　　源:</span><span class="qresolve_content">第一单元 一 散步</span>
+															</div>
+															<div class="qresolve_row">
+																<span class="qresolve_sn">备　　注:</span><span class="qresolve_body qljQresolve_gray"></span>
+															</div>
+														</div>
+														<div class="icon_container">
+															<div class="icon_bar">
+																<div class="titipiconscommon collect" data-qid="14437">
+																</div>
+																<div class="icon-tip">
+																</div>
+																<div class="titipiconscommon delete" data-qid="14437">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<!-- 
+				<div id="pagearea" style="margin:30px 0 30px 350px;font-size:18px">
+					<div style="font-size:14px">
+						<span index="0" class="previouspagegroup pagefirst"></span><span class="pageicon page-previous" data="previous"></span><span class="prevarea" style="display:none">...</span><span id="pagelist" class="pagesout"><a href="javascript:" class="pagelink pagelinkhigh" style="color:#fff">1</a></span><span class="nextarea" style="display:none">...</span><span class="pageicon page-next" data="next"></span><span index="1" class="previouspagegroup pagelast"></span><span class="turnto" style="margin-left:30px">转到</span><input type="text" class="pageinput" id="jumptotxt"><span class="txtpage">页/</span><span id="totalpage">1</span><span id="goto" class="pageconfirm">确定</span><span id="pagewarn"></span>
+					</div>
+				</div>
+				-->
+				
+				<div class="unitTip">
+					<div style="">
+					</div>
+				</div>
+			</div>
+			<div class="contentofmain" id="bzCtb" style="display: none;">
+				<div class="jiaocaimulu" style="float:left;width: 165px;">
+					教材目录
+				</div>
+				<div class="tiheader" style="float:left;width: auto;">
+									<span class="subcontainer">共<span class="ticount">3</span>道题</span>
+								</div>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+				<tbody>
+				<tr>
+					<td valign="top" class="custd1" style="border: 1px solid #F1F1F1;">
+						<div class="ctsc_left" style="position:relative;top:32px">
+							
+							<div class="unitcontainer">
+								<div class="unitcommon1" title="1.1 正数和负数" value="5">
+									1.3 负数和正数
+									<div class="rightdown">
+									</div>
+									<ul class="menu_ul">
+										<li title="填空题">
+										<div class="unitcommon1li" isover="false" value="84" subcount="0">
+											填空题
+										</div>
+										</li>
+									</ul>
+									<div class="first-level-shadow">
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+					<td valign="top" style="border: 1px solid #F1F1F1;">
+						<div class="paperarea">
+							<div id="Div6" style="margin-top:30px">
+								
+								<div class="nodata" style="width:100%;height:720px;margin:12px auto 0;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+								</div>
+								<div class="ccppart">
+									<div class="ppart" id="Div7">
+										<div class="ptype" data-id="5">
+											<div class="ptype_title">
+												<div class="ptype_sn">
+													I
+												</div>
+												<div class="ptype_txt">
+													基础知识
+												</div>
+											</div>
+											<div class="pgroup" data-id="1194">
+												<div class="pgroup_sn">
+													一、根据题意，填写正确答案。
+												</div>
+												<div class="pgroup_container">
+													<div class="pgroup_txt">
+													</div>
+													<div class="question" id="Div8" data-sn="1" data-snshow="1" isobject="true" data-score="0" data-time="0" iscorrect="false" iscloze="true" classidx="1">
+														<div class="question_sn">
+															
+														</div>
+														<div class="qbody_container" style="width:605px">
+															<div class="question_body">
+																<div class="qoption_container">
+																	<div class="qoption ticloze" data-oid="72184">
+																		<div class="qoption_content">
+																			1.设向东走为正，那么向东走20m记作(+20)m，向西走20m记作(-20)m；-30m表示(向西走30m)，+60m表示(向东走60m).<br>
+																			小锦囊: 用正负数表示具有相反意义的量时，选择恰当的“基准”可以大大简化运算，需注意并不是所有的基准都是0.
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="question_resolve">
+															<div class="qresolve_row">
+																<span class="qresolve_sn">来　　源:</span><span class="qresolve_content">第一单元 一 散步</span>
+															</div>
+															<div class="qresolve_row">
+																<span class="qresolve_sn">备　　注:</span><span class="qresolve_body qljQresolve_gray"></span>
+															</div>
+														</div>
+														<div class="icon_container">
+															<div class="icon_bar">
+																<div class="titipiconscommon collect" data-qid="14437">
+																</div>
+																<div class="icon-tip">
+																</div>
+																<div class="titipiconscommon delete" data-qid="14437">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<!-- 
+				<div id="pagearea" style="margin:30px 0 30px 350px;font-size:18px">
+					<div style="font-size:14px">
+						<span index="0" class="previouspagegroup pagefirst"></span><span class="pageicon page-previous" data="previous"></span><span class="prevarea" style="display:none">...</span><span id="pagelist" class="pagesout"><a href="javascript:" class="pagelink pagelinkhigh" style="color:#fff">1</a></span><span class="nextarea" style="display:none">...</span><span class="pageicon page-next" data="next"></span><span index="1" class="previouspagegroup pagelast"></span><span class="turnto" style="margin-left:30px">转到</span><input type="text" class="pageinput" id="jumptotxt"><span class="txtpage">页/</span><span id="totalpage">1</span><span id="goto" class="pageconfirm">确定</span><span id="pagewarn"></span>
+					</div>
+				</div>
+				-->
+				
+				<div class="unitTip">
+					<div style="">
+					</div>
+				</div>
+			</div>
+			<div id="saving" style="display:none">
+				<div style="margin:20px auto;width:70px;height:70px;display:block;background:url(../images/gototop.png) no-repeat scroll 0 0 transparent">
+				</div>
+				<div class="savingmsg">
+					正在生成试卷...
+				</div>
+			</div>
+			<div id="commenteditor">
+				<div class="modal_title_bar">
+					<div class="modal_title_text">
+						编辑备注
+					</div>
+					<div class="modal_title_btn">
+						<a href="javascript:" class="modal_tigan_btn modal_close ce_close"></a>
+					</div>
+				</div>
+				<div class="modal_body">
+					<div id="ce_body">
+						<textarea id="ce_ta" maxlength="500"></textarea>
+						<div id="ce_txt">
+							还可输入<span id="ce_left"></span>字
+						</div>
+					</div>
+					<div class="modal_body_line">
+					</div>
+					<div class="modal_body_btn">
+						<a href="javascript:" class="btnCmnt modal_btn modal_btn_default" id="btnSaveCmnt">保&nbsp;存</a><a href="javascript:" class="btnCmnt ce_close modal_btn">退&nbsp;出</a>
+					</div>
+				</div>
+			</div>
+			<div id="dlgVideo">
+				<div class="modal_title_bar">
+					<div class="modal_title_text">
+						视频解析
+					</div>
+					<div class="modal_title_btn">
+						<a id="video_close" href="javascript:" class="modal_tigan_btn modal_close"></a>
+					</div>
+				</div>
+				<div class="modal_body">
+					<div id="videoContainer">
+						<video controls=""></video>
+					</div>
+				</div>
+			</div>
+			<div class="funcbtns-btm">
+				<div class="autocombine">
+				</div>
+				<div class="stronger1">
+				</div>
+			</div>
+			<div class="funcbtns-out" style="bottom:40px">
+				<div id="autobtn" class="funcbtn-c combine">
+				</div>
+				<div id="weakbtn" class="funcbtn-c stronger">
+				</div>
+			</div>
+			<div id="Div1" style="width:100%;height:1px">
+			</div>
+		</div>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+    </div>
+
+    <script>
+        $('#scCtb').hide();
+        $('#bzCtb').hide();
+        $('#tmLx>div').click(function() {
+            $(this).addClass('classxhigh').siblings().removeClass('classxhigh');
+
+            $('#main_body_r').find('.contentofmain').eq($(this).index()).fadeIn().siblings().hide();
+        })
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            var frame = window.parent.document.getElementById("pageframe");
+            $(frame).height($('body').height() + 30);
+        });
+</script>
+</body></html>

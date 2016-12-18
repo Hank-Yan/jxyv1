@@ -1,0 +1,16 @@
+@rankMarginTop:5%;
+@rankNormalLRPadding    :   10px;
+@rankNormalTBPadding    :   10px;
+@colorGray     :   rgb(211,212,213);
+@colorWhite       :   rgb(255,255,255);
+@colorRed    :   rgb(248,81,71);
+@colorLightGray        :   rgb(160,161,162);
+@displayWebkitBox   : -webkit-box;
+
+@widthAuto   :   auto;
+@borderRadius   :   3px;
+@overflowHidden :   hidden;
+@textAlignCenter    :   center;
+@lineHeight :   28px;
+@fontSize   :   12px;
+@displayBlock   :   block;

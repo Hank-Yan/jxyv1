@@ -1,0 +1,146 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+    <link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+    <style>
+        .te_box_all {background: #FBFCFB;overflow:hidden;}
+        ul,p{margin:0;padding:0;}
+    .qusetion_list{overflow:hidden;background:#FBFCFB;position: relative;left: -87px;top: 17px;}
+    .qusetion_list li{position:relative;float:left;margin-right:48px;width:36px;height:36px;border:1px solid #698BD2;border-radius:4px;border-radius:50%;text-align:center;text-align:center;line-height:36px;}
+    .qusetion_list li:last-of-type {margin-right: 0;}
+    .qusetion_list li:after{position:absolute;top:18px;right:36px;display:block;width:48px;height:1px;background:#698BD2;content:'';}
+    .qusetion_list li a{display:block;width:100%;height:100%;color:#698BD2;}
+    .qusetion_list li.current,.qusetion_list li:hover{background:#5E82CF;}
+    .qusetion_list li.current a, .qusetion_list li:hover a{color:#FFF;}
+    
+      .peoList {float:left;margin-top: 87px;margin-left: 24px;}
+    .peoList li {border-radius: 10px;height: 27px;line-height: 27px;width: 87px;text-align:center;border: 1px solid #5E83CF;margin-bottom: 20px; }
+     .peoList li a {display: block;width: 100%;height: 100%;color: #5E83CF;}
+     .peoList li:hover,.peoList li.current {background: #5E83CF;}
+     .peoList li:hover a,.peoList .current a  {color:#FFFFFF;}
+     
+     
+     .mainWuestion {float:left;margin-top: 45px;margin-left: 45px;width: 65%;}
+      .mainWuestion img {margin-top: 20px;}
+     .fB {font-size: 18px;margin-bottom: 10px;}
+     .fN {font-size: 16px;}
+     .cG {color: #383938;}
+     .cR {color: #E6660A;}
+     .txtDown {display: inline-block;transform: rotate(90deg);font-family:'宋体';}
+     .icoBz {display: inline-block; padding-right: 53px;background: url(../images/icoBz.png ) no-repeat right center;}
+     .lineSplit {height: 1px;width: 116%;background: #E7E8E7;margin-bottom: 20px;}
+     .scoreBox a{width: 95px;height: 38px;border-radius: 10px;border: 1px solid #FC2822;margin-right: 10px;text-align:center;line-height: 38px;}
+     .scoreBox a:nth-of-type(1) {background: url(../images/ico100.png) no-repeat center center; margin-top: 20px;}
+      .scoreBox a:nth-of-type(2) {background: url(../images/ico90.png) no-repeat center center;}
+      .scoreBox a:nth-of-type(3) {background: url(../images/ico80.png) no-repeat center center;}
+      .scoreBox a:nth-of-type(4) {background: url(../images/ico70.png) no-repeat center center;}
+      .scoreBox a:nth-of-type(5) {background: url(../images/ico60.png) no-repeat center center;}
+      .scoreBox a:nth-of-type(6) {background: url(../images/icoBjg.png) no-repeat center center;margin-right:0;}
+      .scoreBox a:nth-of-type(7) {color: #FC2822;margin-top: 20px;}
+       .scoreBox a:nth-of-type(7):hover {color: #FFF;background: #FC2822;}
+      .scoreBox a:nth-of-type(8) {color: #FC7B21;border-color: #FC7B21}
+       .scoreBox a:nth-of-type(8):hover {color: #FFF;background: #FC7B21;}
+      .scoreBox a:nth-of-type(9) {color: #FCC143;border-color: #FCC143;}
+       .scoreBox a:nth-of-type(9):hover {color: #FFF;background: #FCC143;}
+      .scoreBox a:nth-of-type(10) {color: #F4087C;border-color: #F4087C;}
+      .scoreBox a:nth-of-type(10):hover {color: #FFF;background: #F4087C;}
+      .icoDp{padding-left: 44px; background:url(../images/icoDp.png) no-repeat left center; }
+      .dpBox {background: #F5F6F5;width: 660px;height: 160px;border: 1px solid #E0E1E0;box-sizing: border-box;padding: 20px 16px;resize: none;color: #393A39;font-family: 'Microsoft yahei' }
+      .toolBtnGroup {margin-top: 30px;margin-bottom: 30px;}
+      .toolBtnGroup a {width: 85px;height: 35px;line-height: 35px;text-align:center;margin-right: 30px;border-radius: 4px;border: 1px solid;display: inline-block;}
+      .toolBtnGroup a:nth-of-type(1) {color: #70CD00;border-color: #70CD00}
+      .toolBtnGroup a:nth-of-type(2) {color: #7CCAE1;border-color: #7CCAE1}
+      .toolBtnGroup a:nth-of-type(3) {color: #5243C9;border-color: #5243C9}
+      
+      .toolBtnGroup a:nth-of-type(1):hover {background-color: #70CD00;color: #FFF;}
+      .toolBtnGroup a:nth-of-type(2):hover {background-color: #7CCAE1;color: #FFF;}
+      .toolBtnGroup a:nth-of-type(3):hover {background-color: #5243C9;color: #FFF;}
+      
+       .question_ft{margin-top:67px;padding:0 20px;width:100%;height:52px;border-radius:4px;background:#EEE;line-height:52px!important;margin-bottom: 30px;}
+    .question_ft>span:first-of-type{float:left;}
+    .question_ft>span:last-of-type{float:right;}
+    .question_ft a{color:#595959;}
+    .question_ft a:hover{text-decoration:underline;}
+    </style>
+
+    </head><body><div class="te_box_all">
+        
+        <ul class="peoList">
+            <li class="current"><a href="#">王小明</a></li>
+            <li><a href="#">张晓强</a></li>
+            <li><a href="#">李红</a></li>
+            <li><a href="#">李伟</a></li>
+            <li><a href="#">王亮</a></li>
+            <li><a href="#">祝强强</a></li>
+            <li><a href="#"><span class="txtDown">&gt;</span></a></li>
+        </ul>
+        <ul class="qusetion_list">
+	        <li><a href="javascript:;">1</a></li>
+	        <li><a href="javascript:;">2</a></li>
+	        <li class="current"><a href="kjavascript:;">3</a></li>
+	        <li><a href="javascript:;">4</a></li>
+	        <li><a href="javascript:;">5</a></li>
+	        <li><a href="javascript:;">6</a></li>
+	        <li><a href="javascript:;">7</a></li>
+	        <li><a href="javascript:;">8</a></li>
+	        <li><a href="javascript:;">9</a></li>
+	        <li><a href="javascript:;">&gt;</a></li>
+        </ul>
+        
+        <div class="mainWuestion">
+            <p class="fB cG">3.如图6，已知三角形ABC是钝角三角形</p>
+            <p class="fN cG">(1) 画出BC边上的高和中线</p>
+            <img src="../../Images/tm1.png">
+            <div class="lineSplit"></div>
+            <p class="fB cR">参考答案：</p>
+            <p class="fN cR">如图：BC边上的高和中线，BC边上的高和中线，BC边上的高和中线</p>
+            <img src="../../Images/tm2.png">
+            <div class="lineSplit"></div>
+             <p class="fN cR">文字解析：</p>
+             <p class="fN cG" style="line-height:35px;">画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，</p>
+             <div class="lineSplit" style="margin-bottom:0;"></div>
+             <p class="fN cR icoBz" style="height: 50px;line-height: 50px;margin: 10px 0;">备注：</p>
+            <div class="lineSplit"></div>
+             <p class="fN cR">分数：</p>
+             <div class="scoreBox" style="width: 120%;">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <br>
+                <a href="#">优</a>
+                <a href="#" class="current">良</a>
+                <a href="#">中</a>
+                <a href="#">差</a>
+             </div>
+             
+             <div class="lineSplit" style="margin: 20px 0;"></div>
+             <p class="fB cR icoDp">教师点评：</p>
+             
+             <textarea class="dpBox">画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，画出BC边上的高和中线，</textarea>
+             
+             <div class="toolBtnGroup">
+                <a href="#">推送</a>
+                <a href="#">微课</a>
+                <a href="#">学案</a>
+             </div>
+             
+             <div class="question_ft">
+		        <span><a href="#">上一人</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">下一人</a></span><span><a href="#">上一题</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/Student/kytl">下一题</a></span>
+	        </div>
+    </div>
+        
+        
+        
+        
+    </div>
+  <script type="text/javascript">
+      $(function() {
+          var frame = window.parent.document.getElementById("pageframe");
+          $(frame).height($('body').height() + 30);
+      });
+</script>
+    
+</body></html>

@@ -1,0 +1,569 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<script>
+   
+</script>
+    <style>
+      h1,h2,h3,h4,h5,h6{margin:0}
+      a:visited {color: #333;} 
+ul{margin:0;padding:0}
+li{list-style:none}
+.WB_left_nav .lev .levtxt{display:inline-block;overflow:hidden;max-width:82px;color:#FFF;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+.WB_miniblog_fb{background:#fff}
+.WB_frame{margin:0 auto;padding:1pc 0 0;min-height:680px;background:#8bc0e0}
+.WB_frame_a,.WB_frame_a_fix,.WB_frame_b,.WB_frame_c,.WB_frame_d,.WB_main_a,.WB_main_c,.WB_main_cr,.WB_main_l,.WB_main_r,.WB_toptips{display:inline-block;vertical-align:top;word-spacing:normal;letter-spacing:normal;font-size:9pt}
+.WB_left_nav,.WB_main_l{width:150px}
+.WB_main_l{background:#8bc0e0}
+.WB_left_nav .lev_Box h3.lev a{padding:0 0 0 15px;height:34px;color:#fff;font-weight:700;font-size:14px;line-height:34px}
+.UI_scrollView .UI_scrollContainer{position:relative;overflow:hidden;width:100%;height:100%}
+.UI_scrollView .UI_scrollContent{position:relative;overflow-x:hidden;overflow: visible;margin-right:-30px;padding-right:30px;width:100%;height:100%}
+.WB_left_nav .lev_Box,.WB_left_nav fieldset{border-color:#d4c0b5;border-color:hsla(0,16%,55%,.1)}
+.WB_left_nav .lev_Box{border-bottom-width:1px;border-bottom-style:solid}
+.WB_left_nav .lev a{position:relative;display:block;overflow:hidden;padding:0 0 0 13px;height:34px;text-decoration:none;font-size:9pt;line-height:34px}
+.WB_frame #plc_main{display:inline-block;width:600px}
+.B_discover .WB_frame_c,.WB_main_c{margin-right:10px;width:600px}
+.WB_tab_a{margin:0 0 10px;box-shadow:-1px 0 0 rgba(0,0,0,.04),0 -1px 0 rgba(0,0,0,.04),1px 0 0 rgba(0,0,0,.04)}
+.clearfix:after{clear:both;display:block;visibility:hidden;height:0;content:"."}
+.WB_tab_a .tab_box{width:100%;height:38px}
+.clearfix{display:block}
+.WB_tab_a .tab_box_a .tab{width:300px}
+.W_fl{float:left}
+.WB_tab_a .tab_box_a_r5 .tab .li_first,.WB_tab_a .tab_box_a_r5 .tab .li_last{width:0}
+.WB_tab_a .tab li.S_bg2,.WB_tab_a .tab li.curr .b .b1 em i{box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.WB_tab_a .tab a{display:block}
+.SW_fun .S_func1,.S_txt1,.W_btn_b,.W_input:focus,body,legend{color:#333;text-decoration:none}
+.WB_tab_a .tab li:nth-child(2) .t{border-top-left-radius:2px}
+.WB_tab_a .tab .t{overflow:hidden;padding:0 0 0 1pc;height:31px;line-height:38px}
+.WB_tab_a .tab span{display:block}
+.WB_tab_a .tab_box_a_r5 .tab li{width:60px}
+.WB_tab_a .tab li.curr{box-shadow:none;font-weight:700}
+.WB_tab_a .tab li:first-child,.WB_tab_a .tab li:nth-child(2){border-bottom-left-radius:2px;border-top-left-radius:2px}
+.WB_tab_a .tab li{float:left;height:38px}
+.WB_tab_a .tab_box_a .fr_box{width:300px}
+.WB_tab_a .tab_box .fr_box{overflow:hidden;height:38px;border-top-right-radius:2px;border-bottom-right-radius:2px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.SW_fun_bg,.S_bg2,.W_btn_b,.W_input,blockquote{background-color:#fff}
+.W_fr{float:right}
+.WB_tab_a .WB_search_s{margin:10px 7px 0 0}
+.WB_search_s{position:relative;display:inline-block}
+.WB_face{width:50px}
+.W_fl{float:left}
+.W_face_radius{border-radius:50%}
+.WB_face .face img{width:50px;height:50px}
+.W_face_radius{border-radius:50%}
+.WB_detail{margin-left:60px}
+.WB_info{margin:0 0 3px;padding:5px 0 0}
+.SW_fun .S_func1,.S_txt1,.W_btn_b,.W_input:focus,body,legend{color:#333;text-decoration:none}
+.W_f14{font-size:14px}
+.W_fb{font-weight:700}
+.S_txt2,.W_btn_b_disable,.W_btn_b_disable:hover,.W_input{color:grey;text-decoration:none}
+.S_txt2,.W_btn_b_disable,.W_btn_b_disable:hover,.W_input{color:grey;text-decoration:none}
+.S_txt2,.W_btn_b_disable,.W_btn_b_disable:hover,.W_input{color:grey;text-decoration:none}
+.WB_feed_handle .WB_handle{overflow:hidden}
+.WB_feed_handle .WB_row_line{border-top-width:1px;border-top-style:solid}
+.S_line2{border-color:#f2f2f5}
+.WB_row_line{margin:0 0 0 -1px;zoom:1}
+.WB_row_r4 li{width:25%}
+.WB_row_line li{float:left;height:38px}
+.WB_row_line a{display:block;margin:0 0 0 1px;padding:1px 0;text-align:center}
+.WB_row_line .pos{display:block;margin-left:-1px}
+.WB_row_line .line{display:block;margin:7px 0;height:22px;line-height:22px;border-left-width:1px;border-left-style:solid}
+.S_line1,.W_btn_b,.W_btn_next,.W_btn_prev{border-color:#d9d9d9}
+.WB_feed_detail{padding:10px 16px 10px 10px}
+.WB_tab_a .tab .b .W_arrow_bor i{border-width:9px;border-top-width:0}
+.WB_tab_a .tab .b .W_arrow_bor i{border-width:9px;border-top-width:0}
+.WB_tab_a .tab span{display:block}
+.WB_tab_a .tab_box_a_r5 .tab .b .b1 em{width:28px}
+.WB_tab_a .tab .b .b1 em{float:left;overflow:hidden;height:8px}
+address,caption,cite,code,dfn,em,i,th,var{font-weight:400;font-style:normal}
+.WB_tab_a .tab li:nth-child(2) .b .b1 em.l i{border-bottom-left-radius:2px}
+.WB_tab_a .tab li.S_bg2,.WB_tab_a .tab li.curr .b .b1 em i{box-shadow:0 1px 0 rgba(0,0,0,.04)}
+
+.WB_tab_a .tab .b .b1 i{display:block;height:7px}
+.SW_fun_bg,.S_bg2,.W_btn_b,.W_input,blockquote{background-color:#fff}
+.WB_tab_a .tab li.S_bg2,.WB_tab_a .tab li.curr .b .b1 em i{box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.WB_tab_a .tab li.S_bg2,.WB_tab_a .tab li.curr .b .b1 em i{box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.WB_tab_a .tab_box_a_r5 .tab .b .b1 em.r{width:32px}
+.WB_feed .WB_cardwrap{margin-bottom:10px}
+.like_status {display: inline-block;}
+li .S_line1 .icon_praised_b {background: url(../images/zan.png);width: 16px;height: 19px;display: inline-block;position: relative;top: 4px;}
+.lev_line {margin-bottom: 10px;margin-top: 10px;border-top: 1px solid #8DB9D6;}
+.lev:hover {opacity: .8;}
+.W_input {border: 1px solid #ccc;}
+.ficon_arrow_down:after {content:'>';position: relative;transform: rotate(90deg);display: inline-block;font-family: '宋体';}
+    </style>
+    </head><body><div class="WB_miniblog_fb">
+       <div class="WB_main clearfix" id="plc_frame">         
+            <div class="WB_frame">
+                <div class="WB_main_l" fixed-box="true">
+                    <div id="v6_pl_leftnav_group">
+                        <div style="z-index: 10; transform: translateZ(0px); width: 150px;">
+                            <div class="WB_left_nav WB_left_nav_Atest" node-type="groupList" fixed-item="true" fixed-id="3">
+                               <div class="lev_Box lev_Box_noborder"> 
+                                    <h3 class="lev">
+                                        <a href="#" class="S_txt1" node-type="item" bpfilter="main" nm="status" suda-uatrack="key=V6update_leftnavigate&amp;value=homepage">
+                                            <span class="levtxt">首页</span></a></h3>
+            <h3 class="lev"><a href="#" class="S_txt1" node-type="item" suda-uatrack="key=V6update_leftnavigate&amp;value=message" bpfilter="message"><span class="levtxt">消息</span></a></h3>
+    </div>
+    <div class="lev_Box lev_Box_noborder">
+        <h3 class="lev"><a dot="pos55b9e09c8ae74" href="#" class="S_txt1" node-type="item" bpfilter="main" suda-uatrack="key=V6update_leftnavigate&amp;value=collect"><span class="levtxt">收藏</span></a></h3>        
+    </div>
+    <div class="lev_Box lev_Box_noborder">
+        <h3 class="lev"><a dot="pos55b9e0b0ca122" href="#" class="S_txt1" node-type="item" bpfilter="main" suda-uatrack="key=V6update_leftnavigate&amp;value=collect"><span class="levtxt">赞</span><i class="W_new" like-dot="likeDot" style="display: none;"></i></a></h3>        
+    </div>
+    <div class="lev_line">
+        
+    </div>
+    <div node-type="leftnav_scroll" class=" UI_scrollView" style="height: 741px;"><div class="UI_scrollContainer">
+	<div class="UI_scrollContent" style="width: 167px;">
+        <div class="lev_Box">
+    <div class="lev"><a href="#" title="好友圈" class="S_txt1" node-type="item" bpfilter="main" isfriends="1" nm="moments_to_me" suda-uatrack="key=V6update_leftnavigate&amp;value=friends"><span class="levtxt">好友圈</span></a></div>
+	<div class="lev"><a bpfilter="main" groupnm="page_group_to_me" href="#" class="S_txt1" node-type="item"><span class="levtxt">群微博</span></a></div>
+    <div node-type="system_list" specialgid="201201180720528834"> 
+                    <div class="lev" gid="201201180720528834" node-type="group" action-data="id=201201180720528834"><a href="#" class="S_txt1" title="" node-type="item" bpfilter="main" gid="201201180720528834" suda-uatrack="key=V6update_leftnavigate&amp;value=special"><span class="levtxt">特别关注</span></a></div>
+            </div>
+    <div node-type="leftnav_grouplists">
+        <div node-type="group_show_list">
+                                                            <div class="lev" gid="201201180622460377" node-type="group" action-data="id=201201180622460377"><a href="#" class="S_txt1" title="名人明星" node-type="item" bpfilter="main" gid="201201180622460377" suda-uatrack="key=V6update_leftnavigate&amp;value=commongroup"><span class="levtxt">名人明星</span></a></div>
+                                                                                <div class="lev" gid="3733803777947181" node-type="group" action-data="id=3733803777947181"><a href="#" class="S_txt1" title="科技" node-type="item" bpfilter="main" gid="3733803777947181" suda-uatrack="key=V6update_leftnavigate&amp;value=commongroup"><span class="levtxt">科技</span></a></div>
+                                                                                <div class="lev" gid="3735813508268801" node-type="group" action-data="id=3735813508268801"><a href="#" class="S_txt1" title="耽美" node-type="item" bpfilter="main" gid="3735813508268801" suda-uatrack="key=V6update_leftnavigate&amp;value=commongroup"><span class="levtxt">耽美</span></a></div>
+                                                    </div>
+                    <div class="lev"><a href="#" class="S_txt1" title="悄悄关注" node-type="item" bpfilter="main" whisper="1" suda-uatrack="key=V6update_leftnavigate&amp;value=secret"><span class="levtxt">悄悄关注</span></a></div>
+            </div>
+    </div>    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div><div id="plc_main"><div class="WB_main_c">
+    
+    <div id="v6_pl_content_biztips" style="display: none;"><div suda-uatrack="key=zymo&amp;value=wbv5~10~m~none" suda-urls="http://zymo.mps.weibo.com/suda" ad-data="id=ads_top&amp;url=http://wbpctips.mobile.sina.cn/adfront/deliver.php&amp;posid=pos525904036078b&amp;psid=PDPS000000052321&amp;wbVersion=v6&amp;uid=1530168943&amp;cip=211.157.121.109&amp;spr=" cache="true"><div class="M_sc_tips" pbc-refresh="true"><div class="sct_frame sct_frame_2 clearfix"><div class="sct_media W_tog_hover"><a class="media_link" href="#" ad-comp="type=jump" target="_blank"><img class="media_pic" src="http://ww3.sinaimg.cn/large/6021d87ajw1exsmtkvj18j20dc0280t9.jpg" alt="全球狂欢节！大牌好货限时抢，不只5折！"><span class="tog_display"><span class="media_btn"><em>参加</em></span><span class="media_desc">全球狂欢节！大牌好货限时抢，不只5折！</span><span class="media_mask"></span></span></a></div><div class="sct_info"><span class="info_ref"><a class="S_link1" href="#" target="_blank"><em class="info_name" usercard="id=1768198384">天猫</em></a><a href="#" target="_blank"><em class="W_icon icon_approve_co" title="微博机构认证"></em></a></span><span class="info_opt"><a class="W_btn_b btn_22px" href="#" ad-comp="type=jump" target="_blank"><em class="W_ficon ficon_cd_event S_ficon">M</em>马上参加</a></span></div></div><a class="sct_close" href="#" onclick="STK.core.util.cookie.set('tips_'+$CONFIG['uid'],'1',{'expire':3});STK.E('v6_pl_content_biztips').style.display='none'"><span class="W_ficon ficon_close">X</span></a></div></div>
+</div>
+<div id="v6_pl_content_homefeed"><div node-type="homefeed">
+<div class="WB_tab_a" node-type="feed_nav" mblogsorttype="" dom_id="Pl_Content_HomeFeed">
+	<div class="tab_box tab_box_a tab_box_a_r5 clearfix">
+        <ul class="tab W_fl clearfix">
+        <li class="li_first S_bg2"></li>
+        <li class="curr">
+        <a suda-data="key=tblog_home_tab&amp;value=all" href="#" class="S_txt1" action-data="type=0" action-type="search_type">
+            <span class="t S_bg2">全部</span>
+            <span class="b">
+                <span class="b1">
+                    <em class="l"><i class="S_bg2"></i></em>
+                    <em class="r"><i class="S_bg2"></i></em>
+                </span>
+                <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+            </span>
+        </a>
+        </li>
+        <li class="S_bg2">
+        <a suda-data="key=tblog_home_tab&amp;value=org" href="#" class="S_txt1" action-data="type=1" action-type="search_type">
+            <span class="t S_bg2">原创</span>
+            <span class="b">
+                <span class="b1">
+                    <em class="l"><i class="S_bg2"></i></em>
+                    <em class="r"><i class="S_bg2"></i></em>
+                </span>
+                <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+            </span>
+        </a>
+        </li>
+        <li class="S_bg2">
+        <a suda-data="key=tblog_home_tab&amp;value=pic" href="#" class="S_txt1" action-type="search_type">
+            <span class="t S_bg2">图片</span>
+            <span class="b">
+                <span class="b1">
+                    <em class="l"><i class="S_bg2"></i></em>
+                    <em class="r"><i class="S_bg2"></i></em>
+                </span>
+                <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+            </span>
+        </a>
+        </li>
+        <li class="S_bg2">
+        <a suda-data="key=tblog_home_tab&amp;value=video" href="#" class="S_txt1" action-type="search_type">
+            <span class="t S_bg2">视频</span>
+            <span class="b">
+                <span class="b1">
+                    <em class="l"><i class="S_bg2"></i></em>
+                    <em class="r"><i class="S_bg2"></i></em>
+                </span>
+                <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+            </span>
+        </a>
+        </li>
+        <li class="S_bg2">
+        <a suda-data="key=tblog_home_tab&amp;value=music" href="#" class="S_txt1" action-type="search_type">
+            <span class="t S_bg2">音乐</span>
+            <span class="b">
+                <span class="b1">
+                    <em class="l"><i class="S_bg2"></i></em>
+                    <em class="r"><i class="S_bg2"></i></em>
+                </span>
+                <span class="W_arrow_bor W_arrow_bor_tno"><i class="S_bg2_br"></i></span>
+            </span>
+        </a>
+        </li>
+        <li class="li_last S_bg2"></li>
+        </ul>
+        <div class="fr_box W_fr S_bg2">
+        	<div class="search_box W_fr">
+            	<span class="WB_search_s">
+            	    <form method="get" action="" node-type="singleForm">
+            	    <input type="text" class="W_input" "="" node-type="simpleSearch" name="key_word" value="搜索我关注人的微博" notice="搜索我关注人的微博">
+                	<span class="pos">
+                    	<a href="#" title="搜索" class="W_ficon ficon_search S_ficon S_ficon_dis" action-type="search_key" onclick="return false;">搜索</a>                  	
+                	</span>
+                	</form>
+            	</span>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="WB_cardwrap feed_pop_search S_bg2" node-type="search" style="display:none;">
+        <div class="WB_cardtitle_b S_line2">
+            <h4 class="obj_name"><span class="main_title W_fb W_f14">高级搜索</span></h4>
+            <div class="opt_box">
+                <a href="#" action-type="search_adv" action-data="type=1" class="W_ficon ficon_close S_ficon">X</a>
+            </div>
+        </div>
+        <form method="get" action="" node-type="searchForm">
+        <div class="WB_innerwrap">
+            <div class="m_wrap">
+                <div class="form_table_s">
+                    <dl class="f_normal clearfix">
+                    <dt class="f_tit">类　型：</dt>
+                    <dd class="f_con">
+                        <span class="f_ipt">
+                            <label for="is_ori" class="W_label"><input type="checkbox" value="1" name="is_ori" id="is_ori" checked="checked" class="W_checkbox"><span>原创</span></label>
+                            <label for="is_forward" class="W_label"><input type="checkbox" value="1" name="is_forward" id="is_forward" checked="checked" class="W_checkbox"><span>转发</span></label>
+                            <label for="is_text" class="W_label"><input type="checkbox" value="1" name="is_text" id="is_text" checked="checked" class="W_checkbox"><span>纯文字</span></label>
+                            <label for="is_pic" class="W_label"><input type="checkbox" value="1" name="is_pic" id="is_pic" checked="checked" class="W_checkbox"><span>含图片</span></label>
+                            <label for="is_video" class="W_label"><input type="checkbox" value="1" name="is_video" id="is_video" checked="checked" class="W_checkbox"><span>含视频</span></label>
+                            <label for="is_music" class="W_label"><input type="checkbox" value="1" name="is_music" id="is_music" checked="checked" class="W_checkbox"><span>含音乐</span></label>
+                        </span>
+                    </dd>
+                    </dl>
+                    <dl class="f_normal clearfix">
+                    <dt class="f_tit">关键字：</dt>
+                    <dd class="f_con"><span class="f_ipt"><input node-type="keyword" class="W_input w1" type="text" value="查找我关注人的微博" id="key_word" notice="查找我关注人的微博" name="key_word" maxlength="40"></span></dd>
+                    </dl>
+                    <dl class="f_normal clearfix">
+                    <dt class="f_tit">时　间：</dt>
+                    <dd class="f_con"><span class="f_ipt">
+                    <input action-type="search_date" action-data="type=1" type="text" value="选择日期" class="W_input w2" id="start_time" def="选择日期" name="start_time" style="color: rgb(153, 153, 153);" readonly="true"><i class="t1">到</i><input class="W_input w2" action-type="search_date" action-data="type=2" type="text" value="2015-11-08" def="点击选择日期" id="end_time" name="end_time" style="color: rgb(153, 153, 153);" readonly="true"></span></dd>
+                    </dl>
+                    <dl class="f_btn">
+                    <dd class="f_con"><a action-type="search_button" href="#" onclick="return false;" class="W_btn_a">搜索</a><div class="W_tips clearfix" node-type="advSearchErr"></div></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        </form>
+</div>
+<div class="WB_feed" pagenum="1" node-type="feed_list">
+         <div mrid="rid=0_0_1_2606538643249160846" tbinfo="ouid=1530168943" diss-data="group_source=group_all&amp;rid=0_0_1_2606538643249160846" class="WB_cardwrap WB_feed_type S_bg2" mid="3905559646101040" action-type="feed_list_item">
+        <div class="WB_feed_detail clearfix" node-type="feed_content">
+        <div class="WB_screen W_fr">
+            <div class="screen_box">
+                <a href="#" action-type="fl_menu"><i class="W_ficon ficon_arrow_down S_ficon"></i></a>
+<div class="layer_menu_list" node-type="fl_menu_right" style="display:none; position: absolute; z-index: 999;">
+    <ul>
+                        <li><a href="#" action-type="feed_list_delete" title="删除">删除</a></li>
+                	<li><a href="#" action-type="fl_friendVisible" action-data="visible=2" title="转换为好友圈可见">转换为好友圈可见</a></li>
+        	<li><a href="#" action-type="fl_personalVisible" action-data="visible=1" title="转换为仅自己可见">转换为仅自己可见</a></li>
+                 </ul>
+            <ul style="display:none;" node-type="hide">
+        		<li><a action-type="feed_list_shield_setkeyword" href="#" suda-data="key=tblog_screen_keyword&amp;value=screen_keyword" action-data="member_type=0" title="屏蔽关键词">屏蔽关键词</a></li>
+    </ul>
+             </div>
+            </div>
+        </div>
+        <div class="WB_face W_fl">
+            <div class="face"><a target="_blank" class="W_face_radius" href="#" title="曲小鉴"><img title="曲小鉴" alt="" width="50" height="50" src="http://tp4.sinaimg.cn/1530168943/50/22830510010/1" class="W_face_radius"></a></div>
+                    </div>
+        <div class="WB_detail">
+                <div class="WB_info"><a suda-uatrack="key=feed_headnick&amp;value=pubuser_nick:3905559646101040" target="_blank" class="W_f14 W_fb S_txt1" nick-name="最早的精神病" title="最早的精神病" href="#" usercard="id=1530168943">
+                曲小鉴</a>                </div>
+            <div class="WB_text W_f14" node-type="feed_list_content"> 昨天下午，在教室门前，我们举行了语文数学作业展评。这次展的是基础训练，因为目的是树立榜样，所以挑选了语数作业各20本。<br>课外活动时，学生分组很认真地欣赏了这些优秀作业，很多同学一边欣赏一边赞叹。看的出来，这次作业展评在学生心里还是留下了很深的印象，今天写作业时，绝大部分学生的作业都比以前写得认真了， 字体漂亮了，作业整洁了。这正是我们举行作业展评的目的！</div>
+                                             
+             <!-- 引用文件时，必须对midia_info赋值 -->
+
+            <div class="WB_media_wrap clearfix" node-type="feed_list_media_prev">
+      <div class="media_box">
+                                                    <!-- img之间不能加空格 -->
+            <ul class="WB_media_a WB_media_a_m1 clearfix">
+           
+            </ul>
+                                                </div>
+</div>
+                                <div class="WB_expand_media_box" style="display: none;" node-type="feed_list_media_disp"></div>
+                                                                			                <!-- feed区 大数据tag -->                
+       </div>
+    </div>
+    <div class="WB_feed_handle">
+        <div class="WB_handle">
+            <ul class="WB_row_line WB_row_r4 clearfix S_line2">
+                <li>
+                                        <a class="S_txt2" href="#" action-type="fl_pop" action-data="mid=3905559646101040" suda-uatrack="key=tblog_fstt&amp;value=pop_butt_home"><span class="pos"><span class="line S_line1">推广</span></span></a>
+                                    </li>
+                                <li>
+                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_tran:3905559646101040" href="#" action-history="rec=1" action-type="fl_forward" action-data="allowForward=1&amp;url=http://weibo.com/1530168943/D2kDapB9S&amp;mid=3905559646101040&amp;name=最早的精神病&amp;uid=1530168943&amp;domain=1530168943&amp;pid=5b34866fjw1exp8fvl8qfj205k07sq32"><span class="pos"><span class="line S_line1" node-type="forward_btn_text">转发 </span></span></a>
+                </li>
+                                <li>
+                                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_comm:3905559646101040" href="#" action-type="fl_comment" action-data="ouid=1530168943&amp;location=home"><span class="pos"><span class="line S_line1" node-type="comment_btn_text">
+                    评论 </span></span></a>
+                    <span class="arrow" style="display: none;" node-type="cmtarrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_line1"></i><em class="S_bg1_br"></em></span></span>
+                                                </li>
+                <li>
+                    <a href="#" class="S_txt2" action-type="fl_like" action-data="version=mini&amp;qid=heart&amp;mid=3905559646101040&amp;like_src=1" title="赞"><span class="pos"><span class="line S_line1"><span node-type="like_status"><i class="W_icon icon_praised_b"></i> <em></em></span></span></span></a>
+                </li>
+            </ul>
+        </div>
+        <div node-type="feed_list_repeat" class="WB_feed_repeat S_bg1" style="display:none;"></div>
+                
+            </div>
+</div>	    				    	    		    	    	    	    	    		    	
+        
+                     
+                                                        
+       </div>
+    
+<div class="WB_feed" pagenum="1" node-type="feed_list">
+         <div mrid="rid=0_0_1_2606538643249160846" tbinfo="ouid=1530168943" diss-data="group_source=group_all&amp;rid=0_0_1_2606538643249160846" class="WB_cardwrap WB_feed_type S_bg2" mid="3905559646101040" action-type="feed_list_item">
+        <div class="WB_feed_detail clearfix" node-type="feed_content">
+        <div class="WB_screen W_fr">
+            <div class="screen_box">
+                <a href="#" action-type="fl_menu"><i class="W_ficon ficon_arrow_down S_ficon"></i></a>
+<div class="layer_menu_list" node-type="fl_menu_right" style="display:none; position: absolute; z-index: 999;">
+    <ul>
+                        <li><a href="#" action-type="feed_list_delete" title="删除">删除</a></li>
+                	<li><a href="#" action-type="fl_friendVisible" action-data="visible=2" title="转换为好友圈可见">转换为好友圈可见</a></li>
+        	<li><a href="#" action-type="fl_personalVisible" action-data="visible=1" title="转换为仅自己可见">转换为仅自己可见</a></li>
+                 </ul>
+            <ul style="display:none;" node-type="hide">
+        		<li><a action-type="feed_list_shield_setkeyword" href="#" suda-data="key=tblog_screen_keyword&amp;value=screen_keyword" action-data="member_type=0" title="屏蔽关键词">屏蔽关键词</a></li>
+    </ul>
+             </div>
+            </div>
+        </div>
+        <div class="WB_face W_fl">
+            <div class="face"><a target="_blank" class="W_face_radius" href="#" title="曲小鉴"><img title="曲小鉴" alt="" width="50" height="50" src="http://tp4.sinaimg.cn/1530168943/50/22830510010/1" class="W_face_radius"></a></div>
+                    </div>
+        <div class="WB_detail">
+                <div class="WB_info"><a suda-uatrack="key=feed_headnick&amp;value=pubuser_nick:3905559646101040" target="_blank" class="W_f14 W_fb S_txt1" nick-name="最早的精神病" title="最早的精神病" href="#" usercard="id=1530168943">
+                曲小鉴</a>                </div>
+            <div class="WB_text W_f14" node-type="feed_list_content">  大家好，为方便大家设计我们的班级课程表，先把有关内容发送进来，大家制作的时候方便取用。<br>本次制作的课程表的高度不要超过60厘米，但也不能太小，形状可以多样，要大方美观又不失活泼。相信孩子们一定能制作出优秀的的课程表来。另外除了有课程表外，还可以有时间表，班委名单，任课教师名单。</div>
+                                             
+             <!-- 引用文件时，必须对midia_info赋值 -->
+
+            <div class="WB_media_wrap clearfix" node-type="feed_list_media_prev">
+      <div class="media_box">
+                                                    <!-- img之间不能加空格 -->
+            <ul class="WB_media_a WB_media_a_m1 clearfix">
+           
+            </ul>
+                                                </div>
+</div>
+                                <div class="WB_expand_media_box" style="display: none;" node-type="feed_list_media_disp"></div>
+                                                                			                <!-- feed区 大数据tag -->                
+       </div>
+    </div>
+    <div class="WB_feed_handle">
+        <div class="WB_handle">
+            <ul class="WB_row_line WB_row_r4 clearfix S_line2">
+                <li>
+                                        <a class="S_txt2" href="#" action-type="fl_pop" action-data="mid=3905559646101040" suda-uatrack="key=tblog_fstt&amp;value=pop_butt_home"><span class="pos"><span class="line S_line1">推广</span></span></a>
+                                    </li>
+                                <li>
+                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_tran:3905559646101040" href="#" action-history="rec=1" action-type="fl_forward" action-data="allowForward=1&amp;url=http://weibo.com/1530168943/D2kDapB9S&amp;mid=3905559646101040&amp;name=最早的精神病&amp;uid=1530168943&amp;domain=1530168943&amp;pid=5b34866fjw1exp8fvl8qfj205k07sq32"><span class="pos"><span class="line S_line1" node-type="forward_btn_text">转发 </span></span></a>
+                </li>
+                                <li>
+                                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_comm:3905559646101040" href="#" action-type="fl_comment" action-data="ouid=1530168943&amp;location=home"><span class="pos"><span class="line S_line1" node-type="comment_btn_text">
+                    评论 </span></span></a>
+                    <span class="arrow" style="display: none;" node-type="cmtarrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_line1"></i><em class="S_bg1_br"></em></span></span>
+                                                </li>
+                <li>
+                    <a href="#" class="S_txt2" action-type="fl_like" action-data="version=mini&amp;qid=heart&amp;mid=3905559646101040&amp;like_src=1" title="赞"><span class="pos"><span class="line S_line1"><span node-type="like_status"><i class="W_icon icon_praised_b"></i> <em></em></span></span></span></a>
+                </li>
+            </ul>
+        </div>
+        <div node-type="feed_list_repeat" class="WB_feed_repeat S_bg1" style="display:none;"></div>
+                
+            </div>
+</div>	    				    	    		    	    	    	    	    		    	
+        
+                     
+                                                        
+       </div>
+   
+    
+ <div class="WB_feed" pagenum="1" node-type="feed_list">
+         <div mrid="rid=0_0_1_2606538643249160846" tbinfo="ouid=1530168943" diss-data="group_source=group_all&amp;rid=0_0_1_2606538643249160846" class="WB_cardwrap WB_feed_type S_bg2" mid="3905559646101040" action-type="feed_list_item">
+        <div class="WB_feed_detail clearfix" node-type="feed_content">
+        <div class="WB_screen W_fr">
+            <div class="screen_box">
+                <a href="#" action-type="fl_menu"><i class="W_ficon ficon_arrow_down S_ficon"></i></a>
+<div class="layer_menu_list" node-type="fl_menu_right" style="display:none; position: absolute; z-index: 999;">
+    <ul>
+                        <li><a href="#" action-type="feed_list_delete" title="删除">删除</a></li>
+                	<li><a href="#" action-type="fl_friendVisible" action-data="visible=2" title="转换为好友圈可见">转换为好友圈可见</a></li>
+        	<li><a href="#" action-type="fl_personalVisible" action-data="visible=1" title="转换为仅自己可见">转换为仅自己可见</a></li>
+                 </ul>
+            <ul style="display:none;" node-type="hide">
+        		<li><a action-type="feed_list_shield_setkeyword" href="#" suda-data="key=tblog_screen_keyword&amp;value=screen_keyword" action-data="member_type=0" title="屏蔽关键词">屏蔽关键词</a></li>
+    </ul>
+             </div>
+            </div>
+        </div>
+        <div class="WB_face W_fl">
+            <div class="face"><a target="_blank" class="W_face_radius" href="#" title="曲小鉴"><img title="曲小鉴" alt="" width="50" height="50" src="http://tp4.sinaimg.cn/1530168943/50/22830510010/1" class="W_face_radius"></a></div>
+                    </div>
+        <div class="WB_detail">
+                <div class="WB_info"><a suda-uatrack="key=feed_headnick&amp;value=pubuser_nick:3905559646101040" target="_blank" class="W_f14 W_fb S_txt1" nick-name="最早的精神病" title="最早的精神病" href="#" usercard="id=1530168943">
+                曲小鉴</a>                </div>
+            <div class="WB_text W_f14" node-type="feed_list_content"> 喜报：我校第二届博客之星评选活动揭晓，屈沛琦的博客被评为家长博客之星，杨涵被评为学生博客之星，我班被评为优秀班级博客圈。真是可喜可贺！愿大家继续努力，把我们的博客打造得更具魅力，我们的班级博客圈更有人气！</div>
+                                             
+             <!-- 引用文件时，必须对midia_info赋值 -->
+
+            <div class="WB_media_wrap clearfix" node-type="feed_list_media_prev">
+      <div class="media_box">
+                                                    <!-- img之间不能加空格 -->
+            <ul class="WB_media_a WB_media_a_m1 clearfix">
+           
+            </ul>
+                                                </div>
+</div>
+                                <div class="WB_expand_media_box" style="display: none;" node-type="feed_list_media_disp"></div>
+                                                                			                <!-- feed区 大数据tag -->                
+       </div>
+    </div>
+    <div class="WB_feed_handle">
+        <div class="WB_handle">
+            <ul class="WB_row_line WB_row_r4 clearfix S_line2">
+                <li>
+                                        <a class="S_txt2" href="#" action-type="fl_pop" action-data="mid=3905559646101040" suda-uatrack="key=tblog_fstt&amp;value=pop_butt_home"><span class="pos"><span class="line S_line1">推广</span></span></a>
+                                    </li>
+                                <li>
+                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_tran:3905559646101040" href="#" action-history="rec=1" action-type="fl_forward" action-data="allowForward=1&amp;url=http://weibo.com/1530168943/D2kDapB9S&amp;mid=3905559646101040&amp;name=最早的精神病&amp;uid=1530168943&amp;domain=1530168943&amp;pid=5b34866fjw1exp8fvl8qfj205k07sq32"><span class="pos"><span class="line S_line1" node-type="forward_btn_text">转发 </span></span></a>
+                </li>
+                                <li>
+                                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_comm:3905559646101040" href="#" action-type="fl_comment" action-data="ouid=1530168943&amp;location=home"><span class="pos"><span class="line S_line1" node-type="comment_btn_text">
+                    评论 </span></span></a>
+                    <span class="arrow" style="display: none;" node-type="cmtarrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_line1"></i><em class="S_bg1_br"></em></span></span>
+                                                </li>
+                <li>
+                    <a href="#" class="S_txt2" action-type="fl_like" action-data="version=mini&amp;qid=heart&amp;mid=3905559646101040&amp;like_src=1" title="赞"><span class="pos"><span class="line S_line1"><span node-type="like_status"><i class="W_icon icon_praised_b"></i> <em></em></span></span></span></a>
+                </li>
+            </ul>
+        </div>
+        <div node-type="feed_list_repeat" class="WB_feed_repeat S_bg1" style="display:none;"></div>
+                
+            </div>
+</div>	    				    	    		    	    	    	    	    		    	
+        
+                     
+                                                        
+       </div>
+  
+<div class="WB_feed" pagenum="1" node-type="feed_list">
+         <div mrid="rid=0_0_1_2606538643249160846" tbinfo="ouid=1530168943" diss-data="group_source=group_all&amp;rid=0_0_1_2606538643249160846" class="WB_cardwrap WB_feed_type S_bg2" mid="3905559646101040" action-type="feed_list_item">
+        <div class="WB_feed_detail clearfix" node-type="feed_content">
+        <div class="WB_screen W_fr">
+            <div class="screen_box">
+                <a href="#" action-type="fl_menu"><i class="W_ficon ficon_arrow_down S_ficon"></i></a>
+<div class="layer_menu_list" node-type="fl_menu_right" style="display:none; position: absolute; z-index: 999;">
+    <ul>
+                        <li><a href="#" action-type="feed_list_delete" title="删除">删除</a></li>
+                	<li><a href="#" action-type="fl_friendVisible" action-data="visible=2" title="转换为好友圈可见">转换为好友圈可见</a></li>
+        	<li><a href="#" action-type="fl_personalVisible" action-data="visible=1" title="转换为仅自己可见">转换为仅自己可见</a></li>
+                 </ul>
+            <ul style="display:none;" node-type="hide">
+        		<li><a action-type="feed_list_shield_setkeyword" href="#" suda-data="key=tblog_screen_keyword&amp;value=screen_keyword" action-data="member_type=0" title="屏蔽关键词">屏蔽关键词</a></li>
+    </ul>
+             </div>
+            </div>
+        </div>
+        <div class="WB_face W_fl">
+            <div class="face"><a target="_blank" class="W_face_radius" href="#" title="曲小鉴"><img title="曲小鉴" alt="" width="50" height="50" src="http://tp4.sinaimg.cn/1530168943/50/22830510010/1" class="W_face_radius"></a></div>
+                    </div>
+        <div class="WB_detail">
+                <div class="WB_info"><a suda-uatrack="key=feed_headnick&amp;value=pubuser_nick:3905559646101040" target="_blank" class="W_f14 W_fb S_txt1" nick-name="最早的精神病" title="最早的精神病" href="#" usercard="id=1530168943">
+                曲小鉴</a>                </div>
+            <div class="WB_text W_f14" node-type="feed_list_content"> 昨天下午，在教室门前，我们举行了语文数学作业展评。这次展的是基础训练，因为目的是树立榜样，所以挑选了语数作业各20本。<br>课外活动时，学生分组很认真地欣赏了这些优秀作业，很多同学一边欣赏一边赞叹。看的出来，这次作业展评在学生心里还是留下了很深的印象，今天写作业时，绝大部分学生的作业都比以前写得认真了， 字体漂亮了，作业整洁了。这正是我们举行作业展评的目的！</div>
+                                             
+             <!-- 引用文件时，必须对midia_info赋值 -->
+
+            <div class="WB_media_wrap clearfix" node-type="feed_list_media_prev">
+      <div class="media_box">
+                                                    <!-- img之间不能加空格 -->
+            <ul class="WB_media_a WB_media_a_m1 clearfix">
+           
+            </ul>
+                                                </div>
+</div>
+                                <div class="WB_expand_media_box" style="display: none;" node-type="feed_list_media_disp"></div>
+                                                                			                <!-- feed区 大数据tag -->                
+       </div>
+    </div>
+    <div class="WB_feed_handle">
+        <div class="WB_handle">
+            <ul class="WB_row_line WB_row_r4 clearfix S_line2">
+                <li>
+                                        <a class="S_txt2" href="#" action-type="fl_pop" action-data="mid=3905559646101040" suda-uatrack="key=tblog_fstt&amp;value=pop_butt_home"><span class="pos"><span class="line S_line1">推广</span></span></a>
+                                    </li>
+                                <li>
+                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_tran:3905559646101040" href="#" action-history="rec=1" action-type="fl_forward" action-data="allowForward=1&amp;url=http://weibo.com/1530168943/D2kDapB9S&amp;mid=3905559646101040&amp;name=最早的精神病&amp;uid=1530168943&amp;domain=1530168943&amp;pid=5b34866fjw1exp8fvl8qfj205k07sq32"><span class="pos"><span class="line S_line1" node-type="forward_btn_text">转发 </span></span></a>
+                </li>
+                                <li>
+                                    <a class="S_txt2" suda-data="key=smart_feed&amp;value=time_sort_comm:3905559646101040" href="#" action-type="fl_comment" action-data="ouid=1530168943&amp;location=home"><span class="pos"><span class="line S_line1" node-type="comment_btn_text">
+                    评论 </span></span></a>
+                    <span class="arrow" style="display: none;" node-type="cmtarrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_line1"></i><em class="S_bg1_br"></em></span></span>
+                                                </li>
+                <li>
+                    <a href="#" class="S_txt2" action-type="fl_like" action-data="version=mini&amp;qid=heart&amp;mid=3905559646101040&amp;like_src=1" title="赞"><span class="pos"><span class="line S_line1"><span node-type="like_status"><i class="W_icon icon_praised_b"></i> <em></em></span></span></span></a>
+                </li>
+            </ul>
+        </div>
+        <div node-type="feed_list_repeat" class="WB_feed_repeat S_bg1" style="display:none;"></div>
+                
+            </div>
+</div>	    				    	    		    	    	    	    	    		    	
+        
+                     
+                                                        
+       </div>  
+   
+ 
+    </div>
+    
+    
+</div>	    				    	    		    	    	    	    	    		    	
+        
+    
+</div>	    				    	    		    	    	    	    	    		    	
+    </div>
+   
+</div>	    				    	    		    	    	    	    	    		    	
+		  
+	                
+            </div>
+    </div>
+
+
+
+
+
+
+
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+    $('.UI_scrollView').height($('.WB_frame').height()-350)
+        var frame = window.parent.document.getElementById("pageframe");
+        $(frame).height($('body').height() + 30).css('overflow', 'hidden');
+    });
+</script>
+</body></html>

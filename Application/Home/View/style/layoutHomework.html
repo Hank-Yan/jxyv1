@@ -1,0 +1,200 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+.ass_dialog_container
+{max-width:972px;width:100%;max-height:86.185044%;margin:0 auto;position:relative;background-color:#fff;height:710px;}
+.ass_dialog_header
+{width:97%;height:50px;background-color:#0ba6de;color:#fff;text-align:center;padding-top:20px;font-size:22px;position:relative;cursor:move;}
+.ass_dialog_main
+{width:100%;height:auto;font-size:20px;color:#3c3c3c;}
+.ass_dialog_left
+{max-width:130px;width:100%;background-color:#d3e0e5;display:inline-block;float:left;}
+.ass_work_tab
+{height:51px;padding-top:21px;text-align:center;background-color:#bdccd2;cursor:pointer;}
+.ass_tab_checked
+{color:#fff;background:url(../images/ass_tab_checked.png);}
+.ass_dialog_right
+{max-width:842px;width:100%;display:inline-block;position:relative;}
+.ass_hwinfo
+{margin-top:20px;padding-left:60px;width:100%;height:460px;}
+.ass_hwinfo tr
+{height:80px;}
+.ass_dialog_radios
+{width:100%;height:80px;position:relative;}
+.ass_dialog_radio_out
+{width:100px;height:80px;position:relative;padding-left:50px;display:inline-block;color:#7c7d7d;cursor:default;}
+.ass_dialog_radio
+{width:17px;height:17px;position:absolute;top:50%;margin-top:-7px;left:20px;background:url(../images/ass_dialog_radio.png) no-repeat scroll 0 0;}
+.ass_dialog_radio_checked
+{background:url(../images/ass_dialog_radio.png) no-repeat scroll 0 -17px;}
+
+.ass_inputbox
+{position:relative;width:75%;height:52px;box-shadow:0 1px 1px #fcfdfd;margin-left:15px;}
+.ass_inputbox input
+{position:absolute;top:0px;left:0px;font-size:20px;height:50px;border-radius:5px;padding-left:45px;background-color:#edeff0;color:#7c7d7d;}
+#ass_workname
+{width:100%;border:0;box-shadow:inset 0 0 1px 1px #d8d9da;}
+.ass_workname_notice,.ass_custime_notice,.ass_custime_notice1
+{width:5px;height:5px;position:absolute;color:#ff0000;top:30%;right:-13%;display:none;}
+.ass_timearea1
+{max-width:270px;width:100%;height:55px;position:absolute;top:0px;left:0px;}
+.ass_timearea2
+{max-width:220px;width:100%;height:55px;position:absolute;top:0px;right:0px;}
+.ass_timearea1 input,.ass_timearea2 input
+{max-width:220px;width:100%;border:0;box-shadow:inset 0 0 1px 1px #d8d9da;}
+.ass_notice
+{position:absolute;resize:none;left:0px;top:10px;background-color:#edeff0;border:0;box-shadow:inset 0 0 1px 1px #d8d9da;border-radius:5px;color:#7c7d7d;max-width:513px;width:100%;padding-top:13px;padding-left:45px;}
+.ass_dialog_hr
+{width:85%;border-top:1px solid #d7d9d9;margin:0 auto;margin-top:20px;}
+.step2warn
+{color:Red;font-size:14px;margin-top:43px;margin-left:20px;float:left;display:none;}
+.ass_dialog_btn_next
+{width:131px;height:72px;line-height:72px;background:#6DCA41;font-size:16px;text-align:center;color:#fff;cursor:pointer;}
+.ass_dialog_btn_next:hover
+{background:#4EB936;}
+.ass_dialog_tip
+{position:absolute;width:22px;height:22px;left:10px;top:15px;}
+.ass_dialog_worknametip
+{background:url(../images/ass_dialog_worknametip.png);}
+.ass_dialog_pubtip
+{background:url(../images/ass_dialog_pubtip.png);}
+.ass_dialog_finshtip
+{background:url(../images/ass_dialog_finshtip.png);}
+.ass_dialog_noticetip
+{background:url(../images/ass_dialog_noticetip.png);top:20px;}
+.ass_dialog_tip1
+{max-width:510px;width:100%;height:20px;color:#aeb0b0;font-size:14px;position:absolute;top:50%;margin-top:-10px;left:46px;display:none;z-index:1;}
+.ass_dialog_tip2
+{max-width:510px;width:100%;height:20px;color:#aeb0b0;font-size:14px;position:absolute;top:50%;margin-top:-10px;left:46px;display:block;z-index:1;}
+.ass_custom_time
+{position:absolute;top:25px;left:46px;color:#aeb0b0;font-size:14px;}
+.ass_work_duration
+{cursor:pointer;width:80px;height:25px;border-radius:5px;text-align:center;padding-top:27px;display:inline-block;border:2px solid Transparent;}
+.ass_work_duration:hover,.ass_work_duration_high
+{border:2px solid #f98f45;color:#f98f45;}
+.ass_hwinfo .ass_duration_tr
+{display:none;height:80px;line-height:0px;}
+.ass_pubtime_td
+{width:105px;}
+
+.ass_worktype
+{position:absolute;top:50%;margin-top:-12px;height:20px;width:50px;}
+.assbtn
+{
+    width:100px;
+    height:25px;
+    border:1px solid #5e82cf;
+}
+</style>
+</head><body><div class="assistep">
+    <div class="step step1">1</div> <span class="steptxt" onclick="javascript:location.href='/Teacher/Zysj'">作业设计</span> <span class="stepA">&gt;</span>
+    <div class="step step2">2</div> <span class="steptxt" onclick="javascript:location.href='/Teacher/Shengczy'">生成作业</span> <span class="stepA">&gt;</span>
+    <div class="step step3 stephigh">3</div> <span class="steptxt" style="color:#000;" onclick="javascript:location.href='/Teacher/Bzzy'">布置作业</span>
+</div>
+
+<div id="ass_dialog_window" class="ass_dialog_container">
+    <div class="ass_dialog_main">
+    <table cellpadding="0" cellspacing="0" style="border:0px;width:100%;">
+        <tbody><tr>
+            <td valign="top">
+                <div class="ass_dialog_right">
+           
+                    <table class="ass_hwinfo" border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr class="ass_worktyue">
+                            <td class="ass_pubtime_td">试卷类型：</td>
+                            <td>
+                                <div class="ass_dialog_radios">
+                                    <div class="ass_dialog_radio_out">
+                                        <div class="ass_dialog_radio ass_dialog_radio_checked"></div><div class="ass_worktype">作业</div>
+                                    </div>
+                                    <div class="ass_dialog_radio_out ass_dialog_radio1">
+                                        <div class="ass_dialog_radio"></div><div class="ass_worktype">考试</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td width="105">名 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
+                            <td>
+                                <div class="ass_inputbox">
+                                    <input type="text" id="ass_workname">
+                                    <div class="ass_workname_notice">*</div>
+                                    <div class="ass_dialog_tip ass_dialog_worknametip"></div>
+                                    <div class="ass_dialog_tip1 ass_hide">建议格式：日期+科目+课后作业/考试。 如：2014-07-15 英语 课后作业</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>发布时间：</td>
+                            <td>
+                                <div class="ass_inputbox">
+                                    <div class="ass_timearea1">
+                                        <input type="text" class="Wdate ass_begin_date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',lang:'zh-cn',readOnly:'readonly',onpicked:function(){$('.Wdate').blur();}})">
+                                        <div class="ass_dialog_tip ass_dialog_pubtip"></div>
+                                    </div>
+                                    <div class="ass_timearea2">
+                                        <input type="text" class="Wdate" onfocus="WdatePicker({dateFmt:'HH:mm',lang:'zh-cn',readOnly:'readonly',onpicked:function(){$('.Wdate').blur();}})">
+                                        <div class="ass_dialog_tip ass_dialog_pubtip"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ass_duration_tr">
+                            <td>持续时间：</td>
+                            <td>
+                                <div class="ass_inputbox">
+                                    <div class="ass_timearea1">
+                                        <div class="ass_work_duration"><span>30</span>分钟</div>
+                                        <div class="ass_work_duration"><span>90</span>分钟</div>
+                                        <div class="ass_work_duration"><span>120</span>分钟</div>
+                                    </div>
+                                    <div class="ass_timearea2">
+                                        <input type="text" class="ass_custom_time_input">
+                                        <div class="ass_dialog_tip ass_dialog_pubtip"></div>
+                                        <div class="ass_custom_time ass_hide">自定义时间(最大360)</div>
+                                    </div>
+                                    <div class="ass_custime_notice" style="top:50%;">*</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="ass_finsh_time_tr">
+                            <td>完成时间：</td>
+                            <td>
+                                <div class="ass_inputbox">
+                                    <div class="ass_timearea1">
+                                        <input type="text" class="Wdate ass_finsh_date" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',lang:'zh-cn',readOnly:'readonly',onpicked:function(){$('.ass_custime_notice1').hide();if((new Date($dp.cal.getDateStr('yyyy-MM-dd')))<(new Date($('.ass_begin_date').val()))){$('.ass_custime_notice1').show();}$('.Wdate').blur();}})">
+                                        <div class="ass_dialog_tip ass_dialog_finshtip"></div>
+                                    </div>
+                                    <div class="ass_timearea2">
+                                        <input type="text" class="Wdate ass_finsh_time" onfocus="WdatePicker({dateFmt:'HH:mm',lang:'zh-cn',readOnly:'readonly',onpicked:function(){$('.Wdate').blur();}})">
+                                        <div class="ass_dialog_tip ass_dialog_finshtip"></div>
+                                    </div>
+                                    <div class="ass_custime_notice1" style="top:30%;">*</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height:180px;">
+                            <td>注意事项：</td>
+                            <td>
+                                <div class="ass_inputbox">
+                                    <textarea class="ass_notice" rows="4">                                    </textarea>
+                                    <div class="ass_dialog_tip ass_dialog_noticetip"></div>
+                                    <div class="ass_dialog_tip2 ass_hide" style="top:30px;left:6px;">可填写与作业相关注意事项、题目及知识点的提示等，学生开始作业时可以看到。</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2"><input type="button" value="提交" class="btnc"> &nbsp;&nbsp;<input type="button" class="btnc" onclick="javascript:history.go(-1);" value="返回"></td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+    </div>
+    <input type="hidden" id="selectedPaperIdx" value="0">
+    <input type="hidden" id="selectedptIdx" value="">
+    <input type="hidden" id="isexpand" value="">
+</div></body></html>

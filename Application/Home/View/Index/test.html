@@ -1,0 +1,108 @@
+<!-- <!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta charset="utf-8" />
+<title>
+</title>
+<script type="text/javascript" src="../../../js/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script type="text/javascript" src="../../../js/seajs.config.js"></script>
+<script type="text/javascript">
+    seajs.use("../../../js/seajs/my/demo.js");
+</script>
+<style type="text/css">
+    body {margin:0px;padding:0px;position:relative;}
+    #div-box1 {width:100px;height:100px;background:#f00;border:0px solid #f00;position:absolute;left:0px;}
+    #div-box2 {width:100px;height:100px;background:#999;border:0px solid #00f;position:absolute;left:110px;}
+    #div-box3 {width:100px;height:100px;background:#00f;border:0px solid #00f;position:absolute;left:220px;}
+    #div-box4 {width:100px;height:100px;background:#0f0;border:0px solid #0F0;position:absolute;left:330px;}
+</style>
+</head>
+<body>
+<div id="div-box1" class="box1">
+    <input type="button" value="向左" class='btn-left' id="btn1-left" />
+    <input type="button" value="向右" class='btn-right' id="btn1-right" >
+</div>
+<div id="div-box2" class="box1">
+    <input type="button" value="向左" class='btn-left' id="btn2-left" />
+    <input type="button" value="向右" class='btn-right' id="btn1-right" >
+</div>
+<div id="div-box3">
+    <input type="button" value="向左" class='btn-left' id="btn3-left" />
+    <input type="button" value="向右" class='btn-right' id="btn3-right" >
+</div>
+<div id="div-box4">
+    <input type="button" value="向左" class='btn-left' id="btn3-left" />
+    <input type="button" value="向右" class='btn-right' id="btn3-right" >
+</div>
+</body>
+</html> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+    function init(){
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        // 获取文件相关信息
+        var f1 = fso.GetFile("F:\\test\\test.txt");
+        alert('文件上次修改日期:' + f1.DateLastModified);
+        var drv;
+        var s = '';
+        // 获取磁盘相关信息
+        drv = fso.GetDrive(fso.GetDriveName("C:\\"));
+        s += 'Drive C:' + '-' + drv.VolumeName + '\n';
+        s += 'Total Space:' + drv.TotalSize / 1024 + 'Kb' + '\n';
+        s += 'Free Space:' + drv.FreeSpace / 1024 + 'Kb' + '\n';
+        alert('C盘信息' + s);
+        // 操作文件夹
+        fldr = fso.GetFolder("F:\\test");
+        alert('父文件夹名称：' + fldr + '\n');
+        // 显示所在drive名称 
+        alert("Contained on drive " + fldr.Drive + "\n"); 
+        // 判断是否为根目录 
+        if (fldr.IsRootFolder){
+            alert("This is the root folder."); 
+        }
+        else {
+            alert("This folder isn't a root folder."); 
+        }
+        // 创建新文件夹 
+        fso.CreateFolder ("F:\\test\\Bogus"); 
+        alert("Created folder F:\\testBogus" + "\n"); 
+        // 显示文件夹基础名称，不包含路径名 
+        alert("Basename = " + fso.GetBaseName("F:\\test\\bogus") + "\n"); 
+        // 删除创建的文件夹 
+        fso.DeleteFolder ("F:\\test\\Bogus"); 
+        alert("Deleted folder F:\\test\\Bogus" + "\n"); 
+    }
+    
+    function init2(){
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        // 获取目录下所有文件，对于该浏览器缓存目录，仅能获取到一个文件
+        var path = 'C:\\Users\\zhang\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files';
+        //path = 'F:\\test';
+        var fldr = fso.GetFolder(path);
+        var ff = new Enumerator(fldr.Files);
+        var s = '';
+        var fileArray = new Array();
+        var fileName = '';
+        var count = 0;
+        for(; !ff.atEnd(); ff.moveNext()){
+            fileName = ff.item().Name + '';
+            fileName = fileName.toLowerCase();
+            if(fileName.indexOf('cookie') >= 0){
+                fileName = fileName.substring(0,fileName.indexOf('.'));
+                fileName = fileName.substring(fileName.lastIndexOf('@')+1);
+                s += fileName + '\n';
+            }
+            count++;
+        }
+        alert(count + ',' + s);
+    }
+</script>
+</head>
+<body onload="init2();">
+</body>
+</html>

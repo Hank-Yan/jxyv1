@@ -1,0 +1,427 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+    <link href="../../Content/Site1.css" rel="stylesheet" type="text/css">
+    <link href="../../Content/student1.css" rel="stylesheet" type="text/css">
+    <style>
+     .selectBox input[type=text]{width:92px;height:30px;border:1px solid #5E82CF;border-radius:8px;color:#5E82CF;text-align:center}
+    .qljTop{margin-right:auto;margin-left:auto;width:94%;height:88px;border-bottom:1px solid #efefef}
+    .qljTop h1{display:inline-block;margin:0 0 0 17px;line-height:88px}
+    .qljTop .rt{float:right}
+    .qljTop a{margin-top:40px;color:#88a2db;font-size:14px}
+    .qljTop a:hover{text-decoration:underline}
+    .radius-shadow{position:relative;display:inline-block;margin-top:-12px;width:220px;border-radius:3px;background-color:#fff;-webkit-box-shadow:0 0 0 Gray;-moz-box-shadow:0 0 0 Gray;box-shadow:0 0 0;behavior:url(ie-css3.htc);-ms-filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0,0,0,.3), direction=0, strength=0)}
+    .intelcombi{position:fixed;right:7%;bottom:200px;width:70px;height:70px;background:url(../images/combine.png) no-repeat scroll 0 0;cursor:pointer}
+    .intelcombi:hover{background-position:0 -70px}
+    .intelcombi1{display:inline-block;margin-top:20px;width:188px;height:82px;background:url(../images/intell-cmbine-gexing.png) no-repeat;background-position:right;cursor:pointer}
+    .gexing-table{width:100%;background:url(../images/gexing-bg.jpg) repeat-y}
+    .noresult-out{position:relative;display:none;height:65px}
+    .nodata-bird{position:absolute;top:30px;left:30%;display:inline-block;width:10%;height:59px;background:url(../images/tongji-bird2.png) no-repeat scroll center center}
+    .noresult{position:absolute;top:50px;left:40%;display:inline-block;width:150px;height:20px}
+    .stunavtable{background-color:#59dbaa}
+    .propertyitem{margin:0!important;padding:0!important}
+    .propertyitemhigh{float:left}
+    .propertyinsetcontainer{position:relative;padding-top:0!important}
+    .propertyitem{border-bottom:0!important;color:#979797}
+    .detailitems{margin-left:160px!important;padding-left:20px;line-height:54px!important}
+    .propertytrcommon{min-height:54px!important}
+    .propertytrcommon .propertyitemhigh{position:absolute;box-sizing:border-box;padding-left:10px!important;width:160px!important;height:100%!important;border-right:1px solid #EFEFEF;color:#595959;font-size:1em!important;line-height:54px!important}
+    </style>
+    </head><body><div id="main_body">
+        <div class="qljTop" style="width:94%;border-bottom:1px solid #efefef">
+	<h1>错题分析</h1>
+	<a href="/Student/ctb" class="rt">错题管理 &gt;&gt;</a>
+</div>
+<div id="farea">
+	<div class="morecontainer">
+		<div class="periodcontainer">
+			<div title="小学" class="periodcommon periodhigh" value="1">
+				初中
+			</div>
+		</div>
+	</div>
+	<div class="subjectcontainer">
+		<div title="语文" class="subjectcommon subjecthigh" value="1">
+			语文
+		</div>
+		<div class="subjectcommon" value="2" title="数学">
+			数学
+		</div>
+		<div title="英语" class="subjectcommon" value="3">
+			英语
+		</div>
+		<div title="物理" class="subjectcommon" value="4">
+			物理
+		</div>
+		<div title="化学" class="subjectcommon" value="5">
+			化学
+		</div>
+	</div>
+	<div class="morecontainer">
+		<div class="editioncontainer">
+			<div class="editioncommon editionhigh" value="2" title="八年级上">
+				八年级上
+			</div>
+		</div>
+		<div class="gradecontainer" id="tmfl">
+			<div class="gradecommon gradehigh" value="13" title="题型">
+				题型
+			</div>
+			<div title="知识点" class="gradecommon" value="14">
+				知识点
+			</div>
+			<div title="章节" class="gradecommon" value="15">
+				章节
+			</div>
+		</div>
+	</div>
+	<div id="crumpath">
+		<span id="crumbefore">已选条件</span>： <span id="xueduan">初中</span>、 <span id="kemu">数学</span>、 <span id="banben">人教版</span>、 <span id="nianji">七年级上</span>、 <span id="classx">题型</span>
+	</div>
+	<div class="selectBox">
+		<input type="text" value="2015-9-7"> - <input type="text" value="2015-9-13"><a href="#" class="selectBtn" style="width:92px;height:29px;color:#5E82CF;border:1px solid #5E82CF;border-radius:8px;display:inline-block;position:relative;text-align:center;top:0;left:8px;line-height:29px">筛选</a>
+	</div>
+</div>
+<div id="main_body" style="margin-top:15px">
+	<div id="main_body_l">
+	</div>
+	<div id="main_body_r">
+		<div id="mBody_rTit">
+		</div>
+		<div style="width:100%;margin-top:-1px;padding:30px 0 60px">
+			<table class="gexing-table" cellpadding="0" cellspacing="0">
+			<tbody>
+			<tr>
+				<td align="left">
+					<div class="contentofmain" style="border-radius:0 50px 50px 0;background-color:#fff">
+						<div class="propertyoutercontainer">
+							<div class="nodata" style="width:100%;height:200px;margin:0 auto;padding-top:12px;border-radius:40px;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+							</div>
+							<div class="propertyinsetcontainer">
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>听力理解</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											短文理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>基础知识</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px;line-height:29px!important">
+										<div class="propertyitem" title="单词归类">
+											单词归类
+										</div>
+										<div class="propertyitem" title="单项选择">
+											单项选择
+										</div>
+										<div class="propertyitem" title="改写句子">
+											改写句子
+										</div>
+										<div class="propertyitem" title="拼写单词">
+											拼写单词
+										</div>
+										<div class="propertyitem" title="选词填空">
+											选词填空
+										</div>
+										<div class="propertyitem" title="英汉互译">
+											英汉互译
+										</div>
+										<div class="propertyitem" title="根据题意填空">
+											根据题意填空
+										</div>
+										<div class="propertyitem" title="适当形式填空">
+											适当形式填空
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>情景交际运用</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="85">
+											补全对话
+										</div>
+										<div class="propertyitem" title="完成对话">
+											完成对话
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>阅读理解</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											阅读理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>任务型阅读</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											任务型阅读
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			<table class="gexing-table" cellpadding="0" cellspacing="0" style="display: none;">
+			<tbody>
+			<tr>
+				<td align="left">
+					<div class="contentofmain" style="border-radius:0 50px 50px 0;background-color:#fff">
+						<div class="propertyoutercontainer">
+							<div class="nodata" style="width:100%;height:200px;margin:0 auto;padding-top:12px;border-radius:40px;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+							</div>
+							<div class="propertyinsetcontainer">
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>知识点1</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											短文理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>基础知识</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px;line-height:29px!important">
+										<div class="propertyitem" title="单词归类">
+											单词归类
+										</div>
+										<div class="propertyitem" title="单项选择">
+											单项选择
+										</div>
+										<div class="propertyitem" title="改写句子">
+											改写句子
+										</div>
+										<div class="propertyitem" title="拼写单词">
+											拼写单词
+										</div>
+										<div class="propertyitem" title="选词填空">
+											选词填空
+										</div>
+										<div class="propertyitem" title="英汉互译">
+											英汉互译
+										</div>
+										<div class="propertyitem" title="根据题意填空">
+											根据题意填空
+										</div>
+										<div class="propertyitem" title="适当形式填空">
+											适当形式填空
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>情景交际运用</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="85">
+											补全对话
+										</div>
+										<div class="propertyitem" title="完成对话">
+											完成对话
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>阅读理解</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											阅读理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>任务型阅读</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											任务型阅读
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			<table class="gexing-table" cellpadding="0" cellspacing="0" style="display: none;">
+			<tbody>
+			<tr>
+				<td align="left">
+					<div class="contentofmain" style="border-radius:0 50px 50px 0;background-color:#fff">
+						<div class="propertyoutercontainer">
+							<div class="nodata" style="width:100%;height:200px;margin:0 auto;padding-top:12px;border-radius:40px;display:none;background:url(http://zhizhiniao.ckl.com/images/nodata.jpg) 50% 50% no-repeat scroll #fff">
+							</div>
+							<div class="propertyinsetcontainer">
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>章节1</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											短文理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>基础知识</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px;line-height:29px!important">
+										<div class="propertyitem" title="单词归类">
+											单词归类
+										</div>
+										<div class="propertyitem" title="单项选择">
+											单项选择
+										</div>
+										<div class="propertyitem" title="改写句子">
+											改写句子
+										</div>
+										<div class="propertyitem" title="拼写单词">
+											拼写单词
+										</div>
+										<div class="propertyitem" title="选词填空">
+											选词填空
+										</div>
+										<div class="propertyitem" title="英汉互译">
+											英汉互译
+										</div>
+										<div class="propertyitem" title="根据题意填空">
+											根据题意填空
+										</div>
+										<div class="propertyitem" title="适当形式填空">
+											适当形式填空
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>情景交际运用</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="85">
+											补全对话
+										</div>
+										<div class="propertyitem" title="完成对话">
+											完成对话
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>阅读理解</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											阅读理解
+										</div>
+									</div>
+								</div>
+								<div class="propertytrcommon">
+									<div class="propertyitem propertyitemhigh">
+										<span>任务型阅读</span>
+									</div>
+									<div class="gt">
+									</div>
+									<div class="detailitems" style="display:inline-block;max-width:83%;margin-left:5px">
+										<div class="propertyitem" style="min-width:30px" data-id="84">
+											任务型阅读
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			<div class="intelcombi" style="bottom:40px;display:none">
+			</div>
+			<div class="subjectcommon" style="float:right;margin-right:50px">
+				统计
+			</div>
+			<img src="../../Images/tgtTemp.png" style="margin-left:50px">
+			<div id="saving" style="display:none">
+				<div style="margin:20px auto;width:70px;height:70px;display:block;background:url(../images/gototop.png) no-repeat scroll 0 0 transparent">
+				</div>
+				<div class="savingmsg">
+					正在生成试卷...
+				</div>
+			</div>
+			<div id="Div1" style="width:100%;height:1px">
+			</div>
+		</div>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+    </div>
+
+    <script>
+        $('#tmfl>div').click(function() {
+        $(this).addClass('gradehigh').siblings().removeClass('gradehigh');
+
+        $('#main_body_r').find('.gexing-table').eq($(this).index()).fadeIn().siblings('.gexing-table').hide();
+        })
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            var frame = window.parent.document.getElementById("pageframe");
+            $(frame).height($('body').height() + 30);
+        });
+</script>
+</body></html>

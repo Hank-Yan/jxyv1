@@ -1,0 +1,15 @@
+@totalWidth : 327.5px;
+@headHeight : 52px;
+@liHeight : 34px;
+@imageWidth : 60px;
+@nameSuojinWidth : 13px;
+@nameAeraColor : #f0f0f0;
+@textWidth : 267.5px;
+@textPosition : center;
+@imagePosition : middle;
+@MarginStyle :0 auto;
+@headFontSize : 20px;
+@nameFontSize : 18px;
+@textFontSize : 14px;
+@colorWhite :#FFFFFF;
+@borderStyle : 1px solid #d4d4d4;

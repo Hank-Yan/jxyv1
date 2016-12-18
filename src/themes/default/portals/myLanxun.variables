@@ -1,0 +1,6 @@
+@usernamePhoto: "../images/userInfoPhoto.png";
+@companyNamePhoto: "../images/companyNamePhoto.png";
+@userTypePhoto: "../images/userTypePhoto.png";
+@channelGroupNumPhoto: "../images/channelGroupNum.png";
+@channelNumPhoto: "../images/channelNum.png";
+@backgroundColor: #fff;

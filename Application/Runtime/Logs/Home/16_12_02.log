@@ -1,0 +1,103 @@
+[ 2016-12-02T23:31:09+08:00 ] ::1 /jxy/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+ERR: 参数错误或者未定义:cap
+
+[ 2016-12-02T23:31:34+08:00 ] ::1 /jxy/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0388s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0181s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0382s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0182s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008495s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008556s ]
+NOTIC: [8] Undefined index: capterId C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 74 行.
+NOTIC: [8] Undefined index: classNum C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 74 行.
+NOTIC: [8] Undefined index: addShow C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 74 行.
+NOTIC: [8] Undefined index: addShow1 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 74 行.
+NOTIC: [8] Undefined index: classConWidth C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 74 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined variable: j C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined index:  C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined variable: j C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined index:  C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined variable: j C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined index:  C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 234 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Use of undefined constant 章 - assumed '章' C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 226 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+NOTIC: [8] Undefined offset: 360 C:\xampp\htdocs\jxy\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013442s ]
+
+[ 2016-12-02T23:31:46+08:00 ] ::1 /jxy/index.php/Home/Index/getCorrect
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0016s ]
+SQL: SELECT `knowledege`,`category`,`item`,`ThisFrequency`,`AllFrequency`,`ThisExample`,`OtherExample` FROM `wl_commts` WHERE `knowledege` = 63 ORDER BY id asc  [ RunTime:0.0002s ]
+

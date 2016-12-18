@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="__PUBLIC__/Css/ccui.css" type="text/css"/>
+    <title>2015年秋季初三(一)班数学教学计划与进度列表</title>   
+</head>
+<body>
+
+<div class="createPlan">导出教学计划</div>
+<div class="planTable" id="planTable">
+    <div class="titleTop">2015年秋季初三(一)班数学教学计划与进度列表</div>
+    <ul>
+        <li>
+            <span class="left">学生情况分析</span>
+            <span class="right">初三(1)班共有学生48人，其中女生20人，男生28人。本学期我的基本目标是：使全体同学都能树立明确的学习目的，形成良好的学习风气；充分调动学生学习数学的积极性,学习数学的兴趣,逐步形成学生良好的学习风气。</span>
+        </li>
+        <li>
+            <span class="left">教材分析</span>
+            <span class="right">九年级数学上册教材共有五个单元的内容，第二十一单元共有12节内容，让学生学会什么是一元二次方程，培养函数方程图像的意识。第二十二章共有11节内容，让学生知道什么是二次函数以及二次函数图像的基本轮廓。</span>
+        </li>
+        <li>
+            <span class="left list">教学目的和任务</span>
+            <span class="right list">
+                <p>1、力争学期检测全部达合格以上标准。2、培养学生的自学能力，思维能力和分析概括能力。3、培养学生自主、合作、探究的学习方式，以及综合性学习。4、创设情景，使学生主动参与，乐于探究，交流与合作，从中激发学生进行讨论，多角度的去思考问题。5、培养学生正确的人生观，价值观，增强数学素养，从一定的理论高度去认识数学的发展。</p>
+            </span>
+        </li>
+        <li>
+            <span class="left list">改革方向及重点</span>
+            <span class="right list">
+                <p>1、认真钻研教材,上好每一节课,向45分钟要质量。2、堂上尽量使用现代化教学技术如多媒体教学,给学生创造良好的教学环境。3、做好作业、单元测试及讲评工作。4、在教学过程中培养学生的创新精神与实践能力，形成符合时代精神的价值观。5、培养学生的自学能力和学生学习情趣，善于终身学习，兴趣是学习最好的老师。6、课后多加强学生的重点知识的练习，以常见题型为主延伸训练。</p>
+            </span>
+        </li>
+    </ul>
+    <ul class="listTitle">
+        <li>章节（单元）</li>
+        <li style="width:25%;">内容</li>
+        <li>周次</li>
+        <li>课时</li>
+        <li>日期</li>
+        <li>备注</li>
+    </ul>
+    <ul class = "capterInfo">
+    <?php for ($i=0; $i<count($capter); $i++) { ?>
+        <li>
+            <div class="capterName">{$capter[$i].capter_name}</div>
+            <ol class="classList" style="width:25%;">
+            <?php for ($j=0; $j < count($class); $j++) { 
+                      if ($class[$j]['capter_id'] == $capter[$i]['capter_num']) { ?>
+                <li><?php echo $class[$j]['class_name']?></li>
+            <?php }}?>
+            </ol>
+            <ol class='zhouci'>
+            <?php for ($j=0; $j < count($class); $j++) {
+                if ($class[$j]['capter_id'] == $capter[$i]['capter_num']) { ?>
+                <li><?php echo $class[$j]['week_num']?></li>
+            <?php }}?>
+            </ol>
+            <ol class='keshi'>
+            <?php for ($j=0; $j < count($class); $j++) { 
+                      if ($class[$j]['capter_id'] == $capter[$i]['capter_num']) { ?>
+                <li>1</li>
+            <?php }}?>
+            </ol>
+            <ol class='riqi'>
+            <?php for ($j=0; $j < count($class); $j++) { 
+                      if ($class[$j]['capter_id'] == $capter[$i]['capter_num']) { ?>
+                <li></li>
+            <?php }}?>
+            </ol>
+            <ol class='beizhu'>
+            <?php for ($j=0; $j < count($class); $j++) { 
+                      if ($class[$j]['capter_id'] == $capter[$i]['capter_num']) { ?>
+                <li></li>
+            <?php }}?>
+            </ol>
+        </li>
+    <?php }?>
+    </ul>
+    <div class="planFoot">
+        <p>教研组长或教务主任（签字）</p>
+        <p>年　　　月　　　日</p>
+    </div>
+</div>
+<script type="text/javascript" src="../../../js/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script type="text/javascript" src="../../../js/seajs.config.js"></script>
+<script type="text/javascript">
+    seajs.use("../../../js/seajs/my/demo.js");
+</script>
+
+</body>
+</html>
+
+

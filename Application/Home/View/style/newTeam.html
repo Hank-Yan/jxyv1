@@ -1,0 +1,38 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<link href="../../Content/createclasses.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    
+</style>
+</head><body><div class="grouppage">
+    <div class="groupheader">
+        <div class="groupbasic">
+            <div class="groupimg"></div>
+            <span class="grouptitle">学生分组</span>
+            </div>
+        <div class="groupman">
+            <input type="button" value="生成邀请码" class="btnc"> &nbsp;&nbsp;<input type="button" value="除名学生" class="btnc">
+        </div>
+    </div>
+    <div class="groups">
+        <div id="div_group_no">
+            <span id="weifenzu">未分组</span>
+            <ul class="ul_group" id="ul_group">
+                <li><a title="张山" href="javascript:;" id="1211" class="a_team_student">张山</a></li>
+                <li><a title="李四" href="javascript:;" id="1212" class="a_team_student">李四</a></li>
+            </ul>
+        </div>
+        <div id="div_group_yes"><div class="groupyes_item"><span class="teamName">B组</span><span id="99" class="delTeam">删除本组</span><span id="99" class="removeFromTeam">移出本组</span><span id="99" class="editTeam">加入本组</span><ul id="99" class="ul_group"><li><a title="小明" id="260" class="a_team_student" href="javascript:;">小明</a></li><li><a title="wiist002" id="261" class="a_team_student" href="javascript:;">wiist002</a></li><li><a title="wiist003" id="262" class="a_team_student" href="javascript:;">wiist003</a></li><li><a title="wiist004" id="263" class="a_team_student" href="javascript:;">wiist004</a></li><li><a title="AA" id="1120" class="a_team_student" href="javascript:;">AA</a></li><li><a title="AB" id="1121" class="a_team_student" href="javascript:;">AB</a></li><li><a title="周1" id="17402" class="a_team_student" href="javascript:;">周1</a></li><li><a title="周2" id="17403" class="a_team_student" href="javascript:;">周2</a></li><li><a title="周3" id="17404" class="a_team_student" href="javascript:;">周3</a></li><li><a title="周4" id="17405" class="a_team_student" href="javascript:;">周4</a></li><li><a title="周5" id="17406" class="a_team_student" href="javascript:;">周5</a></li></ul></div><div class="groupyes_item"><span class="teamName">C</span><span id="133" class="delTeam">删除本组</span><span id="133" class="removeFromTeam">移出本组</span><span id="133" class="editTeam">加入本组</span><ul id="133" class="ul_group"><li><a title="wiist002" id="261" class="a_team_student" href="javascript:;">wiist002</a></li><li><a title="wiist003" id="262" class="a_team_student" href="javascript:;">wiist003</a></li><li><a title="mypeptest" id="5953" class="a_team_student" href="javascript:;">mypeptest</a></li><li><a title="周6" id="17407" class="a_team_student" href="javascript:;">周6</a></li><li><a title="周7" id="17408" class="a_team_student" href="javascript:;">周7</a></li><li><a title="周8" id="17409" class="a_team_student" href="javascript:;">周8</a></li><li><a title="周10" id="17411" class="a_team_student" href="javascript:;">周10</a></li><li><a title="周16" id="17417" class="a_team_student" href="javascript:;">周16</a></li><li><a title="周17" id="17418" class="a_team_student" href="javascript:;">周17</a></li><li><a title="周18" id="17419" class="a_team_student" href="javascript:;">周18</a></li><li><a title="周19" id="17420" class="a_team_student" href="javascript:;">周19</a></li><li><a title="周20" id="17421" class="a_team_student" href="javascript:;">周20</a></li></ul></div><div class="groupyes_item"><span class="teamName">D组</span><span id="151" class="delTeam">删除本组</span><span id="151" class="removeFromTeam">移出本组</span><span id="151" class="editTeam">加入本组</span><ul id="151" class="ul_group"><li><a title="wiist002" id="261" class="a_team_student" href="javascript:;">wiist002</a></li><li><a title="周9" id="17410" class="a_team_student" href="javascript:;">周9</a></li><li><a title="周11" id="17412" class="a_team_student" href="javascript:;">周11</a></li><li><a title="周12" id="17413" class="a_team_student" href="javascript:;">周12</a></li><li><a title="周13" id="17414" class="a_team_student" href="javascript:;">周13</a></li><li><a title="周14" id="17415" class="a_team_student" href="javascript:;">周14</a></li><li><a title="周15" id="17416" class="a_team_student" href="javascript:;">周15</a></li></ul></div></div>
+    </div>
+    <div class="groupbtns">
+        <input type="button" class="btnc" value="+ 新建分组"> &nbsp;&nbsp;<input type="button" class="btnc" value="批量导入学生">
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        var frame = window.parent.document.getElementById("pageframe");
+        $(frame).height($("body").height() + 30);
+    });
+</script>
+</body></html>

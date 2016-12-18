@@ -1,0 +1,7 @@
+@usernamePhoto: "../images/userInfoPhoto.png";
+@companyNamePhoto: "../images/companyNamePhoto.png";
+@userTypePhoto: "../images/userTypePhoto.png";
+@userIDPhoto: "../images/userIDPhoto.png";
+@myInfoLogo: "../images/myInfoLogo.png";
+@myInfoUserTypeLogo:"../images/myInfoUserTypeLogo.png";
+@backgroundColor: #fff;

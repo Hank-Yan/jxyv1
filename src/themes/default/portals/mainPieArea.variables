@@ -1,0 +1,24 @@
+@mainPieBoxMarginTop: 8px;
+@colorWhite: rgb(255,255,255);
+
+@pieChartAreaWidth:100%;
+@pieChartAreaHeight:auto;
+@overflowHidden:hidden;
+
+@pieChartAreaLeftWidth:50%;
+@floatLeft:left;
+@floatRight:right;
+@textAlignLeft:left;
+@displayInlineBlock:inline-block;
+
+@textAlignCenter:center;
+@leftPieBoxHeight:140px;
+@colorGray:rgb(124,124,124);
+@leftPieTitleFontSize:14px;
+@colorLightBlue:rgb(164,222,246);
+@percentageValueFontSize:32px;
+@percentageUnitFontSize:14px;
+
+@colorOrange:rgb(255,201,116);
+@colorLightGray:rgb(212,212,212);
+@colorBlack:rgb(0,0,0);

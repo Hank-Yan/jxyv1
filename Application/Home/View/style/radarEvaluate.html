@@ -1,0 +1,203 @@
+﻿<html><head><link href="../../Content/framepage.css" rel="stylesheet" type="text/css">
+<script src="../../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+   .editorbox {
+    border-radius: 5px;
+    display: none;
+    left: 50%;
+    margin: -187px 0 0 -360px;
+    position: fixed;
+    top: 50%;
+    width: 720px;
+    z-index: 1002;
+} 
+
+.handler {
+    background: #0ba6de none repeat scroll 0 0;
+    border-radius: 5px 0 0;
+    color: #fff;
+    cursor: move;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+    width: 95%;
+}
+
+.close_btn {
+    background: rgba(0, 0, 0, 0) url("../images/ass_dialog_close.png") repeat scroll 0 0;
+    cursor: pointer;
+    height: 74px;
+    position: absolute;
+    right: -54px;
+    top: -24px;
+    width: 54px;
+    z-index: -1;
+}
+.desctxt {
+    font-family: Arial;
+    height: 116px;
+    resize: none;
+    width: 442px;
+}
+.editorbox-mask {
+    background: #000 none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+.addcol_btns{
+    border: medium none;
+    height: 40px;
+    margin: 80px 0 0;
+    text-align: center;
+    width: 100%;
+}
+.start{
+background:url(../images/start.png) no-repeat scroll 0 -20px;
+cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding-left: 10px;
+    text-align: center;
+    width: 20px;
+}
+.chart-p{ height: 400px;
+    width:80%;
+    margin-left:10%;
+}
+.stustudytb td{padding: 0 20px;}
+</style>
+</head><body><div class="jxjhout" style="background-color:#fff;">
+    
+    <div class="crumpath">
+        <div class="crump">
+            <span id="xueduan">初中</span>、
+            <span id="nianji">九年级上</span>、
+            <span id="xueke">数学</span>
+        </div>
+        <div class="crumpup">∧</div>
+    </div>
+    <div class="charts">
+        <div id="chart_bar" class="chart-c" _echarts_instance_="1447404701819" style="-webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);"><div style="position: relative; overflow: hidden; width: 460px; height: 400px;"><div data-zr-dom-id="bg" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none;"></div><canvas width="460" height="400" data-zr-dom-id="0" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="460" height="400" data-zr-dom-id="1" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="460" height="400" data-zr-dom-id="_zrender_hover_" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><div class="echarts-tooltip" style="position: absolute; display: none; border: 0px solid rgb(51, 51, 51); white-space: nowrap; transition: left 0.4s, top 0.4s; -webkit-transition: left 0.4s, top 0.4s; border-radius: 4px; color: rgb(255, 255, 255); padding: 5px; left: 116px; top: 252px; background-color: rgba(0, 0, 0, 0.701961);">题库组卷<br>资源数量 : 2.6</div></div></div>
+        <div id="chart_radar" class="chart-c" _echarts_instance_="1447404701820" style="-webkit-tap-highlight-color: transparent; -webkit-user-select: none; background-color: rgba(0, 0, 0, 0);"><div style="position: relative; overflow: hidden; width: 460px; height: 400px;"><div data-zr-dom-id="bg" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none;"></div><canvas width="460" height="400" data-zr-dom-id="0" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="460" height="400" data-zr-dom-id="1" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="460" height="400" data-zr-dom-id="_zrender_hover_" style="position: absolute; left: 0px; top: 0px; width: 460px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div></div>
+    </div>
+    <div class="studenttb">
+        <p style="color:#404040;margin-bottom:10px;">学生作业完成情况统计：</p>
+        <table class="stustudytb" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td>姓名</td><td>整体得分率</td><td>&nbsp;</td><td>作业完成度</td><td>平均完成时间</td><td>评价</td>
+            </tr>
+            <tr>
+                <td>严晓斌</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+            <tr>
+                <td>郭凡锐</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+            <tr>
+                <td>彭文建</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+            <tr>
+                <td>陈志豪</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+            <tr>
+                <td>吴嘉昕</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+            <tr>
+                <td>苏世聪</td><td>100%</td><td>↑</td><td>100%</td><td>31'</td><td><a class="open_alert" href="javascript:">评价</a></td>
+            </tr>
+
+        </tbody></table>
+        <br>
+    </div>
+    <div id="chart_pie" class="chart-p" _echarts_instance_="1447404701821" style="-webkit-tap-highlight-color: transparent; -webkit-user-select: none; background-color: rgba(0, 0, 0, 0);"><div style="position: relative; overflow: hidden; width: 750px; height: 400px;"><div data-zr-dom-id="bg" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 400px; -webkit-user-select: none;"></div><canvas width="750" height="400" data-zr-dom-id="0" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="750" height="400" data-zr-dom-id="1" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="750" height="400" data-zr-dom-id="_zrender_hover_" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 400px; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><div class="echarts-dataview" style="position: absolute; display: block; overflow: hidden; transition: height 0.8s, background-color 1s; -webkit-transition: height 0.8s, background-color 1s; z-index: 1; left: 0px; top: 0px; width: 750px; height: 0px; background-color: rgb(240, 255, 255);"></div></div></div>
+    <div class="studenttb">
+        <p style="color:#404040;margin-bottom:10px;">难点归纳：</p>
+        <table class="stustudytb" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td>知识点</td><td>基础度</td><td>重点度</td><td>教学难度</td><td>临界度</td><td>掌握度</td><td>相关试题详情</td><td>生成强化练习</td>
+            </tr>
+            <tr>
+                <td>平法差公式</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>32%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+            <tr>
+                <td>完全平方公式</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>36%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+            <tr>
+                <td>同底数幂的乘法</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>36%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+            <tr>
+                <td>幂的乘方</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>36%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+            <tr>
+                <td>积的乘方</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>36%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+            <tr>
+                <td>整式的乘方</td><td>一星</td><td>二星</td><td>五星</td><td>一星</td><td>36%</td><td><div class="checkwbtn">查看</div></td><td><div class="checkwbtn">生成</div></td>
+            </tr>
+
+        </tbody></table>
+        <br>
+    </div>
+    <div class="editorbox">
+                <div class="handler ui-draggable-handle"><span class="type_name">评价</span><div class="close_btn"></div></div>
+                <div style="padding: 3% 0;background: #fff;">
+                    <div style="">
+                        <p style="margin: 30px 18%;">对学生严小斌的评价</p>
+                        <div style="margin-left:18%;"><textarea class="desctxt"></textarea></div>
+                    </div>
+                    <div style="margin:30px 18%;"><span class="start"></span><span class="start"></span><span class="start"></span><span class="start"></span><span class="start"></span></div>
+                    <div class="addcol_btns">
+                        <input type="button" class="checkwbtn" value="提 交">
+                    </div>
+                </div>
+                
+            </div>
+    <div class="editorbox-mask"></div>
+</div>
+
+<script src="../../Scripts/echarts-2.0.4/build/dist/echarts-all.js" type="text/javascript"></script>
+<script src="../../Scripts/screenmonitor.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+   //location.reload();
+        var frame = window.parent.document.getElementById("pageframe");
+        $(frame).height($(".jxjhout").height() + 100);
+
+    });
+    var bar_xAxis = ["题库组卷", "数字教辅", "导学案", "校本资源", "语音作业", "群组活动"]
+    , bar_legend = []
+    , bar_series_data = [
+                            { name: "资源数量",
+                                type: "bar",
+                                data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7],
+                                markPoint: {
+                                    data: []
+                                }
+                            }
+                        ]
+    , bar_title = "作业来源统计";
+    getBar("chart_bar");
+    GetRadar("chart_radar");
+    GetPie("chart_pie");
+    $('.open_alert').click(function() {
+        $('.editorbox-mask').fadeIn(100);
+        $('.editorbox').slideDown(200);
+    })
+    $('.close_btn').click(function() {
+        $('.editorbox-mask').fadeOut(100);
+        $('.editorbox').slideUp(200);
+    });
+
+</script>
+</body></html>

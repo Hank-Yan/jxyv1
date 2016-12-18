@@ -1,0 +1,22 @@
+@listMarginTop   :   12px;
+@listTitlePadding    :   10px;
+@colorGray     :   rgb(211,212,213);
+@colorWhite     :   rgb(255,255,255);
+@colorDarkGray     :   rgb(122, 123, 124);
+@colorRed     :   rgb(249, 71, 59);
+@colorPink     :   rgb(217, 165, 160);
+@webkitBoxOrient    :   horizontal;
+@listItemTBPadding  :   12px;
+@listItemLRPadding    :   10px;
+@displayBlock   :   block;
+@displayNone   :   none;
+
+
+@peakTimeValueFontSize   :   12px;
+@peakTimeDuringFontSize  :   10px;
+@peakFluxValueFontSize   :   18px;
+@peakBandwidthValueFontSize :   22px;
+
+@bandwidthSeqFontSize   :   20px;
+@ttTimeValueFontSize    :   12px;
+@ttValueFontSize        :   22px;
