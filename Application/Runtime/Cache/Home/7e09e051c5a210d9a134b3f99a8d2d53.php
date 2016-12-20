@@ -8,9 +8,10 @@
             text-align: center;
         }
 
-        .name {
+        .stuInfo {
             text-align: right;
             margin-right: 10vw;
+            line-height: 10px;
         }
 
         .content li {
@@ -34,12 +35,14 @@
         </div>
     <?php endif;?>
     <?php if($studentInfo == null):?>
-        <div class="name">
+
+        <div class="stuInfo">
             <h3>姓名：查无此人</h3>
         </div>
     <?php else:?>
-        <div class="name">
-            <h3>姓名：<?=$studentInfo['name']?></h3>
+        <div class="stuInfo">
+                <h3>班级：<?=$studentInfo['classnum']?>班 </h3>
+                <h3>姓名：<?=$studentInfo['name']?></h3>
         </div>
     <?php endif;?>
 

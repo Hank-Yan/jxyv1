@@ -1,0 +1,434 @@
+[ 2016-12-20T11:16:21+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2016-12-20T11:16:22+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002814s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004426s ]
+
+[ 2016-12-20T11:17:10+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2016-12-20T11:17:11+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002922s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000630s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002212s ]
+
+[ 2016-12-20T11:17:11+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002838s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2016-12-20T11:18:03+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2016-12-20T11:18:05+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001865s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000346s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001920s ]
+
+[ 2016-12-20T11:18:05+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/946/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003462s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '946' AND `capterid` = '26'  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 946 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2016-12-20T11:41:54+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002800s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0026s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0026s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001906s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 212 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 212 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 212 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 212 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 212 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 609 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.642510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.643326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007433s ]
+
+[ 2016-12-20T11:42:05+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001844s ]
+
+[ 2016-12-20T11:42:19+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004028s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001744s ]
+
+[ 2016-12-20T11:42:58+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003187s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001106s ]
+
+[ 2016-12-20T11:43:14+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2016-12-20T11:43:29+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003945s ]
+
+[ 2016-12-20T11:43:36+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/952/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '952' AND `capterid` = '26'  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 952 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003245s ]
+
+[ 2016-12-20T11:43:55+08:00 ] ::1 /jxyv1/index.php/Home/Index/hwdetails/sid/955/capterid/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002430s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `wl_hwimages` WHERE `sid` = '955' AND `capterid` = '26'  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `wl_students` WHERE ( studentid = 955 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wl_capter` WHERE ( capter_num = 26 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000542s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001723s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003341s ]
+
