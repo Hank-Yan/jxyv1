@@ -1,6 +1,6 @@
 /**
- * Created by zuanny on 2016/12/9.
- * desc 本页面是群组状态下却换效果的示例
+ * Created by hank-yan on 2016/12/9.
+ * desc 本页面是知识态、群组态切换逻辑控制
  */
 define(function (require, exports, module) {
     var group = {
@@ -21,7 +21,6 @@ define(function (require, exports, module) {
                 $(this).children().addClass('showName');
             });
         },
-
         // 翻转函数
         seesaw: function () {
             //  知识态与群组态切换逻辑

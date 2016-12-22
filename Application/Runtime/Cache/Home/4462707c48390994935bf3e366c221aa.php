@@ -367,6 +367,7 @@
     <div class="festival">2016年<br>春季学期</div>
     <?php }?>
     <div class="weekInfo">
+        <!--weekInfo 是通过 js 动态添加的-->
         <div class="weekNum" id="weekNum"></div>
         <div class="weekDayNum" flag="0" style="display:none;"></div>
     </div>
@@ -1790,21 +1791,5 @@
 
 </script>
 
-
-<!--    <script type="text/javascript">
-        if (document.addEventListener) {
-            document.addEventListener('DOMMouseScroll', scrollFunc, false);
-        }//W3C
-        window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome
-        var scrollFunc=function(e){
-e=e || window.event;
-if(e.wheelDelta){alert(e.wheelDelta);//IE/Opera/Chrome ±120
-
-}
-else if(e.detail){alert(e.detail)//Firefox ±3
-
-}
-        }
-    </script> -->
 </body>
 </html>
