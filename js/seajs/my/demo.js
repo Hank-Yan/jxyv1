@@ -2,10 +2,10 @@
  * Created by xilang on 2015/12/22.
  */
 define(function(require, exports, module){
-    require("../../seajs/jquery/2.1.4/jquery-2.1.4.min.js");
-    require("../../seajs/jquery-ui-1.11.4/jquery-ui.min.js");
-    require("../../seajs/jquery-mousewheel-3.1.12/jquery.mousewheel.js");
-    require("../../seajs/jquery-mousewheel-3.1.12/jquery.mousewheel.min.js");
+    // require("../../seajs/jquery/2.1.4/jquery-2.1.4.min.js");
+    // require("../../seajs/jquery-ui-1.11.4/jquery-ui.min.js");
+    // require("../../seajs/jquery-mousewheel-3.1.12/jquery.mousewheel.js");
+    // require("../../seajs/jquery-mousewheel-3.1.12/jquery.mousewheel.min.js");
     Array.prototype.insert = function (index, item) {  //修改原生数组方法，在数组指定位置插入元素
         this.splice(index, 0, item);  
     }; 
