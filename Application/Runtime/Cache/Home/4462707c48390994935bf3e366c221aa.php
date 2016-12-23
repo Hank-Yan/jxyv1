@@ -64,6 +64,7 @@
         .list {
             position: absolute;
         }
+
         .addCorrectTable {
             width: 600px;
         }
@@ -119,8 +120,8 @@
     <!--下面是班级群组态样式控制-->
     <style type="text/css">
         /*ul {*/
-            /*margin: 0px;*/
-            /*padding: 0px;*/
+        /*margin: 0px;*/
+        /*padding: 0px;*/
         /*}*/
 
         .stuItem {
@@ -201,9 +202,10 @@
         .stuName > a {
             /*设置名字格式*/
             cursor: pointer;
-            color:#000000;
+            color: #000000;
             font-weight: bolder;
         }
+
         .stuItemParent {
             display: none;
         }
@@ -390,40 +392,40 @@
             <div class="capterTitle" style="visibility:hidden;">
                 <span class="toLeft" style="cursor:pointer;"></span>
                 <?php if ($cap == 0): ?>
-                    <?php if ($i < 2): ?>
-                        <span class="capterName">
+                <?php if ($i < 2): ?>
+                <span class="capterName">
                             <?= $capter_item['capter_num']?>章<br>
-                            <?= $capter_item['capter_name']?>
+                    <?= $capter_item['capter_name']?>
                         </span>
-                    <?php elseif ($i == 2 || $i == 6 || $i == 10):?>
-                        <span class="capterName">
+                <?php elseif ($i == 2 || $i == 6 || $i == 10):?>
+                <span class="capterName">
                             <?= $capter_item['capter_num']?>章<br>
                         </span>
-                    <?php elseif ($i > 2 && $i < 6):?>
-                        <span class="capterName">
+                <?php elseif ($i > 2 && $i < 6):?>
+                <span class="capterName">
                             <?= $capter_item['capter_num']-1?>章
-                            <?= $capter_item['capter_name']?>
+                    <?= $capter_item['capter_name']?>
                         </span>
-                    <?php elseif($i>6 && $i < 10):?>
-                        <span class="capterName">
+                <?php elseif($i>6 && $i < 10):?>
+                <span class="capterName">
                             <?= $capter_item['capter_num']-2?>章
-                            <?= $capter_item['capter_name']?>
+                    <?= $capter_item['capter_name']?>
                         </span>
-                    <?php endif;?>
+                <?php endif;?>
                 <?php elseif ($cap == 1): ?>
-                    <?php if ($i == 0): ?>
-                        <span class="capterName">第29章<br>投影和视图</span>
-                    <?php elseif($i == 1):?>
-                        <span class="capterName">阶段性复习和结业考试</span>
-                    <?php elseif($i == 2):?>
-                        <span class="capterName" style="line-height: 7.77vh;">第一轮复习</span>
-                    <?php elseif($i == 3):?>
-                        <span class="capterName" style="line-height: 7.77vh;">第二轮复习</span>
-                    <?php elseif($i == 4):?>
-                        <span class="capterName" style="line-height: 7.77vh;">第三轮复习</span>
-                    <?php elseif($i == 5):?>
-                        <span class="capterName" style="line-height: 7.77vh;">保留章节</span>
-                    <?php endif;?>
+                <?php if ($i == 0): ?>
+                <span class="capterName">第29章<br>投影和视图</span>
+                <?php elseif($i == 1):?>
+                <span class="capterName">阶段性复习和结业考试</span>
+                <?php elseif($i == 2):?>
+                <span class="capterName" style="line-height: 7.77vh;">第一轮复习</span>
+                <?php elseif($i == 3):?>
+                <span class="capterName" style="line-height: 7.77vh;">第二轮复习</span>
+                <?php elseif($i == 4):?>
+                <span class="capterName" style="line-height: 7.77vh;">第三轮复习</span>
+                <?php elseif($i == 5):?>
+                <span class="capterName" style="line-height: 7.77vh;">保留章节</span>
+                <?php endif;?>
                 <?php endif;?>
 
                 <span class="toRight" style="cursor:pointer;"></span>
@@ -451,32 +453,33 @@
                         </div>
 
                         <?php if ($class_item['class_flag'] == 0): ?>
-                            <div class="classCategory">新课</div>
+                        <div class="classCategory">新课</div>
                         <?php elseif ($class_item['class_flag'] == 1): ?>
-                            <div class="classCategory">活动课</div>
+                        <div class="classCategory">活动课</div>
                         <?php elseif ($class_item['class_flag'] == 2): ?>
-                            <div class="classCategory">复习课</div>
+                        <div class="classCategory">复习课</div>
                         <?php elseif ($class_item['class_flag'] == 3): ?>
-                            <div class="classCategory">单元测</div>
+                        <div class="classCategory">单元测</div>
                         <?php else: ?>
-                            <div class="classCategory">考试</div>
+                        <div class="classCategory">考试</div>
                         <?php endif; ?>
 
                         <?php if ($class_item['add_flag'] == 1): ?>
-                            <div class="classContent" flag="0" style="background:#ffe777;" classIndex="<?= $class_item['id'];?>"
-                                 title="<?= $class_item['class_name']?>">
-                                <?= $class_item['class_name']?>
-                            </div>
+                        <div class="classContent" flag="0" style="background:#ffe777;"
+                             classIndex="<?= $class_item['id'];?>"
+                             title="<?= $class_item['class_name']?>">
+                            <?= $class_item['class_name']?>
+                        </div>
                         <?php else: ?>
-                            <div class="classContent" flag="0" classIndex="<?= $class_item['id'];?>"
+                        <div class="classContent" flag="0" classIndex="<?= $class_item['id'];?>"
                              title="$class_item['class_name']?>">
-                                <?= $class_item['class_name']?>
-                            </div>
+                            <?= $class_item['class_name']?>
+                        </div>
                         <?php endif; ?>
-                        <div  class="classesDetails">
+                        <div class="classesDetails">
                             <?php if ($class_item['class_flag'] != 4): ?>
-                                <div class="addHomework" classIndex="<?= $class_item['id'];?>">作业<br/>
-                                    <span>
+                            <div class="addHomework" classIndex="<?= $class_item['id'];?>">作业<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>
                                                 <?= $class_item['task_count']?>
@@ -485,10 +488,10 @@
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php else: ?>
-                                <div class="addHomework" classIndex="<?= $class_item['id'];?>">卷数<br/>
-                                    <span>
+                            <div class="addHomework" classIndex="<?= $class_item['id'];?>">卷数<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>
                                                 <?= $class_item['task_count']?>
@@ -497,27 +500,27 @@
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php endif; ?>
 
                             <?php if ($class_item['capter_id'] == 21): ?>
-                                <div class="addCorrect" classId="<?= $class_item['id'];?>">批语<br/>
-                                    <span>
+                            <div class="addCorrect" classId="<?= $class_item['id'];?>">批语<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>10</label>条</t>
                                         </n><br/>
                                         <p class="btn"><i class="modifyCorrect">+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php else: ?>
-                                <div class="addCorrect" classId="<?= $class_item['id'];?>">批语<br/>
-                                    <span>
+                            <div class="addCorrect" classId="<?= $class_item['id'];?>">批语<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>10</label>条</t>
                                         </n><br/>
                                         <p class="btn"><i class="modifyCorrect">+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php endif; ?>
 
                             <div class="addDefect">缺陷<br/>
@@ -539,19 +542,21 @@
                         <div class="classItem" style="display: none;">
                             <div class="stuItemParent classOneParent">
                                 <?php foreach($classOneStudents as $key=> $item):?>
-                                    <?php if($key == 2):?>
-                                        <div class="stuItem cur">
-                                            <div class="stuName showName">
-                                                <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>" target="_blank"><?= $item['name']?></a>
-                                            </div>
-                                        </div>
-                                    <?php else:?>
-                                        <div class="stuItem">
-                                            <div class="stuName">
-                                                <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>" target="_blank"><?= $item['name']?></a>
-                                            </div>
-                                        </div>
-                                    <?php endif;?>
+                                <?php if($key == 2):?>
+                                <div class="stuItem cur">
+                                    <div class="stuName showName">
+                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>"
+                                           target="_blank"><?= $item['name']?></a>
+                                    </div>
+                                </div>
+                                <?php else:?>
+                                <div class="stuItem">
+                                    <div class="stuName">
+                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>"
+                                           target="_blank"><?= $item['name']?></a>
+                                    </div>
+                                </div>
+                                <?php endif;?>
 
                                 <?php endforeach;?>
                             </div>
@@ -560,13 +565,15 @@
                                 <?php if($key == 2):?>
                                 <div class="stuItem cur">
                                     <div class="stuName showName">
-                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>" target="_blank"><?= $item['name']?></a>
+                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>"
+                                           target="_blank"><?= $item['name']?></a>
                                     </div>
                                 </div>
                                 <?php else:?>
                                 <div class="stuItem">
                                     <div class="stuName">
-                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>" target="_blank"><?= $item['name']?></a>
+                                        <a href="/jxyv1/index.php/Home/Index/hwdetails/sid/<?= $item['studentid']?>/capterid/<?= $class_item['capter_id']?>"
+                                           target="_blank"><?= $item['name']?></a>
                                     </div>
                                 </div>
                                 <?php endif;?>
@@ -577,16 +584,16 @@
                         </div>
 
                         <!--<div class="groupDetails" style="margin-left: -92%;display: none;">-->
-                            <!--&lt;!&ndash;群组态详情&ndash;&gt;-->
-                            <!--&lt;!&ndash;一班&ndash;&gt;-->
-                            <!---->
-                            <!--<a href="/jxyv1/index.php/Home/Index/homework/sid/1/classid/<?= $class_item['id'];?>" class="classOneData">-->
-                                <!--<img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">-->
-                            <!--</a>-->
-                            <!--&lt;!&ndash;二班默认不可见&ndash;&gt;-->
-                            <!--<a href="/jxyv1/index.php/Home/Index/homework/sid/2/classid/<?= $class_item['id'];?>" style="display: none;" class="classTwoData">-->
-                                <!--<img style="width: 52px;height: 270px;" src="/jxyv1/images/students2.png">-->
-                            <!--</a>-->
+                        <!--&lt;!&ndash;群组态详情&ndash;&gt;-->
+                        <!--&lt;!&ndash;一班&ndash;&gt;-->
+                        <!---->
+                        <!--<a href="/jxyv1/index.php/Home/Index/homework/sid/1/classid/<?= $class_item['id'];?>" class="classOneData">-->
+                        <!--<img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">-->
+                        <!--</a>-->
+                        <!--&lt;!&ndash;二班默认不可见&ndash;&gt;-->
+                        <!--<a href="/jxyv1/index.php/Home/Index/homework/sid/2/classid/<?= $class_item['id'];?>" style="display: none;" class="classTwoData">-->
+                        <!--<img style="width: 52px;height: 270px;" src="/jxyv1/images/students2.png">-->
+                        <!--</a>-->
                         <!--</div>-->
                     </li>
                     <li capterId="<?= $class_item['capter_id']?>"
@@ -624,33 +631,34 @@
                         </div>
 
                         <?php if ($knowledge_item['class_flag'] == 0): ?>
-                            <div class="classCategory">新课</div>
+                        <div class="classCategory">新课</div>
                         <?php elseif ($knowledge_item['class_flag'] == 1): ?>
-                            <div class="classCategory">活动课</div>
+                        <div class="classCategory">活动课</div>
                         <?php elseif ($knowledge_item['class_flag'] == 2): ?>
-                            <div class="classCategory">复习课</div>
+                        <div class="classCategory">复习课</div>
                         <?php elseif ($knowledge_item['class_flag'] == 3): ?>
-                            <div class="classCategory">单元测</div>
+                        <div class="classCategory">单元测</div>
                         <?php else: ?>
-                            <div class="classCategory">考试</div>
+                        <div class="classCategory">考试</div>
                         <?php endif; ?>
 
                         <?php if ($knowledge_item['add_flag'] == 1): ?>
-                            <div class="classContent" flag="0" style="background:#ffe777;" classIndex="<?= $knowledge_item['id']?>"
+                        <div class="classContent" flag="0" style="background:#ffe777;"
+                             classIndex="<?= $knowledge_item['id']?>"
                              title="<?= $knowledge_item['class_name']?>">
-                                <?= $knowledge_item['class_name']?>
-                            </div>
+                            <?= $knowledge_item['class_name']?>
+                        </div>
                         <?php else: ?>
-                            <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
+                        <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
                              title="<?= $knowledge_item['class_name']?>">
-                                <?= $knowledge_item['class_name']?>
-                            </div>
+                            <?= $knowledge_item['class_name']?>
+                        </div>
                         <?php endif; ?>
 
                         <div class="classesDetails">
                             <?php if ($knowledge_item['class_flag'] != 2): ?>
-                                <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
-                                    <span>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>
                                                 <?= $knowledge_item['task_count']?>
@@ -659,10 +667,10 @@
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php else: ?>
-                                <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
-                                    <span>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>
                                                 <?= $knowledge_item['task_count']?>
@@ -671,28 +679,28 @@
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php endif; ?>
 
                             <?php if ($knowledge_item['capter_id'] == 21): ?>
-                                <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                    <span>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
                                         <n class="btw"><t>
                                             <label>20</label>条</t>
                                         </n>
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php else: ?>
-                                <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                    <span>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
                                         <n class="btw"><t><label>0</label>条</t>
                                         </n>
                                         <br/>
                                         <p class="btn"><i>+</i></p>
                                     </span>
-                                </div>
+                            </div>
                             <?php endif; ?>
                             <div class="addDefect">缺陷<br/>
                                 <span>

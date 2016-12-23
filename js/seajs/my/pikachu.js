@@ -13,12 +13,28 @@ define(function (require, exports, module) {
         this.splice(index, 1);
     };
 
+    // 基本参数设置
     var arrIndex = 0;//缩放后宽度数组的游标
-    var screenWidth = $(window).width();//当前屏幕宽度
+    var screenWidth = $(window).width();//当前屏幕有效宽度
+    var selectedWeekNum;// 被选中的周次，
+    console.log(screenWidth);
+    // 重要常量配置（需要调试）！！！
+    // 确定屏幕的有效宽度
+    // 与鼠标缩放的层数有关，比如缩放0的时候，下面应该有24个屏幕宽度，一个屏幕宽度有5条数据对应一个周
+    var bottomWidthArr = [24 * screenWidth, 12 * screenWidth, 8 * screenWidth, 6 * screenWidth, 4.8 * screenWidth,
+        4 * screenWidth, 4 * screenWidth, 3 * screenWidth, 2 * screenWidth, screenWidth];
+
+    // 占多少个顶部宽度， 比如第一个 5.42 代表 5.42%， 最后一个宽度 88 代表 88%
+    // 这个宽度可以通过测量得到
+    var topWidthArr = [5.42 * screenWidth, 9.01 * screenWidth, 12.6 * screenWidth, 16.2 * screenWidth, 19.788 * screenWidth,
+        23.372 * screenWidth, 23.372 * screenWidth, 30.553 * screenWidth, 45.2 * screenWidth, 88 * screenWidth];
+
 
     //定义setTimeout执行方法 ,将单击事件和双击事件分开
     var TimeFn = null;// 用于控制单击双击
-    console.log(screenWidth);
+
+    // 引入其他依赖库
+    var wheelUtils = require('./wheelUtils.js');
 
     // 执行总逻辑
     var pikachu = {
@@ -34,7 +50,6 @@ define(function (require, exports, module) {
             this.weekStyleAfterDbClick();
             // 内容部分左右移动样式的控制
             this.initMainContent();
-
 
             // 顶部蒙层控制
             this.topMaskMove();
@@ -92,14 +107,6 @@ define(function (require, exports, module) {
                 }
             }
 
-            // $('.selectCon0 .back').click(function(){
-            //     $('.mask').css('display','none');
-            //     for (var i = 0; i < 6; i++) {
-            //         $('.selectCon'+i).css('display','none');
-            //     }
-            //     $('.selectCon').css('display','none');
-            //     location.href = 'main';
-            // })
             $('.selectCon0 .back').click(huifu);
             $('.selectCon1 .back').click(huifu);
             $('.selectCon2 .back').click(huifu);
@@ -128,11 +135,6 @@ define(function (require, exports, module) {
             for (var i = 0; i < 120; i++) {
                 $('.addCorrectTable' + i + ' .back').click(huifu1);
             }
-            // $('.addCorrectTable .back').click(function(){
-            //     $('.mask').css('display','none');
-            //     $('.addCorrectTable').css('display','none');
-            //     // location.href = 'main';
-            // })
         },
         // 杂项的初始化
         addHomeWork: function () {
@@ -350,9 +352,8 @@ define(function (require, exports, module) {
                 $(".capterDetail").css('display', 'block');
                 $(".capterDetailKnowledge").css('display', 'none');
                 $(".classSummary").css('display', 'none');
-                $(".capterSummary").css('display', 'none');
                 $(".capterDetail").css({'background-position': '29% 1.3%', 'background-size': '97% 2%'});
-            })
+            });
         },
         // 顶部蒙层单击事件响应
         topMaskClick: function () {
@@ -408,7 +409,7 @@ define(function (require, exports, module) {
         // 顶部蒙层拖动事件响应
         topMaskMove: function () {
             var _move = false;//是否移动标记
-            var _x, preLeft, afterLeft;//_x鼠标离控件左上角的相对位置,preLeft,afterLeft鼠标拖拽前和拖拽后顶部套筒的左边距
+            var _x, preLeft, afterLeft;//_x鼠标离控件左上角的相对位置,preLeft,afterLeft鼠标拖拽前和拖拽后顶部遮罩的左边距
             var selectedWeekIndex = $('.weekNum span.selected').index();//有效周的index
             var selectedWeekDayIndex = $('.weekDayNum span[flag=1]').index();//有效的星期的index
 
@@ -431,22 +432,6 @@ define(function (require, exports, module) {
                     var flag = $('.weekNum span.selected').attr('flag');
                     var toRenderStartIndex = selectedWeekIndex * 5;//反选的天的起始下标
                     if (_move) {
-                        // $(".topMask").attr('style','cursor:move');
-                        // if(flag == 1){ //拖拽态将所有单双击以后的状态恢复
-                        //     $(".weekDayNum span").css("background","#92D050");
-                        //     $('.weekNum span.selected').attr('flag',0);
-                        //     $('.weekNum span.selected').css({'background':'#B97A57','height':'5.44vh','margin':'1.555vh 0','line-height':'5.44vh'});
-                        //     for (var i = toRenderStartIndex; i < toRenderStartIndex+5; i++) {
-                        //         $(".capterDetail .classContent").eq(i).css("background","#B97A57");
-                        //         $(".capterDetail .addOrDel.del").eq(i).css("background","#B97A57");
-                        //         $(".capterDetail .classCategory").eq(i).css({"background":"#B97A57","color":"#124934"});
-                        //         $(".capterDetail .addHomework").eq(i).css({"background":"#B97A57","color":"#124934"});
-                        //         $(".capterDetail .addCorrect").eq(i).css({"background":"#B97A57","color":"#124934"});
-                        //         $(".capterDetail .addDefect").eq(i).css({"background":"#B97A57","color":"#124934"});
-                        //         $(".capterDetail .addTeamEvaluate").eq(i).css({"background":"#B97A57","color":"#124934"});
-                        //         $(".capterDetail .addSuggest").eq(i).css("background","#B97A57");
-                        //     }
-                        // }
                         $(".capterDetail .capterUl li").css({'background': '', 'opacity': ''});//清除hover事件引起的变化
                         $(".weekDayNum span").css("background", "#92D050");
                         $('.weekNum span.selected').attr('flag', 0);
@@ -501,15 +486,15 @@ define(function (require, exports, module) {
                         }
 
                         afterLeft = e.pageX - _x;//移动过后滑块的左边距
-                        var topMaskWh = parseInt($(".topMask").css('width')); //顶部套筒宽度
+                        var topMaskWh = parseInt($(".topMask").css('width')); //顶部遮罩宽度
                         selectedWeekIndex = Math.floor(((afterLeft + topMaskWh / 2) / screenWidth * 100 - 6) / 3.59);
-                        var index1 = selectedWeekIndex + 1;
+                        selectedWeekNum = selectedWeekIndex + 1;
                         $(".weekNum span").eq(selectedWeekIndex).addClass("selected").siblings().removeClass("selected");
                         $(".weekNum span").eq(selectedWeekIndex).css({"width": "6.16%"}).siblings().css({"width": "4.08%"});
                         for (var i = 0; i < 24; i++) {
                             $(".weekNum span").eq(i).html(i + 1);
                         }
-                        $(".weekNum span").eq(selectedWeekIndex).html('第' + index1 + '周');
+                        $(".weekNum span").eq(selectedWeekIndex).html('第' + selectedWeekNum + '周');
                         //拖拽时置maskCapterTitle的值
                         if (arrIndex == 0 || arrIndex == 1) {
                             if (selectedWeekIndex < 4) {
@@ -580,10 +565,10 @@ define(function (require, exports, module) {
                     });
                     box.insertAfter(box_next);
                 }
-                var index1 = index + 21;
+                var selectedWeekNum = index + 21;
                 var index2 = index + 22;
                 // if(index != 5){
-                //     location.href = 'chgCapterClass/index1/'+index1+'/index2/'+index2;
+                //     location.href = 'chgCapterClass/selectedWeekNum/'+selectedWeekNum+'/index2/'+index2;
                 // }
             });
             $('.toLeft').click(function () {
@@ -609,10 +594,10 @@ define(function (require, exports, module) {
                     });
                     box.insertBefore(box_prev);
                 }
-                var index1 = index + 21;
+                var selectedWeekNum = index + 21;
                 var index2 = index + 20;
                 // if(index != 0){
-                //     location.href = 'chgCapterClass/index1/'+index1+'/index2/'+index2;
+                //     location.href = 'chgCapterClass/selectedWeekNum/'+selectedWeekNum+'/index2/'+index2;
                 // }
             });
 
@@ -625,94 +610,125 @@ define(function (require, exports, module) {
         },
         // 滚轮滚动的逻辑
         mouseWheel: function () {
-            var arrIndex = 0;//缩放后宽度数组的游标
             $('.mainContent').mousewheel(function (event, delta) {
+                // 阻止事件冒泡
                 event.stopPropagation();
-                var index = $(".weekNum .selected").index(),
-                    index1 = index + 1,
-                    len = $(".weekNum span").length;
+                // 被选中的周次的索引
+                // 总共有多少个周
+                var len = $(".weekNum span").length,
+                    //有效周的索引
+                    selectedWeekIndex = $('.weekNum span.selected').index(),
+                    // 被选中的周次，等于索引加1
+                    selectedWeekNum = selectedWeekIndex + 1,
+                    // 不同层级缩放时候动画事件间隔
+                    animateTime = 100,
+                    //合并同类项前后的切换时间
+                    fadeTime = 100;
+
+                // delta 代表鼠标滚轮滚动的方向，取两个值 1 或者 -1
                 if (delta > 0) {
                     arrIndex--;
                 } else if (delta < 0) {
                     arrIndex++;
                 }
+
+                // arrIndex 的取值范围是 [0, 9]
                 arrIndex = arrIndex < 0 ? 0 : arrIndex;
                 arrIndex = arrIndex > 9 ? 9 : arrIndex;
-                var animateTime = 100;
-                var selectedWeekIndex = $('.weekNum span.selected').index();//有效周的index
 
-                //确定字体被染黑的周次
-                var d;//黑色边缘距中心点的步数
+                // console.log(arrIndex);
+                // ===================================鼠标滚动后，黑色字体控制 begin=============================================================
+                // 确定字体被染黑的周次
+                // arrIndex:0 => distance:0
+                // arrIndex:1 => distance:1
+                // arrIndex:2 => distance:1
+                // arrIndex:3 => distance:2
+                // arrIndex:4 => distance:2
+                var distance;//黑色边缘距中心点的步数
                 if (arrIndex < 8) {
-                    d = Math.floor((arrIndex + 1) / 2);
+                    distance = Math.floor((arrIndex + 1) / 2);
                 } else if (arrIndex == 8) {
-                    d = 6;
-                } else {
-                    d = 24;
+                    distance = 6;
+                } else if (arrIndex == 9) {
+                    distance = 24;
                 }
-                var fromIndex = selectedWeekIndex - d;//黑色字体周次的起始索引
+                var fromIndex = selectedWeekIndex - distance;//黑色字体周次的起始索引
                 fromIndex = fromIndex < 0 ? 0 : fromIndex;
-                var toIndex = selectedWeekIndex + d;//黑色字体周次的终止索引
+                var toIndex = selectedWeekIndex + distance;//黑色字体周次的终止索引
                 toIndex = toIndex > 23 ? 23 : toIndex;
+                // 将字体颜色设置成黑色
                 $(".weekNum span").css("color", "#fff");
                 for (var i = fromIndex; i < toIndex + 1; i++) {
                     $(".weekNum span").eq(i).css("color", "#000");
                 }
-                var bottomWidthArr = [24 * screenWidth, 12 * screenWidth, 8 * screenWidth, 6 * screenWidth, 4.8 * screenWidth,
-                    4 * screenWidth, 4 * screenWidth, 3 * screenWidth, 2 * screenWidth, screenWidth];
-                var toWidth = bottomWidthArr[arrIndex]; //鼠标滚动后，底部所有课程的宽度
-                toWidth = toWidth > bottomWidthArr[0] ? bottomWidthArr[0] : toWidth;
-                toWidth = toWidth < bottomWidthArr[9] ? bottomWidthArr[9] : toWidth;
-                function getGapCount(ind) {
-                    if (ind < 4) {
-                        return 0;
-                    } else if (ind < 6) {
-                        return 1;
-                    } else if (ind < 7) {
-                        return 2;
-                    } else if (ind < 9) {
-                        return 3;
-                    } else if (ind < 13) {
-                        return 4;
-                    } else if (ind < 13) {
-                        return 4;
-                    } else if (ind < 15) {
-                        return 5;
-                    } else if (ind < 13) {
-                        return 4;
-                    } else if (ind < 16) {
-                        return 6;
-                    } else if (ind < 18) {
-                        return 7;
-                    } else if (ind < 21) {
-                        return 8;
-                    } else if (ind < 24) {
-                        return 9;
-                    } else if (ind == 24) {
-                        return 10;
-                    }
+                // ===================================鼠标滚动后，黑色字体控制 end=============================================================
+
+                // ===================================遮罩位置，以及对应内容位置控制 begin======================================================
+                //鼠标滚动后，底部所有课程的宽度
+                var bottomWidth = bottomWidthArr[arrIndex];
+                bottomWidth = bottomWidth > bottomWidthArr[0] ? bottomWidthArr[0] : bottomWidth;
+                bottomWidth = bottomWidth < bottomWidthArr[9] ? bottomWidthArr[9] : bottomWidth;
+
+                //底部所有课程的左滑距离
+                bottomScrollLeftWidth = (selectedWeekIndex - 0.5 * arrIndex - Math.floor(wheelUtils.getGapCount(selectedWeekIndex) / 4) * 0.025) * bottomWidthArr[arrIndex] / 24;
+                //Math.floor(index/4)*0.025是清除章节之间的margin；0.5*arrIndex是测试得出，确定左移的准确距离
+                // classCon 就是 ul by hank-yan
+                // 调整某一周下内容的总宽度
+                $('.classCon').animate({'width': bottomWidth + 'px'}, animateTime);
+                // 调整完总宽度，设置中心位置，实际上设置 scrollLeft 就OK 啦
+                $(".mainContent").animate({scrollLeft: bottomScrollLeftWidth + 'px'}, 10);
+                // ===================================遮罩位置，以及对应内容位置控制 end=================================================
+
+                // ===================================鼠标滚动后，遮罩控制 begin=============================================================
+                // 鼠标滚动后，顶部遮罩的宽度
+                var topWidth = topWidthArr[arrIndex] / 100;
+                topWidth = topWidth > topWidthArr[9] / 100 ? topWidthArr[9] / 100 : topWidth;
+                topWidth = topWidth <= topWidthArr[0] / 100 ? topWidthArr[0] / 100 : topWidth;
+                $('.topMask').animate({'width': topWidth + 'px'}, animateTime);
+                console.log(arrIndex);
+                // 鼠标滚动后，顶部遮罩的左边距
+                var toTopLeft;//收缩后顶部遮罩左边距
+                // 向左移动多少呢？ 6 之前，每次移动半个章节宽度大小
+                if (arrIndex < 6) {
+                    // 3.59 怎么来的？？？ 原来是一个周的宽度所占的百分比， 6代表秋季学期的宽度
+                    toTopLeft = (selectedWeekIndex - arrIndex / 2) * 3.59 + 6;
+                } else if (arrIndex == 6) {
+                    // js 里面， 5/2 = 2.5  ？？？？？？？？
+                    toTopLeft = (selectedWeekIndex - 2.5) * 3.59 + 6;//收缩后顶部遮罩左边距不改变，即同arrIndex = 5；
+                } else if (arrIndex == 7) {
+                    // 比如，中心在13周， 12-7/2-0.5 = 12-4 = 8共8 个小块
+                    toTopLeft = (selectedWeekIndex - arrIndex / 2 - 0.5) * 3.59 + 6;
+                } else if (arrIndex == 8) {
+                    // 还不如直接写死！！！
+                    toTopLeft = (selectedWeekIndex - arrIndex / 2 - 1.5) * 3.59 + 6;
+                } else if (arrIndex == 9) {
+                    // 9 的时候，直接举例左侧，就一个秋季学期方块的宽度
+                    toTopLeft = 6;
                 }
 
-                bottomLeftWd = (selectedWeekIndex - 0.5 * arrIndex - Math.floor(getGapCount(selectedWeekIndex) / 4) * 0.025) * bottomWidthArr[arrIndex] / 24;//底部所有课程的左滑距离
-                //Math.floor(index/4)*0.025是清除章节之间的margin；0.5*arrIndex是测试得出，确定左移的准确距离
-                $('.classCon').animate({'width': toWidth + 'px'}, animateTime);
-                $(".mainContent").animate({scrollLeft: bottomLeftWd + 'px'}, 10);
+                if (topWidth * 100 / screenWidth + toTopLeft > 94 || selectedWeekIndex == 23) {
+                    // 最右侧
+                    toTopLeft = 94 - topWidth * 100 / screenWidth - 0.25;
+                } else if (toTopLeft < 6) {
+                    // 最左侧
+                    toTopLeft = 6;
+                }
+                toTopLeft = toTopLeft * screenWidth / 100;
+                $('.topMask').animate({'left': toTopLeft + 'px'}, animateTime);
+                // ===================================鼠标滚动后，遮罩控制 end=============================================================
 
-                var topWidthArr = [5.42 * screenWidth, 9.01 * screenWidth, 12.6 * screenWidth, 16.2 * screenWidth, 19.788 * screenWidth,
-                    23.372 * screenWidth, 23.372 * screenWidth, 30.553 * screenWidth, 45.2 * screenWidth, 88 * screenWidth];
-                var toWidth1 = topWidthArr[arrIndex] / 100;//鼠标滚动后，顶部套筒的宽度
-                toWidth1 = toWidth1 > topWidthArr[9] / 100 ? topWidthArr[9] / 100 : toWidth1;//==========
-                toWidth1 = toWidth1 <= topWidthArr[0] / 100 ? topWidthArr[0] / 100 : toWidth1;
-                $('.topMask').animate({'width': toWidth1 + 'px'}, animateTime);
-                var fadeTime = 100; //合并同类项前后的切换时间
-                if (arrIndex == 9) {
-                    $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-5%'});
+
+                // capterTitle 表示第几章，第几章（第24章 圆）
+                // capterTitle .shengzi 表示章节下面的小方块
+                if (arrIndex < 8) {
+                    $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-2%'});
                 } else if (arrIndex == 8) {
                     $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-3%'});
-                } else {
-                    $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-2%'});
+                } else if (arrIndex == 9) {
+                    $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-5%'});
                 }
 
+                // maskCapterTitle 刚进来时候顶部显示的章节信息
                 if (arrIndex == 0 || arrIndex == 1) {
                     $(".capterTitle").css('visibility', 'hidden');
                     $(".maskCapterTitle").css('display', 'block');
@@ -721,30 +737,33 @@ define(function (require, exports, module) {
                     $(".maskCapterTitle").css('display', 'none');
                 }
 
+                // 三个层级之间进行切换
+                // 几个层级， <6  <9  ==9  其他
                 if (arrIndex < 6) {
                     $(".capterDetail").fadeIn(fadeTime);
                     $(".capterDetailKnowledge").fadeOut(fadeTime);
                     $(".classSummary").fadeOut(fadeTime);
-                    $(".capterSummary").fadeOut(fadeTime);
                 } else if (arrIndex < 9) {
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeIn(fadeTime);
                     $(".classSummary").fadeOut(fadeTime);
-                    $(".capterSummary").fadeOut(fadeTime);
                 } else if (arrIndex == 9) {
                     $(".capterTitle").fadeIn(fadeTime);
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeOut(fadeTime);
                     $(".classSummary").fadeIn(fadeTime);
-                    $(".capterSummary").fadeOut(fadeTime);
-                } else {
-                    $(".capterTitle").fadeOut(fadeTime);
-                    $(".capterDetail").fadeOut(fadeTime);
-                    $(".capterDetailKnowledge").fadeOut(fadeTime);
-                    $(".classSummary").fadeOut(fadeTime);
-                    $(".capterSummary").fadeIn(fadeTime);
                 }
 
+
+                // capterUl 的控制
+                if (arrIndex == 9) {
+                    $(".capterUl").css('margin-left', '-6.05%');
+                } else {
+                    $(".capterUl").css('margin-left', '-0.05%');
+                }
+
+                // 控制所有章节在不同缩放层级下的宽度
+                // 这个宽度是怎么取出来的，大致方向
                 if (arrIndex < 6) {
                     $('.capter.t21h').css('width', '10.83%');
                     $('.capter.t22h').css('width', '10%');
@@ -2062,7 +2081,6 @@ define(function (require, exports, module) {
                         'background-position': '63% 1.3%',
                         'background-size': '86% 2%'
                     });
-
                 } else if (arrIndex == 5) {
                     $(".capter.t21h .capterDetail").css({
                         'background-position': '63% 1.3%',
@@ -2247,35 +2265,9 @@ define(function (require, exports, module) {
                             'background-size': '75% 2%'
                         });
                     }
-                } else {
+                } else if(arrIndex == 9) {
                     $(".capterDetailKnowledge").css({'background-position': '45% 1.3%', 'background-size': '68.5% 2%'});
                 }
-                var toTopLeft;//收缩后顶部套筒左边距
-                if (arrIndex < 6) {
-                    toTopLeft = (index - arrIndex / 2) * 3.59 + 6;
-                } else if (arrIndex == 6) {
-                    toTopLeft = (index - 2.5) * 3.59 + 6;//收缩后顶部套筒左边距不改变，即同arrIndex = 5；
-                } else if (arrIndex == 7) {
-                    toTopLeft = (index - arrIndex / 2 - 0.5) * 3.59 + 6;
-                } else if (arrIndex == 8) {
-                    toTopLeft = (index - arrIndex / 2 - 1.5) * 3.59 + 6;
-                } else {
-                    toTopLeft = 6;
-                }
-                if (arrIndex == 9) {
-                    $(".capterUl").css('margin-left', '-6.05%');
-                } else {
-                    $(".capterUl").css('margin-left', '-0.05%');
-                }
-                if (toWidth1 * 100 / screenWidth + toTopLeft > 96 || index == 23) {
-                    toTopLeft = 96 - toWidth1 * 100 / screenWidth - 0.25;
-                } else if (toTopLeft < 6) {
-                    toTopLeft = 6;
-                } else {
-                    toTopLeft = toTopLeft;
-                }
-                toTopLeft = toTopLeft * screenWidth / 100; //鼠标滚动后，顶部套筒的左边距
-                $('.topMask').animate({'left': toTopLeft + 'px'}, animateTime);
 
                 //调整章节的字体大小
                 if (arrIndex < 7) {
@@ -2284,7 +2276,7 @@ define(function (require, exports, module) {
                 } else if (arrIndex < 9) {
                     $('.capterUl li').css({'margin': '0 auto'});
                     $(".capterName").css('font-size', '1.3vw');
-                } else {
+                } else if (arrIndex == 9) {
                     $('.capterUl li').css({'margin': '0 19%'});
                     $(".capterName").css('font-size', '1vw');
                 }
@@ -2362,7 +2354,8 @@ define(function (require, exports, module) {
                         $('.addDefect').css({'width': '2.4vw', 'margin': '0 -3.8vw', 'font-size': '1vw'});
                     }
                 } else {
-                    $('.mainContent').css('background-position', '0 4%');//下调横穿章节名称的底边线
+                    // 下调横穿章节名称的底边线
+                    $('.mainContent').css('background-position', '0 4%');
                     $(".classCategory").css({'width': '20%', 'margin': '-8% -7% 0'});
                     $(".classContent").css({'width': '20%', 'margin': '0 -7%', 'padding-top': '14%'});
                     $('.addHomework').css({'width': '33%', 'margin-left': '-13%'});
@@ -2375,48 +2368,8 @@ define(function (require, exports, module) {
                     $('.addOrDel.del').css({'width': '20%'});
                 }
 
-                // var titleLeftMargin;//给capterTitle加上left-margin,使章节名称始终在当前屏幕的中央
-                // if(arrIndex == 0){
-                //     titleLeftMargin = (index%4-0.04)*screenWidth;
-                //     $(".capterTitle").css('margin-left',titleLeftMargin+'px');
-                // }else if(arrIndex == 1){
-                //     // titleLeftMargin = ((index%4)*12/24-0.04)*screenWidth;
-                //     titleLeftMargin = ((index%4)*12/24-0.04-0.5*arrIndex/2)*screenWidth;
-                //     titleLeftMargin = titleLeftMargin<0?0:titleLeftMargin;
-                //     if(titleLeftMargin + screenWidth > 2*screenWidth){
-                //         titleLeftMargin = screenWidth;
-                //     }
-                //     $(".capterTitle").css('margin-left',titleLeftMargin+'px');
-                //     var arr = [3,7,11,15,19];
-                //     if ($.inArray(index, arr) != -1) {
-                //         $(".capterTitle").eq((index+1)/4).css('margin-left',0);
-                //     }
-                //     var brr = [4,8,12,16,20];
-                //     if ($.inArray(index, brr) != -1) {
-                //         $(".capterTitle").eq(index/4-1).css('margin-left',screenWidth+'px');
-                //     }
-                // }else if(arrIndex == 2){
-                //     // titleLeftMargin = ((index%4)*8/24-0.04)*screenWidth;
-                //     titleLeftMargin = ((index%4)*8/24-0.04-0.5*arrIndex/3)*screenWidth;
-                //     titleLeftMargin = titleLeftMargin<0?0:titleLeftMargin;
-                //     if(titleLeftMargin + screenWidth > 4/3*screenWidth){
-                //         titleLeftMargin = 1/3*screenWidth;
-                //     }
-                //     $(".capterTitle").css('margin-left',titleLeftMargin+'px');
-                //     var arr1 = [2,3,6,7,10,11,14,15,18,19];
-                //     if($.inArray(index, arr1) != -1){
-                //         $(".capterTitle").eq(Math.floor((index+2)/4)).css('margin-left',0);
-                //     }
-                //     var brr1 = [4,8,12,16,20];
-                //     if ($.inArray(index, brr1) != -1) {
-                //         $(".capterTitle").eq(index/4-1).css('margin-left',1/3*screenWidth+'px');
-                //     }
-                // }else{
-                //     titleLeftMargin = 0;
-                //     $(".capterTitle").css('margin-left',titleLeftMargin+'px');
-                // }
-
-
+                // flag ==1 时候是 双击之后的状态，显示了周次信息（添加评测级以及课标级时，不需要考虑这些问题）
+                // 双击之后更改宽高
                 if ($('.weekDayNum').attr('flag') == 1) {
                     if (arrIndex > 5) {
                         $('.maskCapterTitle').css('top', '8.5vh');
@@ -2428,8 +2381,7 @@ define(function (require, exports, module) {
                         $('.weekDayNum').attr('flag', 1).css('display', 'block');
                     }
                 }
-
-            })
+            }, {passive: true});
         },
     };
 
