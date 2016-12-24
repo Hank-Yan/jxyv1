@@ -634,7 +634,9 @@ define(function (require, exports, module) {
 
                 // arrIndex 的取值范围是 [0, 9]
                 arrIndex = arrIndex < 0 ? 0 : arrIndex;
-                arrIndex = arrIndex > 9 ? 9 : arrIndex;
+                // arrIndex = arrIndex > 9 ? 9 : arrIndex;
+                // 更改取值范围，从0 到 10
+                arrIndex = arrIndex > 10 ? 10 : arrIndex;
 
                 // console.log(arrIndex);
                 // ===================================鼠标滚动后，黑色字体控制 begin=============================================================
@@ -743,15 +745,44 @@ define(function (require, exports, module) {
                     $(".capterDetail").fadeIn(fadeTime);
                     $(".capterDetailKnowledge").fadeOut(fadeTime);
                     $(".classSummary").fadeOut(fadeTime);
+                    $('.maskExamTitle').css('display', 'none');
+
+                    // 更换蓝色背景bar
+                    $('.mainContent').css({
+                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
+                    });
                 } else if (arrIndex < 9) {
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeIn(fadeTime);
                     $(".classSummary").fadeOut(fadeTime);
+                    $('.maskExamTitle').css('display', 'none');
+
+                    // 更换蓝色背景bar
+                    $('.mainContent').css({
+                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
+                    });
                 } else if (arrIndex == 9) {
                     $(".capterTitle").fadeIn(fadeTime);
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeOut(fadeTime);
                     $(".classSummary").fadeIn(fadeTime);
+                    $('.maskExamTitle').css('display', 'none');
+                    // 更换蓝色背景bar
+                    $('.mainContent').css({
+                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
+                    });
+                } else if (arrIndex == 10) {
+                    // by hank-yan
+                    $(".capterTitle").fadeOut(fadeTime);
+                    $(".capterDetail").fadeOut(fadeTime);
+                    $(".capterDetailKnowledge").fadeOut(fadeTime);
+                    $(".classSummary").fadeOut(fadeTime);
+
+                    $('.maskExamTitle').css('display', 'block');
+                    // 更换蓝色背景bar
+                    $('.mainContent').css({
+                        'backgroundImage': 'url(../../../../../images/examBar.jpg)'
+                    });
                 }
 
 
@@ -805,6 +836,7 @@ define(function (require, exports, module) {
                 //调整箭头宽度
                 $('.capterTitle .toLeft,.capterTitle .toRight').css({'position': 'relative', 'top': 0});
                 $('.maskCapterTitle .toLeft,.maskCapterTitle .toRight').css({'position': 'relative', 'top': 0});
+
                 if (arrIndex == 9) {
                     $(".capterName").css('width', '70%');
                     $(".toLeft").css({
@@ -2267,6 +2299,8 @@ define(function (require, exports, module) {
                     }
                 } else if(arrIndex == 9) {
                     $(".capterDetailKnowledge").css({'background-position': '45% 1.3%', 'background-size': '68.5% 2%'});
+                } else if (arrIndex == 10) {
+
                 }
 
                 //调整章节的字体大小
@@ -2281,8 +2315,14 @@ define(function (require, exports, module) {
                     $(".capterName").css('font-size', '1vw');
                 }
 
+                //上调横穿章节名称的底边线
                 if (arrIndex != 0) {
-                    $('.mainContent').css('background-position', '0 5.8%');//上调横穿章节名称的底边线
+                    if (arrIndex == 10) {
+                        $('.mainContent').css('background-position', '0 3.8%');
+                    } else {
+                        $('.mainContent').css('background-position', '0 5.8%');
+                    }
+
                     $(".classContent").css({'width': '2vw', 'margin': '0 -7%', 'padding-top': '55%'});
                     $('.addOrDel.add').css('width', '2vw');
                     $('.addOrDel.del').css('width', '2vw');
@@ -2367,6 +2407,9 @@ define(function (require, exports, module) {
                     $('.addOrDel.add').css({'width': '20%', 'margin': '0 -7%'});
                     $('.addOrDel.del').css({'width': '20%'});
                 }
+
+                //============================by hank-yan===============================
+
 
                 // flag ==1 时候是 双击之后的状态，显示了周次信息（添加评测级以及课标级时，不需要考虑这些问题）
                 // 双击之后更改宽高

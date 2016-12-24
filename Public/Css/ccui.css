@@ -969,7 +969,8 @@ body {
   background: #70ad47;
   color: #000;
 }
-.maskCapterTitle {
+.maskCapterTitle,
+.maskExamTitle {
   margin-top: -0.1%;
   position: fixed;
   left: 0;
@@ -978,30 +979,50 @@ body {
   height: 9.33vh;
 }
 .maskCapterTitle .toLeft,
+.maskExamTitle .toLeft,
 .maskCapterTitle .capterName,
-.maskCapterTitle .toRight {
+.maskExamTitle .capterName,
+.maskCapterTitle .toRight,
+.maskExamTitle .toRight,
+.maskCapterTitle .examToLeft,
+.maskExamTitle .examToLeft,
+.maskCapterTitle .examCapterName,
+.maskExamTitle .examCapterName,
+.maskCapterTitle .examToRight,
+.maskExamTitle .examToRight {
   display: inline-block;
   float: left;
 }
 .maskCapterTitle .toLeft,
-.maskCapterTitle .toRight {
+.maskExamTitle .toLeft,
+.maskCapterTitle .toRight,
+.maskExamTitle .toRight,
+.maskCapterTitle .examToLeft,
+.maskExamTitle .examToLeft,
+.maskCapterTitle .examToRight,
+.maskExamTitle .examToRight {
   cursor: pointer;
   width: 3%;
   max-height: 6.33vh;
 }
-.maskCapterTitle .toLeft {
+.maskCapterTitle .toLeft,
+.maskExamTitle .toLeft {
   background: url('../images/toLeft1.jpg') -8px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 3% 0 29%;
   height: 5vh;
 }
-.maskCapterTitle .toRight {
+.maskCapterTitle .toRight,
+.maskExamTitle .toRight {
   background: url('../images/toRight1.jpg') 7px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 0 0 3%;
   height: 5vh;
 }
-.maskCapterTitle .capterName {
+.maskCapterTitle .capterName,
+.maskExamTitle .capterName,
+.maskCapterTitle .examCapterName,
+.maskExamTitle .examCapterName {
   text-align: center;
   width: 30%;
   margin: 5px 0;
@@ -1013,13 +1034,36 @@ body {
   white-space: normal;
   border-radius: 3px;
 }
-.maskCapterTitle .shengzi {
+.maskCapterTitle .shengzi,
+.maskExamTitle .shengzi,
+.maskCapterTitle .examShengzi,
+.maskExamTitle .examShengzi {
   z-index: -1;
   width: 15%;
   height: 69%;
   background: #B97A57;
   margin: 3% 42.5%;
   position: relative;
+}
+.maskCapterTitle .examToLeft,
+.maskExamTitle .examToLeft {
+  background: url('../images/toLeft_exam.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 3% 0 29%;
+  height: 5vh;
+}
+.maskCapterTitle .examToRight,
+.maskExamTitle .examToRight {
+  background: url('../images/toRight_exam.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 0 0 3%;
+  height: 5vh;
+}
+.maskCapterTitle .examCapterName,
+.maskExamTitle .examCapterName,
+.maskCapterTitle .examShengzi,
+.maskExamTitle .examShengzi {
+  background: #00B4FB;
 }
 .mainContent {
   width: 100%;

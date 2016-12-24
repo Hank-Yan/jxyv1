@@ -155,7 +155,7 @@ body {
     }
 }
 
-.maskCapterTitle {
+.maskCapterTitle, .maskExamTitle{
     margin-top: -0.1%;
     position: fixed;
     left: 0;
@@ -163,11 +163,11 @@ body {
     // display: block;
     width: 100vw;
     height: 9.33vh;
-    .toLeft, .capterName, .toRight {
+    .toLeft, .capterName, .toRight, .examToLeft, .examCapterName, .examToRight{
         display: inline-block;
         float: left;
     }
-    .toLeft, .toRight {
+    .toLeft, .toRight, .examToLeft, .examToRight{
         cursor: pointer;
         width: 3%;
         max-height: 6.33vh;
@@ -184,7 +184,7 @@ body {
         margin: 1.1% 0 0 3%;
         height: 5vh;
     }
-    .capterName {
+    .capterName, .examCapterName {
         text-align: center;
         width: 30%;
         margin: 5px 0;
@@ -196,13 +196,28 @@ body {
         white-space: normal;
         border-radius: 3px;
     }
-    .shengzi {
+    .shengzi, .examShengzi {
         z-index: -1;
         width: 15%;
         height: 69%;
         background: #B97A57;
         margin: 3% 42.5%;
         position: relative;
+    }
+    .examToLeft {
+        background: url('../images/toLeft_exam.jpg') -8px center no-repeat;
+        background-size: 100% 100%;
+        margin: 1.1% 3% 0 29%;
+        height: 5vh;
+    }
+    .examToRight {
+        background: url('../images/toRight_exam.jpg') 7px center no-repeat;
+        background-size: 100% 100%;
+        margin: 1.1% 0 0 3%;
+        height: 5vh;
+    }
+    .examCapterName, .examShengzi {
+        background: #00B4FB;
     }
 }
 

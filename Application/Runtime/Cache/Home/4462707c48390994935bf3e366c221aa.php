@@ -375,7 +375,7 @@
     </div>
     <div class="classNum">数学<br><span>9年1班</span></div>
 </div>
-<div class="maskCapterTitle">
+<div class="maskCapterTitle" style="">
     <span class="toLeft" style="cursor:pointer;"></span>
     <?php if($cap == 0){?>
     <span class="capterName">25章<br>概率初步</span>
@@ -385,47 +385,56 @@
     <span class="toRight" style="cursor:pointer;"></span>
     <div class="shengzi"></div>
 </div>
+
+<!--评测级的maskTitle-->
+<div class="maskExamTitle" style="display: none;">
+    <span class="examToLeft" style="cursor:pointer;"></span>
+    <span class="examCapterName" style="line-height: 7.77vh;">圆形与圆</span>
+    <span class="examToRight" style="cursor:pointer;"></span>
+    <div class="examShengzi"></div>
+</div>
+
 <div class="mainContent" id="mainContent">
-    <ul class="classCon">
+    <ul class="classCon" style="">
         <?php foreach($capter as $i=>$capter_item): ?>
         <li class="capter t<?= $capter_item['capter_num']?>h" flag="0">
             <div class="capterTitle" style="visibility:hidden;">
                 <span class="toLeft" style="cursor:pointer;"></span>
                 <?php if ($cap == 0): ?>
-                <?php if ($i < 2): ?>
-                <span class="capterName">
-                            <?= $capter_item['capter_num']?>章<br>
-                    <?= $capter_item['capter_name']?>
-                        </span>
-                <?php elseif ($i == 2 || $i == 6 || $i == 10):?>
-                <span class="capterName">
-                            <?= $capter_item['capter_num']?>章<br>
-                        </span>
-                <?php elseif ($i > 2 && $i < 6):?>
-                <span class="capterName">
-                            <?= $capter_item['capter_num']-1?>章
-                    <?= $capter_item['capter_name']?>
-                        </span>
-                <?php elseif($i>6 && $i < 10):?>
-                <span class="capterName">
-                            <?= $capter_item['capter_num']-2?>章
-                    <?= $capter_item['capter_name']?>
-                        </span>
-                <?php endif;?>
+                    <?php if ($i < 2): ?>
+                        <span class="capterName">
+                                    <?= $capter_item['capter_num']?>章<br>
+                            <?= $capter_item['capter_name']?>
+                                </span>
+                    <?php elseif ($i == 2 || $i == 6 || $i == 10):?>
+                        <span class="capterName">
+                                    <?= $capter_item['capter_num']?>章<br>
+                                </span>
+                    <?php elseif ($i > 2 && $i < 6):?>
+                        <span class="capterName">
+                                    <?= $capter_item['capter_num']-1?>章
+                            <?= $capter_item['capter_name']?>
+                                </span>
+                    <?php elseif($i>6 && $i < 10):?>
+                        <span class="capterName">
+                                    <?= $capter_item['capter_num']-2?>章
+                            <?= $capter_item['capter_name']?>
+                                </span>
+                    <?php endif;?>
                 <?php elseif ($cap == 1): ?>
-                <?php if ($i == 0): ?>
-                <span class="capterName">第29章<br>投影和视图</span>
-                <?php elseif($i == 1):?>
-                <span class="capterName">阶段性复习和结业考试</span>
-                <?php elseif($i == 2):?>
-                <span class="capterName" style="line-height: 7.77vh;">第一轮复习</span>
-                <?php elseif($i == 3):?>
-                <span class="capterName" style="line-height: 7.77vh;">第二轮复习</span>
-                <?php elseif($i == 4):?>
-                <span class="capterName" style="line-height: 7.77vh;">第三轮复习</span>
-                <?php elseif($i == 5):?>
-                <span class="capterName" style="line-height: 7.77vh;">保留章节</span>
-                <?php endif;?>
+                    <?php if ($i == 0): ?>
+                        <span class="capterName">第29章<br>投影和视图</span>
+                    <?php elseif($i == 1):?>
+                        <span class="capterName">阶段性复习和结业考试</span>
+                    <?php elseif($i == 2):?>
+                        <span class="capterName" style="line-height: 7.77vh;">第一轮复习</span>
+                    <?php elseif($i == 3):?>
+                        <span class="capterName" style="line-height: 7.77vh;">第二轮复习</span>
+                    <?php elseif($i == 4):?>
+                        <span class="capterName" style="line-height: 7.77vh;">第三轮复习</span>
+                    <?php elseif($i == 5):?>
+                        <span class="capterName" style="line-height: 7.77vh;">保留章节</span>
+                    <?php endif;?>
                 <?php endif;?>
 
                 <span class="toRight" style="cursor:pointer;"></span>
@@ -939,6 +948,266 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
+
+            <!--评测级 1级-->
+            <div class="examLevelOne" style="display:none;">
+                <ul class="capterUl">
+
+                    <li capterId="<?= $capter_item['capter_num']?>"
+                        class="<?= $capter_item['capter_num'];?>">
+                        <div class="addOrDel add" classId="<?= $capter_item['id'];?>">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+
+                    <?php foreach($knowledge as $knowledge_item): ?>
+                    <?php if ($knowledge_item['capter_id'] == $capter_item['capter_num']): ?>
+                    <li class="<?= $knowledge_item['capter_id'];?>">
+                        <div class="addOrDel del" classId="<?= $knowledge_item['id']?>">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <?php if ($knowledge_item['class_flag'] == 0): ?>
+                        <div class="classCategory">新课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 1): ?>
+                        <div class="classCategory">活动课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 2): ?>
+                        <div class="classCategory">复习课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 3): ?>
+                        <div class="classCategory">单元测</div>
+                        <?php else: ?>
+                        <div class="classCategory">考试</div>
+                        <?php endif; ?>
+
+                        <?php if ($knowledge_item['add_flag'] == 1): ?>
+                        <div class="classContent" flag="0" style="background:#ffe777;"
+                             classIndex="<?= $knowledge_item['id']?>"
+                             title="<?= $knowledge_item['class_name']?>">
+                            <?= $knowledge_item['class_name']?>
+                        </div>
+                        <?php else: ?>
+                        <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
+                             title="<?= $knowledge_item['class_name']?>">
+                            <?= $knowledge_item['class_name']?>
+                        </div>
+                        <?php endif; ?>
+
+                        <div class="classesDetails">
+                            <?php if ($knowledge_item['class_flag'] != 2): ?>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                <?= $knowledge_item['task_count']?>
+                                            </label>组</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php else: ?>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                <?= $knowledge_item['task_count']?>
+                                            </label>份</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php endif; ?>
+
+                            <?php if ($knowledge_item['capter_id'] == 21): ?>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>20</label>条</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php else: ?>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
+                                        <n class="btw"><t><label>0</label>条</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php endif; ?>
+                            <div class="addDefect">缺陷<br/>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br/>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addTeamEvaluate">班组评价</div>
+                            <div class="addSuggest">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                        <div class="groupDetails" style="margin-left: -92%;display: none;">
+                            <!--群组态详情-->
+                            <img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">
+                        </div>
+                    </li>
+                    <li capterId="<?= $knowledge_item['capter_id']?>"
+                        class="<?= $knowledge_item['capter_id']?>">
+                        <div class="addOrDel add" classId="<?= $knowledge_item['id']?>">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <?php endif; ?>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <!--评测级 2级-->
+            <div class="examLevelTwo" style="display:none;">
+
+            </div>
+
+            <!--课标级 1级 (1.1 至 1.8 搞定)-->
+            <div class="standardLevelOne" style="display:none;">
+                <ul class="capterUl">
+
+                    <li capterId="<?= $capter_item['capter_num']?>"
+                        class="<?= $capter_item['capter_num'];?>">
+                        <div class="addOrDel add" classId="<?= $capter_item['id'];?>">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+
+                    <?php foreach($knowledge as $knowledge_item): ?>
+                    <?php if ($knowledge_item['capter_id'] == $capter_item['capter_num']): ?>
+                    <li class="<?= $knowledge_item['capter_id'];?>">
+                        <div class="addOrDel del" classId="<?= $knowledge_item['id']?>">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <?php if ($knowledge_item['class_flag'] == 0): ?>
+                        <div class="classCategory">新课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 1): ?>
+                        <div class="classCategory">活动课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 2): ?>
+                        <div class="classCategory">复习课</div>
+                        <?php elseif ($knowledge_item['class_flag'] == 3): ?>
+                        <div class="classCategory">单元测</div>
+                        <?php else: ?>
+                        <div class="classCategory">考试</div>
+                        <?php endif; ?>
+
+                        <?php if ($knowledge_item['add_flag'] == 1): ?>
+                        <div class="classContent" flag="0" style="background:#ffe777;"
+                             classIndex="<?= $knowledge_item['id']?>"
+                             title="<?= $knowledge_item['class_name']?>">
+                            <?= $knowledge_item['class_name']?>
+                        </div>
+                        <?php else: ?>
+                        <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
+                             title="<?= $knowledge_item['class_name']?>">
+                            <?= $knowledge_item['class_name']?>
+                        </div>
+                        <?php endif; ?>
+
+                        <div class="classesDetails">
+                            <?php if ($knowledge_item['class_flag'] != 2): ?>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                <?= $knowledge_item['task_count']?>
+                                            </label>组</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php else: ?>
+                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                <?= $knowledge_item['task_count']?>
+                                            </label>份</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php endif; ?>
+
+                            <?php if ($knowledge_item['capter_id'] == 21): ?>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>20</label>条</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php else: ?>
+                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
+                                <span>
+                                        <n class="btw"><t><label>0</label>条</t>
+                                        </n>
+                                        <br/>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+                            <?php endif; ?>
+                            <div class="addDefect">缺陷<br/>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br/>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addTeamEvaluate">班组评价</div>
+                            <div class="addSuggest">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                        <div class="groupDetails" style="margin-left: -92%;display: none;">
+                            <!--群组态详情-->
+                            <img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">
+                        </div>
+                    </li>
+                    <li capterId="<?= $knowledge_item['capter_id']?>"
+                        class="<?= $knowledge_item['capter_id']?>">
+                        <div class="addOrDel add" classId="<?= $knowledge_item['id']?>">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <?php endif; ?>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
         </li>
         <?php endforeach;?>
     </ul>

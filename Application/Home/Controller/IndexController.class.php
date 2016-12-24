@@ -405,6 +405,12 @@ class IndexController extends Controller {
         $this->display();
 
     }
+    public function hankTest()
+    {
+        $data = M('Week_exam')->select();
+        dump($data);
+//        $this->display();
+    }
     public function homework()
     {
         $this->display();
