@@ -356,7 +356,9 @@
     <input id="colbase" value=0 style="display: none">
 </div>
 
-<div class="topMask" style="cursor:pointer"></div>
+<div class="topMask" style="cursor:pointer;"></div>
+<div class="examTopMask" style="cursor:pointer;display: none;"></div>
+<div class="standardTopMask" style="cursor:pointer;display: none;"></div>
 <div id="divForm" style="display:none;">
     <input type="file" id="myfile">
     <input type="button" id="btnOpen" value="选择文件">
@@ -371,6 +373,8 @@
     <div class="weekInfo">
         <!--weekInfo 是通过 js 动态添加的-->
         <div class="weekNum" id="weekNum"></div>
+        <div class="weekExamNum" id="weekExamNum" style="display: none;"></div>
+        <div class="weekStandardNum" id="weekStandardNum" style="display: none;"></div>
         <div class="weekDayNum" flag="0" style="display:none;"></div>
     </div>
     <div class="classNum">数学<br><span>9年1班</span></div>
@@ -389,13 +393,22 @@
 <!--评测级的maskTitle-->
 <div class="maskExamTitle" style="display: none;">
     <span class="examToLeft" style="cursor:pointer;"></span>
-    <span class="examCapterName" style="line-height: 7.77vh;">圆形与圆</span>
+    <span class="examCapterName" style="line-height: 7.77vh;">图形与圆</span>
     <span class="examToRight" style="cursor:pointer;"></span>
-    <div class="examShengzi"></div>
+    <div class="examShengzi" style="height: 71%;"></div>
 </div>
 
-<div class="mainContent" id="mainContent">
-    <ul class="classCon" style="">
+<!--课标级的 maskTitle-->
+<div class="maskStandardTitle" style="display: none;">
+    <span class="standardToLeft" style="cursor:pointer;"></span>
+    <span class="standardCapterName" style="line-height: 7.77vh;">课标级别</span>
+    <span class="standardToRight" style="cursor:pointer;"></span>
+    <div class="standardShengzi" style="height: 71%;"></div>
+</div>
+
+<!--课时级-->
+<div class="mainContent">
+    <ul class="classCon">
         <?php foreach($capter as $i=>$capter_item): ?>
         <li class="capter t<?= $capter_item['capter_num']?>h" flag="0">
             <div class="capterTitle" style="visibility:hidden;">
@@ -441,7 +454,7 @@
                 <div class="shengzi"></div>
             </div>
 
-            <div class="capterDetail viewport-flip">
+            <div class="capterDetail">
                 <ul class="capterUl">
                     <li capterId="<?= $capter_item['capter_num']?>"
                         class="<?= $capter_item['capter_num'];?>">
@@ -617,7 +630,6 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
-
             <div class="capterDetailKnowledge" style="display:none;">
                 <ul class="capterUl">
 
@@ -743,7 +755,6 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
-
             <div class="classSummary" style="display:none;">
                 <ul class="capterUl">
                     <?php foreach($category as $category_item): ?>
@@ -948,268 +959,953 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
-
-            <!--评测级 1级-->
-            <div class="examLevelOne" style="display:none;">
-                <ul class="capterUl">
-
-                    <li capterId="<?= $capter_item['capter_num']?>"
-                        class="<?= $capter_item['capter_num'];?>">
-                        <div class="addOrDel add" classId="<?= $capter_item['id'];?>">
-                            <w class="btc">
-                                <c>+</c>
-                            </w>
-                        </div>
-                    </li>
-
-                    <?php foreach($knowledge as $knowledge_item): ?>
-                    <?php if ($knowledge_item['capter_id'] == $capter_item['capter_num']): ?>
-                    <li class="<?= $knowledge_item['capter_id'];?>">
-                        <div class="addOrDel del" classId="<?= $knowledge_item['id']?>">
-                            <w class="btj">
-                                <d>-</d>
-                            </w>
-                        </div>
-
-                        <?php if ($knowledge_item['class_flag'] == 0): ?>
-                        <div class="classCategory">新课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 1): ?>
-                        <div class="classCategory">活动课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 2): ?>
-                        <div class="classCategory">复习课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 3): ?>
-                        <div class="classCategory">单元测</div>
-                        <?php else: ?>
-                        <div class="classCategory">考试</div>
-                        <?php endif; ?>
-
-                        <?php if ($knowledge_item['add_flag'] == 1): ?>
-                        <div class="classContent" flag="0" style="background:#ffe777;"
-                             classIndex="<?= $knowledge_item['id']?>"
-                             title="<?= $knowledge_item['class_name']?>">
-                            <?= $knowledge_item['class_name']?>
-                        </div>
-                        <?php else: ?>
-                        <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
-                             title="<?= $knowledge_item['class_name']?>">
-                            <?= $knowledge_item['class_name']?>
-                        </div>
-                        <?php endif; ?>
-
-                        <div class="classesDetails">
-                            <?php if ($knowledge_item['class_flag'] != 2): ?>
-                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>
-                                                <?= $knowledge_item['task_count']?>
-                                            </label>组</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php else: ?>
-                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>
-                                                <?= $knowledge_item['task_count']?>
-                                            </label>份</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php endif; ?>
-
-                            <?php if ($knowledge_item['capter_id'] == 21): ?>
-                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>20</label>条</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php else: ?>
-                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                <span>
-                                        <n class="btw"><t><label>0</label>条</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php endif; ?>
-                            <div class="addDefect">缺陷<br/>
-                                <span>
-                                    <n class="btw"><t>
-                                        <label>0</label>种</t>
-                                    </n><br/>
-                                    <p class="btn"><i>+</i></p>
-                                </span>
-                            </div>
-                            <div class="addTeamEvaluate">班组评价</div>
-                            <div class="addSuggest">
-                                <n class="btm">
-                                    <m>建议</m>
-                                </n>
-                            </div>
-                        </div>
-                        <div class="groupDetails" style="margin-left: -92%;display: none;">
-                            <!--群组态详情-->
-                            <img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">
-                        </div>
-                    </li>
-                    <li capterId="<?= $knowledge_item['capter_id']?>"
-                        class="<?= $knowledge_item['capter_id']?>">
-                        <div class="addOrDel add" classId="<?= $knowledge_item['id']?>">
-                            <w class="btc">
-                                <c>+</c>
-                            </w>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-
-            <!--评测级 2级-->
-            <div class="examLevelTwo" style="display:none;">
-
-            </div>
-
-            <!--课标级 1级 (1.1 至 1.8 搞定)-->
-            <div class="standardLevelOne" style="display:none;">
-                <ul class="capterUl">
-
-                    <li capterId="<?= $capter_item['capter_num']?>"
-                        class="<?= $capter_item['capter_num'];?>">
-                        <div class="addOrDel add" classId="<?= $capter_item['id'];?>">
-                            <w class="btc">
-                                <c>+</c>
-                            </w>
-                        </div>
-                    </li>
-
-                    <?php foreach($knowledge as $knowledge_item): ?>
-                    <?php if ($knowledge_item['capter_id'] == $capter_item['capter_num']): ?>
-                    <li class="<?= $knowledge_item['capter_id'];?>">
-                        <div class="addOrDel del" classId="<?= $knowledge_item['id']?>">
-                            <w class="btj">
-                                <d>-</d>
-                            </w>
-                        </div>
-
-                        <?php if ($knowledge_item['class_flag'] == 0): ?>
-                        <div class="classCategory">新课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 1): ?>
-                        <div class="classCategory">活动课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 2): ?>
-                        <div class="classCategory">复习课</div>
-                        <?php elseif ($knowledge_item['class_flag'] == 3): ?>
-                        <div class="classCategory">单元测</div>
-                        <?php else: ?>
-                        <div class="classCategory">考试</div>
-                        <?php endif; ?>
-
-                        <?php if ($knowledge_item['add_flag'] == 1): ?>
-                        <div class="classContent" flag="0" style="background:#ffe777;"
-                             classIndex="<?= $knowledge_item['id']?>"
-                             title="<?= $knowledge_item['class_name']?>">
-                            <?= $knowledge_item['class_name']?>
-                        </div>
-                        <?php else: ?>
-                        <div class="classContent" flag="0" classIndex="<?= $knowledge_item['id']?>"
-                             title="<?= $knowledge_item['class_name']?>">
-                            <?= $knowledge_item['class_name']?>
-                        </div>
-                        <?php endif; ?>
-
-                        <div class="classesDetails">
-                            <?php if ($knowledge_item['class_flag'] != 2): ?>
-                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">作业<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>
-                                                <?= $knowledge_item['task_count']?>
-                                            </label>组</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php else: ?>
-                            <div class="addHomework" classIndex="<?= $knowledge_item['id']?>">卷数<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>
-                                                <?= $knowledge_item['task_count']?>
-                                            </label>份</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php endif; ?>
-
-                            <?php if ($knowledge_item['capter_id'] == 21): ?>
-                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                <span>
-                                        <n class="btw"><t>
-                                            <label>20</label>条</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php else: ?>
-                            <div class="addCorrect" classId="<?= $knowledge_item['id']?>">批语<br/>
-                                <span>
-                                        <n class="btw"><t><label>0</label>条</t>
-                                        </n>
-                                        <br/>
-                                        <p class="btn"><i>+</i></p>
-                                    </span>
-                            </div>
-                            <?php endif; ?>
-                            <div class="addDefect">缺陷<br/>
-                                <span>
-                                    <n class="btw"><t>
-                                        <label>0</label>种</t>
-                                    </n><br/>
-                                    <p class="btn"><i>+</i></p>
-                                </span>
-                            </div>
-                            <div class="addTeamEvaluate">班组评价</div>
-                            <div class="addSuggest">
-                                <n class="btm">
-                                    <m>建议</m>
-                                </n>
-                            </div>
-                        </div>
-                        <div class="groupDetails" style="margin-left: -92%;display: none;">
-                            <!--群组态详情-->
-                            <img style="width: 52px;height: 270px;" src="/jxyv1/images/students.png">
-                        </div>
-                    </li>
-                    <li capterId="<?= $knowledge_item['capter_id']?>"
-                        class="<?= $knowledge_item['capter_id']?>">
-                        <div class="addOrDel add" classId="<?= $knowledge_item['id']?>">
-                            <w class="btc">
-                                <c>+</c>
-                            </w>
-                        </div>
-                    </li>
-                    <?php endif; ?>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
-
         </li>
         <?php endforeach;?>
+    </ul>
+</div>
+
+<!--评测级-->
+<div class="examMainContent" style="display: none;">
+    <ul class="examCon">
+        <li class="exam">
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">图形与圆</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--标题-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">新课</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">新课</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">新课</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">新课</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--课标级-->
+<div class="standardMainContent" style="display: none;">
+    <ul class="standardCon">
+        <li class="standard">
+            <div class="standardTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="standardName">图形与圆</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--标题-->
+            <div class="standardDetail">
+                <ul class="standardUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="standardCategory">新课</div>
+
+                        <div class="standardContent" flag="0" classindex="59" title="">
+                            随机事件与概率1
+                        </div>
+                        <div class="standardDetails">
+                            <div class="addStandardsSub1" classindex="59">作业<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>组</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addStandardsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addStandardsSub4">班组评价</div>
+                            <div class="addStandardsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
     </ul>
 </div>
 <div class="confirm">

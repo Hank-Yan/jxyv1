@@ -14,7 +14,13 @@ define(function (require, exports, module) {
     };
 
     // 基本参数设置
+    // arrIndex 有下限0， 没有上限，上限到examMainContent 里面
+    // arrExamIndex 没有上限，上限跳转standardMainContent，没有下限， 下限跳转mainContent
+    // arrStandardIndex 有上限，没有下限，下限跳转到 examMainContent 里面
     var arrIndex = 0;//缩放后宽度数组的游标
+    var arrExamIndex = 0;
+    var arrStandardIndex = 0;
+
     var screenWidth = $(window).width();//当前屏幕有效宽度
     var selectedWeekNum;// 被选中的周次，
     console.log(screenWidth);
@@ -46,6 +52,10 @@ define(function (require, exports, module) {
             this.navigation();
             // 添加周次样式信息（周次信息是通过js 代码添加的）
             this.addWeekInfo();
+            // 周次的信息，开始时候隐藏起来
+            this.addExamWeekInfo();
+            // 周次的信息，开始时候隐藏起来
+            this.addStandardWeekInfo();
             // 添加周一到周五样式，在后面双击或者单击时候显示出来
             this.weekStyleAfterDbClick();
             // 内容部分左右移动样式的控制
@@ -162,6 +172,14 @@ define(function (require, exports, module) {
         addWeekInfo: function () {
             var addWeekInfo = require('./addWeekInfo.js');
             addWeekInfo.run();
+        },
+        addExamWeekInfo: function () {
+            var addExamWeekInfo = require('./addExamWeekInfo.js');
+            addExamWeekInfo.run();
+        },
+        addStandardWeekInfo: function () {
+            var addStandardWeekInfo = require('./addStandardWeekInfo.js');
+            addStandardWeekInfo.run();
         },
         // 顶部蒙层双击事件响应
         topMaskDbClick: function () {
@@ -416,7 +434,7 @@ define(function (require, exports, module) {
             //顶部蒙层的拖拽事件
             $(".topMask").draggable({axis: "x"});
             $(".topMask").draggable({
-                containment: ".weekInfo",
+                containment: ".weekInfo",// containment 是被约束在哪个元素里面
                 scroll: false,
                 cursor: "pointer"
             });
@@ -611,6 +629,7 @@ define(function (require, exports, module) {
         // 滚轮滚动的逻辑
         mouseWheel: function () {
             $('.mainContent').mousewheel(function (event, delta) {
+                arrExamIndex = 0;
                 // 阻止事件冒泡
                 event.stopPropagation();
                 // 被选中的周次的索引
@@ -748,9 +767,17 @@ define(function (require, exports, module) {
                     $('.maskExamTitle').css('display', 'none');
 
                     // 更换蓝色背景bar
-                    $('.mainContent').css({
-                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
-                    });
+                    // $('.mainContent').css({
+                    //     'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
+                    // });
+                    $('.topMask').css('display', 'block');
+                    $('.examTopMask').css('display', 'none');
+
+                    $('#weekNum').css('display', 'block');
+                    $('#weekExamNum').css('display', 'none');
+
+                    $('.mainContent').css('display', 'block');
+                    $('.examMainContent').css('display', 'none');
                 } else if (arrIndex < 9) {
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeIn(fadeTime);
@@ -758,19 +785,31 @@ define(function (require, exports, module) {
                     $('.maskExamTitle').css('display', 'none');
 
                     // 更换蓝色背景bar
-                    $('.mainContent').css({
-                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
-                    });
+                    // $('.mainContent').css({
+                    //     'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
+                    // });
+                    $('.topMask').css('display', 'block');
+                    $('.examTopMask').css('display', 'none');
+                    $('#weekNum').css('display', 'block');
+                    $('#weekExamNum').css('display', 'none');
+
+                    $('.mainContent').css('display', 'block');
+                    $('.examMainContent').css('display', 'none');
                 } else if (arrIndex == 9) {
                     $(".capterTitle").fadeIn(fadeTime);
                     $(".capterDetail").fadeOut(fadeTime);
                     $(".capterDetailKnowledge").fadeOut(fadeTime);
                     $(".classSummary").fadeIn(fadeTime);
+
                     $('.maskExamTitle').css('display', 'none');
                     // 更换蓝色背景bar
-                    $('.mainContent').css({
-                        'backgroundImage': 'url(../../../../../images/capterBar.jpg)'
-                    });
+                    $('.topMask').css('display', 'block');
+                    $('.examTopMask').css('display', 'none');
+                    $('#weekNum').css('display', 'block');
+                    $('#weekExamNum').css('display', 'none');
+
+                    $('.mainContent').css('display', 'block');
+                    $('.examMainContent').css('display', 'none');
                 } else if (arrIndex == 10) {
                     // by hank-yan
                     $(".capterTitle").fadeOut(fadeTime);
@@ -780,9 +819,14 @@ define(function (require, exports, module) {
 
                     $('.maskExamTitle').css('display', 'block');
                     // 更换蓝色背景bar
-                    $('.mainContent').css({
-                        'backgroundImage': 'url(../../../../../images/examBar.jpg)'
-                    });
+                    $('.topMask').css('display', 'none');
+                    $('.examTopMask').css('display', 'block');
+                    $('#weekNum').css('display', 'none');
+                    $('#weekExamNum').css('display', 'block');
+
+                    // 让课标级隐藏， 评测级显示
+                    $('.mainContent').css('display', 'none');
+                    $('.examMainContent').css('display', 'block');
                 }
 
 
@@ -2424,6 +2468,83 @@ define(function (require, exports, module) {
                         $('.weekDayNum').attr('flag', 1).css('display', 'block');
                     }
                 }
+            }, {passive: true});
+            $('.examMainContent').mousewheel(function (event, delta) {
+                // 把课时级的一系列状态初始化一下
+                arrIndex = 9;
+                arrStandardIndex = 0;
+                // 阻止事件冒泡
+                event.stopPropagation();
+
+                // delta 代表鼠标滚轮滚动的方向，取两个值 1 或者 -1
+                if (delta > 0) {
+                    arrExamIndex--;
+                } else if (delta < 0) {
+                    arrExamIndex++;
+                }
+
+               console.log(arrExamIndex);
+
+                // 如果 arrExamIndex<0 说明需要恢复课时级状态
+                if (arrExamIndex <0 ) {
+                    // 课时级显示，同时，各个元素进行初始化操作
+                    $('.examMainContent').css('display', 'none');
+                    $('.mainContent').css('display', 'block');
+
+                    // 恢复课时级 index=9 的状态
+                    var recovery = require('./recoveryNineStateOfClassLevel.js');
+                    recovery.run();
+                }
+
+                // 跳到下一层
+                if (arrExamIndex > 0) {
+                    // 调整 mask 的可见性
+                    $('.examTopMask').css('display', 'none');// 顶部蒙层
+                    $('.maskExamTitle').css('display','none');
+                    $('.standardTopMask').css('display', 'block');
+                    $('.maskStandardTitle').css('display', 'block');// 章节名称
+
+                    $('#weekExamNum').css('display', 'none');
+                    $('#weekStandardNum').css('display', 'block');
+
+                    // 课时级显示，同时，各个元素进行初始化操作
+                    $('.examMainContent').css('display', 'none');
+                    $('.standardMainContent').css('display', 'block');
+
+                }
+
+            }, {passive: true});
+            $('.standardMainContent').mousewheel(function (event, delta) {
+                // 把课时级的一系列状态初始化一下
+                arrExamIndex = 1;
+                // 阻止事件冒泡
+                event.stopPropagation();
+
+                // delta 代表鼠标滚轮滚动的方向，取两个值 1 或者 -1
+                if (delta > 0) {
+                    arrStandardIndex--;
+                } else if (delta < 0) {
+                    arrStandardIndex++;
+                }
+
+                console.log(arrStandardIndex);
+
+                // 如果 arrExamIndex<0 说明需要恢复课时级状态
+                if (arrStandardIndex < 0 ) {
+                    // 调整 mask 的可见性
+                    $('.examTopMask').css('display', 'block');// 顶部蒙层
+                    $('.maskExamTitle').css('display','block');
+                    $('.standardTopMask').css('display', 'none');
+                    $('.maskStandardTitle').css('display', 'none');// 章节名称
+
+                    $('#weekExamNum').css('display', 'block');
+                    $('#weekStandardNum').css('display', 'none');
+
+                    // 课时级显示，同时，各个元素进行初始化操作
+                    $('.examMainContent').css('display', 'block');
+                    $('.standardMainContent').css('display', 'none');
+                }
+                arrStandardIndex = arrStandardIndex > 10 ? 10 : arrStandardIndex;
             }, {passive: true});
         },
     };

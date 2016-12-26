@@ -830,15 +830,29 @@ body {
   padding: 0;
   background: #f6f6f6;
 }
-.topMask {
+.topMask,
+.examTopMask,
+.standardTopMask {
   position: fixed;
-  left: 48.5%;
   top: 0;
-  width: 6.544%;
   height: 8.5vh;
-  background: #B97A57;
   opacity: 0.5;
   border-radius: 7px;
+}
+.topMask {
+  background: #B97A57;
+  width: 6.544%;
+  left: 48.5%;
+}
+.examTopMask {
+  background: #73D6F9;
+  width: 16.2%;
+  left: 41.9%;
+}
+.standardTopMask {
+  background: #FAC400;
+  width: 45.2%;
+  left: 30.9%;
 }
 .yanshizhuti {
   text-align: center;
@@ -869,7 +883,9 @@ body {
   width: 88%;
   float: left;
 }
-.headInfo .weekInfo .weekNum {
+.headInfo .weekInfo .weekNum,
+.headInfo .weekInfo .weekExamNum,
+.headInfo .weekInfo .weekStandardNum {
   height: 8.5vh;
   line-height: 8.5vh;
   width: 100%;
@@ -883,7 +899,9 @@ body {
   margin-left: -7%;
 }
 .headInfo .weekInfo .weekNum span,
-.headInfo .weekInfo .weekDayNum span {
+.headInfo .weekInfo .weekDayNum span,
+.headInfo .weekInfo .weekExamNum span,
+.headInfo .weekInfo .weekStandardNum span {
   color: #fff;
   border-radius: 7px;
   float: left;
@@ -892,20 +910,27 @@ body {
   line-height: 5.44vh;
   height: 5.44vh;
 }
-.headInfo .weekInfo .weekNum span {
+.headInfo .weekInfo .weekNum span,
+.headInfo .weekInfo .weekExamNum span,
+.headInfo .weekInfo .weekStandardNum span {
   background: #B97A57;
   margin: 1.555vh 0;
   width: 4.08%;
   font-size: 1.3vw;
 }
-.headInfo .weekInfo .weekNum span.selected {
+.headInfo .weekInfo .weekNum span.selected,
+.headInfo .weekInfo .weekExamNum span.selected,
+.headInfo .weekInfo .weekStandardNum span.selected {
   color: #000;
-  width: 6.16%;
   font-weight: bold;
   height: 5.44vh;
   line-height: 5.44vh;
   margin: 1.555vh 0;
   font-size: 1.65vw;
+}
+.headInfo .weekInfo .weekNum span.selected,
+.headInfo .weekInfo .weekExamNum span.selected {
+  width: 6.16%;
 }
 .headInfo .weekInfo .weekDayNum span {
   background: #92D050;
@@ -922,11 +947,15 @@ body {
   margin: 2px auto;
 }
 .headInfo .weekInfo .weekNum .selected,
-.headInfo .weekInfo .weekDayNum .selected {
+.headInfo .weekInfo .weekDayNum .selected,
+.headInfo .weekInfo .weekExamNum .selected {
   font-size: 1.85vw;
   word-wrap: break-word;
   word-break: break-all;
   white-space: normal;
+}
+.headInfo .weekInfo .weekStandardNum .selected {
+  font-size: 1.4vw;
 }
 .headInfo .classNum {
   cursor: pointer;
@@ -970,7 +999,8 @@ body {
   color: #000;
 }
 .maskCapterTitle,
-.maskExamTitle {
+.maskExamTitle,
+.maskStandardTitle {
   margin-top: -0.1%;
   position: fixed;
   left: 0;
@@ -980,40 +1010,67 @@ body {
 }
 .maskCapterTitle .toLeft,
 .maskExamTitle .toLeft,
+.maskStandardTitle .toLeft,
 .maskCapterTitle .capterName,
 .maskExamTitle .capterName,
+.maskStandardTitle .capterName,
 .maskCapterTitle .toRight,
 .maskExamTitle .toRight,
+.maskStandardTitle .toRight,
 .maskCapterTitle .examToLeft,
 .maskExamTitle .examToLeft,
+.maskStandardTitle .examToLeft,
 .maskCapterTitle .examCapterName,
 .maskExamTitle .examCapterName,
+.maskStandardTitle .examCapterName,
 .maskCapterTitle .examToRight,
-.maskExamTitle .examToRight {
+.maskExamTitle .examToRight,
+.maskStandardTitle .examToRight,
+.maskCapterTitle .standardToLeft,
+.maskExamTitle .standardToLeft,
+.maskStandardTitle .standardToLeft,
+.maskCapterTitle .standardCapterName,
+.maskExamTitle .standardCapterName,
+.maskStandardTitle .standardCapterName,
+.maskCapterTitle .standardToRight,
+.maskExamTitle .standardToRight,
+.maskStandardTitle .standardToRight {
   display: inline-block;
   float: left;
 }
 .maskCapterTitle .toLeft,
 .maskExamTitle .toLeft,
+.maskStandardTitle .toLeft,
 .maskCapterTitle .toRight,
 .maskExamTitle .toRight,
+.maskStandardTitle .toRight,
 .maskCapterTitle .examToLeft,
 .maskExamTitle .examToLeft,
+.maskStandardTitle .examToLeft,
 .maskCapterTitle .examToRight,
-.maskExamTitle .examToRight {
+.maskExamTitle .examToRight,
+.maskStandardTitle .examToRight,
+.maskCapterTitle .standardToLeft,
+.maskExamTitle .standardToLeft,
+.maskStandardTitle .standardToLeft,
+.maskCapterTitle .standardToRight,
+.maskExamTitle .standardToRight,
+.maskStandardTitle .standardToRight {
   cursor: pointer;
   width: 3%;
   max-height: 6.33vh;
 }
 .maskCapterTitle .toLeft,
-.maskExamTitle .toLeft {
+.maskExamTitle .toLeft,
+.maskStandardTitle .toLeft {
   background: url('../images/toLeft1.jpg') -8px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 3% 0 29%;
   height: 5vh;
 }
 .maskCapterTitle .toRight,
-.maskExamTitle .toRight {
+.maskExamTitle .toRight,
+.maskStandardTitle .toRight {
   background: url('../images/toRight1.jpg') 7px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 0 0 3%;
@@ -1021,8 +1078,13 @@ body {
 }
 .maskCapterTitle .capterName,
 .maskExamTitle .capterName,
+.maskStandardTitle .capterName,
 .maskCapterTitle .examCapterName,
-.maskExamTitle .examCapterName {
+.maskExamTitle .examCapterName,
+.maskStandardTitle .examCapterName,
+.maskCapterTitle .standardCapterName,
+.maskExamTitle .standardCapterName,
+.maskStandardTitle .standardCapterName {
   text-align: center;
   width: 30%;
   margin: 5px 0;
@@ -1036,8 +1098,13 @@ body {
 }
 .maskCapterTitle .shengzi,
 .maskExamTitle .shengzi,
+.maskStandardTitle .shengzi,
 .maskCapterTitle .examShengzi,
-.maskExamTitle .examShengzi {
+.maskExamTitle .examShengzi,
+.maskStandardTitle .examShengzi,
+.maskCapterTitle .standardShengzi,
+.maskExamTitle .standardShengzi,
+.maskStandardTitle .standardShengzi {
   z-index: -1;
   width: 15%;
   height: 69%;
@@ -1046,14 +1113,16 @@ body {
   position: relative;
 }
 .maskCapterTitle .examToLeft,
-.maskExamTitle .examToLeft {
+.maskExamTitle .examToLeft,
+.maskStandardTitle .examToLeft {
   background: url('../images/toLeft_exam.jpg') -8px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 3% 0 29%;
   height: 5vh;
 }
 .maskCapterTitle .examToRight,
-.maskExamTitle .examToRight {
+.maskExamTitle .examToRight,
+.maskStandardTitle .examToRight {
   background: url('../images/toRight_exam.jpg') 7px center no-repeat;
   background-size: 100% 100%;
   margin: 1.1% 0 0 3%;
@@ -1061,16 +1130,46 @@ body {
 }
 .maskCapterTitle .examCapterName,
 .maskExamTitle .examCapterName,
+.maskStandardTitle .examCapterName,
 .maskCapterTitle .examShengzi,
-.maskExamTitle .examShengzi {
+.maskExamTitle .examShengzi,
+.maskStandardTitle .examShengzi {
   background: #00B4FB;
 }
-.mainContent {
+.maskCapterTitle .standardToLeft,
+.maskExamTitle .standardToLeft,
+.maskStandardTitle .standardToLeft {
+  background: url('../images/toLeft_standard.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 3% 0 29%;
+  height: 5vh;
+}
+.maskCapterTitle .standardToRight,
+.maskExamTitle .standardToRight,
+.maskStandardTitle .standardToRight {
+  background: url('../images/toRight_standard.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 1.1% 0 0 3%;
+  height: 5vh;
+}
+.maskCapterTitle .standardCapterName,
+.maskExamTitle .standardCapterName,
+.maskStandardTitle .standardCapterName,
+.maskCapterTitle .standardShengzi,
+.maskExamTitle .standardShengzi,
+.maskStandardTitle .standardShengzi {
+  background: #FAC400;
+}
+.mainContent,
+.examMainContent,
+.standardMainContent {
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   color: #000;
   height: 93.3vh;
+}
+.mainContent {
   background: url('../images/capterBar.jpg') 0 center no-repeat;
   background-size: 100% 2%;
   background-position: 0 4%;
@@ -1423,6 +1522,356 @@ body {
 }
 .mainContent .classCon .capter .classSummary .sumClassCategory1 label {
   color: #fff;
+}
+.examMainContent {
+  background: url('../images/examBar.jpg') 0 center no-repeat;
+  background-size: 100% 2%;
+  background-position: 0 4%;
+}
+.examMainContent .examCon {
+  width: 700%;
+  display: block;
+}
+.examMainContent .examCon .exam {
+  position: relative;
+  display: inline-block;
+  height: 93.3vh;
+  width: 14.3%;
+  float: left;
+  overflow: hidden;
+  margin-left: -38px;
+}
+.examMainContent .examCon .exam .examTitle {
+  margin-top: -0.1%;
+  display: block;
+  width: 100%;
+  height: 9.33vh;
+}
+.examMainContent .examCon .exam .examTitle .toLeft,
+.examMainContent .examCon .exam .examTitle .examName,
+.examMainContent .examCon .exam .examTitle .toRight {
+  display: inline-block;
+  float: left;
+}
+.examMainContent .examCon .exam .examTitle .toLeft,
+.examMainContent .examCon .exam .examTitle .toRight {
+  width: 3%;
+  max-height: 6.33vh;
+}
+.examMainContent .examCon .exam .examTitle .toLeft {
+  background: url('../images/toLeft1.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 3% 0 29%;
+  height: 6.33vh;
+}
+.examMainContent .examCon .exam .examTitle .toRight {
+  background: url('../images/toRight1.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 0 0 3%;
+  height: 6.33vh;
+}
+.examMainContent .examCon .exam .examTitle .capterName {
+  text-align: center;
+  width: 30%;
+  margin: 5px 0;
+  height: 7.77vh;
+  line-height: 3.6vh;
+  background: #B97A57;
+  color: #fff;
+  font-size: 1.6vw;
+  white-space: normal;
+  border-radius: 3px;
+}
+.examMainContent .examCon .exam .examTitle .shengzi {
+  z-index: -1;
+  display: inline-block;
+  margin-left: 42%;
+  margin-top: -3%;
+  width: 15%;
+  height: 34%;
+  background: #B97A57;
+  position: relative;
+}
+.examMainContent .examCon .exam .examDetail {
+  height: 77.76vh;
+  width: 100%;
+  background: url('../images/examAddDelBar.png') no-repeat;
+  background-size: 100% 2%;
+  background-position: 23% 1.3%;
+}
+.examMainContent .examCon .exam .examDetail .examUl {
+  width: 100%;
+  margin-left: -0.05%;
+  display: inline-flex;
+}
+.examMainContent .examCon .exam .examDetail .examUl li {
+  display: inline-block;
+  float: left;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addOrDel {
+  border-radius: 100px;
+  background: #0AB4F9;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #fff;
+  width: 20%;
+  margin: 0 -7%;
+  height: 3.8vh;
+  line-height: 3.11vh;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .examCategory {
+  color: #124934;
+  line-height: 100%;
+  width: 20%;
+  font-size: 1.5vw;
+  margin: -6% -7% 0;
+  background: #0AB4F9;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .examContent {
+  background: #0AB4F9;
+  line-height: 100%;
+  padding-top: 14%;
+  height: 29vh;
+  width: 20%;
+  color: #fff;
+  font-size: 1.28vw;
+  margin: 0 -7%;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-voerflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub1,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub3,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub4 {
+  height: 9vh;
+  padding-top: 5%;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub5 {
+  padding-top: 3%;
+  height: 5vh;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub1,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub3,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub4,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub5 {
+  background: #0AB4F9;
+  font-size: 1.3vw;
+  width: 29%;
+  margin-left: -12%;
+  line-height: 100%;
+  color: #124934;
+  cursor: pointer;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub5,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub1 span,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2 span,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub3 span,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub4 span {
+  color: #fff;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub5 label,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub1 span label,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2 span label,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub3 span label,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub4 span label {
+  display: inline-block;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub5 a,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub1 span a,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2 span a,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub3 span a,
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub4 span a {
+  display: block;
+  color: #fff;
+}
+.examMainContent .examCon .exam .examDetail .examUl li .addExamsSub2 span label {
+  font-size: 1.1vw;
+}
+.standardMainContent {
+  background: url('../images/standardBar.jpg') 0 center no-repeat;
+  background-size: 100% 2%;
+  background-position: 0 4%;
+}
+.standardMainContent .standardCon {
+  width: 700%;
+  display: block;
+}
+.standardMainContent .standardCon .standard {
+  position: relative;
+  display: inline-block;
+  height: 93.3vh;
+  width: 14.3%;
+  float: left;
+  overflow: hidden;
+  margin-left: -38px;
+}
+.standardMainContent .standardCon .standard .standardTitle {
+  margin-top: -0.1%;
+  display: block;
+  width: 100%;
+  height: 9.33vh;
+}
+.standardMainContent .standardCon .standard .standardTitle .toLeft,
+.standardMainContent .standardCon .standard .standardTitle .examName,
+.standardMainContent .standardCon .standard .standardTitle .toRight {
+  display: inline-block;
+  float: left;
+}
+.standardMainContent .standardCon .standard .standardTitle .toLeft,
+.standardMainContent .standardCon .standard .standardTitle .toRight {
+  width: 3%;
+  max-height: 6.33vh;
+}
+.standardMainContent .standardCon .standard .standardTitle .toLeft {
+  background: url('../images/toLeft1.jpg') -8px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 3% 0 29%;
+  height: 6.33vh;
+}
+.standardMainContent .standardCon .standard .standardTitle .toRight {
+  background: url('../images/toRight1.jpg') 7px center no-repeat;
+  background-size: 100% 100%;
+  margin: 2vh 0 0 3%;
+  height: 6.33vh;
+}
+.standardMainContent .standardCon .standard .standardTitle .capterName {
+  text-align: center;
+  width: 30%;
+  margin: 5px 0;
+  height: 7.77vh;
+  line-height: 3.6vh;
+  background: #B97A57;
+  color: #fff;
+  font-size: 1.6vw;
+  white-space: normal;
+  border-radius: 3px;
+}
+.standardMainContent .standardCon .standard .standardTitle .shengzi {
+  z-index: -1;
+  display: inline-block;
+  margin-left: 42%;
+  margin-top: -3%;
+  width: 15%;
+  height: 34%;
+  background: #B97A57;
+  position: relative;
+}
+.standardMainContent .standardCon .standard .standardDetail {
+  height: 77.76vh;
+  width: 100%;
+  background: url('../images/standardAddDelBar.png') no-repeat;
+  background-size: 100% 2%;
+  background-position: 23% 1.3%;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl {
+  width: 100%;
+  margin-left: -0.05%;
+  display: inline-flex;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li {
+  display: inline-block;
+  float: left;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addOrDel {
+  border-radius: 100px;
+  background: #FAC400;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #fff;
+  width: 45%;
+  margin: 0 -7%;
+  height: 3.8vh;
+  line-height: 3.11vh;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .standardCategory {
+  color: #124934;
+  line-height: 100%;
+  width: 45%;
+  font-size: 1.5vw;
+  margin: -6% -7% 0;
+  background: #FAC400;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .standardContent {
+  background: #FAC400;
+  line-height: 100%;
+  padding-top: 14%;
+  height: 29vh;
+  width: 45%;
+  color: #fff;
+  font-size: 1.28vw;
+  margin: 0 -7%;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-voerflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub1,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub3,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub4 {
+  height: 9vh;
+  padding-top: 5%;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub5 {
+  padding-top: 3%;
+  height: 5vh;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub1,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub3,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub4,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub5 {
+  background: #FAC400;
+  font-size: 1.3vw;
+  width: 68%;
+  margin-left: -18%;
+  line-height: 100%;
+  color: #124934;
+  cursor: pointer;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub5,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub1 span,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2 span,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub3 span,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub4 span {
+  color: #fff;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub5 label,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub1 span label,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2 span label,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub3 span label,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub4 span label {
+  display: inline-block;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub5 a,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub1 span a,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2 span a,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub3 span a,
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub4 span a {
+  display: block;
+  color: #fff;
+}
+.standardMainContent .standardCon .standard .standardDetail .standardUl li .addStandardsSub2 span label {
+  font-size: 1.1vw;
 }
 .footInfo {
   position: absolute;

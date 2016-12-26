@@ -1,0 +1,36 @@
+[ 2016-12-26T13:47:24+08:00 ] ::1 /jxyv1/Public/images/examAddDelBar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000733s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-26T13:47:41+08:00 ] ::1 /jxyv1/Public/images/examAddDelBar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000276s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-26T13:48:22+08:00 ] ::1 /jxyv1/Public/images/examAddDelBar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-26T13:49:07+08:00 ] ::1 /jxyv1/Public/images/examAddDelBar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-26T15:13:47+08:00 ] ::1 /jxyv1/Public/images/examBar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000252s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+ERR: 无法加载模块:Public
+
+[ 2016-12-26T15:14:11+08:00 ] ::1 /jxyv1/Public/images/examBar.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+ERR: 无法加载模块:Public
+
