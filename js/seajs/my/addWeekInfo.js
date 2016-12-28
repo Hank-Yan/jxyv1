@@ -1,6 +1,6 @@
 /**
  * Created by hank-yan on 2016/12/22.
- * desc 本页面位杰少原来代码重构，不知道有什么作用，但是这样放不会影响原来功能
+ * desc 添加周次信息
  */
 define(function (require, exports, module) {
     var addWeekInfo = {

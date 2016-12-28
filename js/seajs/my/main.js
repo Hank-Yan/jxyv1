@@ -13,9 +13,19 @@ define(function (require, exports, module) {
     var btnRightLeft = require('./btnRightLeft.js');
     btnRightLeft.run();
 
-    // 执行总逻辑
+    // 执行课时级总逻辑
     var pikachu = require('./pikachu.js');
     // pikachu, run!!!
     pikachu.run();
+
+    // 执行评测级总逻辑
+    var pikachu_exam = require('./pikachu_exam.js');
+    // pikachu_exam, run!!!
+    pikachu_exam.run();
+
+    // 执行课标级总逻辑
+    var pikachu_standard = require('./pikachu_standard.js');
+    // pikachu_standard, run!!!
+    pikachu_standard.run();
 });
 

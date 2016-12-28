@@ -6,15 +6,6 @@ define(function (require, exports, module) {
     var recovery = {
         // 函数入口
         run: function () {
-            // 针对顶部遮罩的调整
-            $('.topMask').css('display', 'block');
-            $('.examTopMask').css('display', 'none');
-            $('.maskExamTitle').css('display','none');
-
-            // 针对顶部周次的调整
-            $('#weekNum').css('display', 'block');
-            $('#weekExamNum').css('display', 'none');
-
             $('.weekNum span').css('color', '#000000');
             // 针对mainContent 的调整
             $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-5%'});

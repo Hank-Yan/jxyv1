@@ -1978,7 +1978,7 @@
 <script type="text/javascript" src="../../../../../js/seajs.config.js"></script>
 <?php if($cap == 0){?>
 <script type="text/javascript">
-    seajs.use("../../../../../js/seajs/my/demo.js");
+    seajs.use("../../../../../js/seajs/my/main.js");
 </script>
 <?php }else if($cap == 1){?>
 <script type="text/javascript">
