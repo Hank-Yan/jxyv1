@@ -390,7 +390,7 @@
     <div class="shengzi"></div>
 </div>
 
-<!--评测级的maskTitle-->
+<!--评测级的 maskTitle-->
 <div class="maskExamTitle" style="display: none;">
     <span class="examToLeft" style="cursor:pointer;"></span>
     <span class="examCapterName" style="line-height: 7.77vh;">图形与圆</span>
@@ -401,7 +401,7 @@
 <!--课标级的 maskTitle-->
 <div class="maskStandardTitle" style="display: none;">
     <span class="standardToLeft" style="cursor:pointer;"></span>
-    <span class="standardCapterName" style="line-height: 7.77vh;">课标级别</span>
+    <span class="standardCapterName" style="line-height: 7.77vh;">空间观念、几何直观</span>
     <span class="standardToRight" style="cursor:pointer;"></span>
     <div class="standardShengzi" style="height: 71%;"></div>
 </div>
@@ -991,17 +991,17 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">新课</div>
+                        <div class="examCategory">周测</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            点直线和圆周测
                         </div>
                         <div class="examDetails">
-                            <div class="addExamsSub1" classindex="59">作业<br>
+                            <div class="addExamsSub1" classindex="59">试卷<br>
                                 <span>
                                         <n class="btw"><t>
                                             <label>
-                                                2                                            </label>组</t>
+                                                2                                            </label>份</t>
                                         </n>
                                         <br>
                                         <p class="btn"><i>+</i></p>
@@ -1047,17 +1047,17 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">新课</div>
+                        <div class="examCategory">周测</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                           正多边形和圆周测
                         </div>
                         <div class="examDetails">
-                            <div class="addExamsSub1" classindex="59">作业<br>
+                            <div class="addExamsSub1" classindex="59">试卷<br>
                                 <span>
                                         <n class="btw"><t>
                                             <label>
-                                                2                                            </label>组</t>
+                                                2                                            </label>份</t>
                                         </n>
                                         <br>
                                         <p class="btn"><i>+</i></p>
@@ -1103,17 +1103,17 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">新课</div>
+                        <div class="examCategory">周测</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            圆的面积周测
                         </div>
                         <div class="examDetails">
-                            <div class="addExamsSub1" classindex="59">作业<br>
+                            <div class="addExamsSub1" classindex="59">试卷<br>
                                 <span>
                                         <n class="btw"><t>
                                             <label>
-                                                2                                            </label>组</t>
+                                                2                                            </label>份</t>
                                         </n>
                                         <br>
                                         <p class="btn"><i>+</i></p>
@@ -1159,17 +1159,17 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">新课</div>
+                        <div class="examCategory">周测</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            圆的应用周测
                         </div>
                         <div class="examDetails">
-                            <div class="addExamsSub1" classindex="59">作业<br>
+                            <div class="addExamsSub1" classindex="59">试卷<br>
                                 <span>
                                         <n class="btw"><t>
                                             <label>
-                                                2                                            </label>组</t>
+                                                2                                            </label>份</t>
                                         </n>
                                         <br>
                                         <p class="btn"><i>+</i></p>
@@ -1234,10 +1234,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">掌握</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            旋转与中心对称
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1291,10 +1291,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">理解</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            圆的性质
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1348,10 +1348,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">熟悉</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            点、线、圆
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1405,10 +1405,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">掌握</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            正多边形和圆
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1462,10 +1462,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">理解</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            扇形与圆的面积
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1519,10 +1519,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">熟悉</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            利用列举法求概率
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1576,10 +1576,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">掌握</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            概率的应用
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1633,10 +1633,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">理解</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            反比例函数
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1690,10 +1690,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">熟悉</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            反比例函数应用
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1747,10 +1747,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">掌握</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            图形的相似
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1804,10 +1804,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">理解</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            相似三角形
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>
@@ -1861,10 +1861,10 @@
                             </w>
                         </div>
 
-                        <div class="standardCategory">新课</div>
+                        <div class="standardCategory">熟悉</div>
 
                         <div class="standardContent" flag="0" classindex="59" title="">
-                            随机事件与概率1
+                            位似
                         </div>
                         <div class="standardDetails">
                             <div class="addStandardsSub1" classindex="59">作业<br>

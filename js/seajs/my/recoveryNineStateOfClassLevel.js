@@ -15,6 +15,7 @@ define(function (require, exports, module) {
             $('#weekNum').css('display', 'block');
             $('#weekExamNum').css('display', 'none');
 
+            $('.weekNum span').css('color', '#000000');
             // 针对mainContent 的调整
             $('.capterTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-5%'});
             $(".capterTitle").fadeIn(100);
