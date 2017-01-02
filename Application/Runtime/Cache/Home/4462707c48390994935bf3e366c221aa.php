@@ -373,7 +373,7 @@
     <div class="weekInfo">
         <!--weekInfo 是通过 js 动态添加的-->
         <div class="weekNum" id="weekNum"></div>
-        <div class="weekExamNum" id="weekExamNum" style="display: none;"></div>
+        <div class="weekExamNum" id="weekExamNum" style="display: none;margin-left: 0.5px;"></div>
         <div class="weekStandardNum" id="weekStandardNum" style="display: none;"></div>
         <div class="weekDayNum" flag="0" style="display:none;"></div>
     </div>
@@ -967,14 +967,15 @@
 <!--评测级-->
 <div class="examMainContent" style="display: none;">
     <ul class="examCon">
-        <li class="exam">
+        <li class="exam month1">
+            <!--标题-->
             <div class="examTitle" style="visibility:hidden;">
                 <span class="toLeft" style="cursor:pointer;"></span>
-                <span class="examName">图形与圆</span>
+                <span class="examName">函数与方程</span>
                 <span class="toRight" style="cursor:pointer;"></span>
                 <div class="shengzi"></div>
             </div>
-            <!--标题-->
+            <!--内容-->
             <div class="examDetail">
                 <ul class="examUl">
                     <li capterid="26" class="26">
@@ -991,7 +992,7 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">周测</div>
+                        <div class="examCategory">周测1</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
                             点直线和圆周测
@@ -1047,7 +1048,7 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">周测</div>
+                        <div class="examCategory">周测1</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
                            正多边形和圆周测
@@ -1103,7 +1104,7 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">周测</div>
+                        <div class="examCategory">周测1</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
                             圆的面积周测
@@ -1159,7 +1160,7 @@
                             </w>
                         </div>
 
-                        <div class="examCategory">周测</div>
+                        <div class="examCategory">周测1</div>
 
                         <div class="examContent" flag="0" classindex="59" title="">
                             圆的应用周测
@@ -1199,6 +1200,1244 @@
                                     <m>建议</m>
                                 </n>
                             </div>
+                        </div>
+                    </li>
+
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="exam month2">
+            <!--标题-->
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">方程与图像</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--内容-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测2</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            点直线和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测2</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            正多边形和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测2</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的面积周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测2</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的应用周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="exam month3">
+            <!--标题-->
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">图形与圆</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--内容-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测3</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            点直线和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测3</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            正多边形和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测3</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的面积周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测3</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的应用周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="exam month4">
+            <!--标题-->
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">统计与概率</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--内容-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测4</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            点直线和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测4</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            正多边形和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测4</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的面积周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测4</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的应用周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="exam month5">
+            <!--标题-->
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">反比例函数</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--内容-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测5</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            点直线和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测5</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            正多边形和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测5</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的面积周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测5</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的应用周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="exam month6">
+            <!--标题-->
+            <div class="examTitle" style="visibility:hidden;">
+                <span class="toLeft" style="cursor:pointer;"></span>
+                <span class="examName">三角形基础</span>
+                <span class="toRight" style="cursor:pointer;"></span>
+                <div class="shengzi"></div>
+            </div>
+            <!--内容-->
+            <div class="examDetail">
+                <ul class="examUl">
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测6</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            点直线和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测6</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            正多边形和圆周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测6</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的面积周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
+                        </div>
+                    </li>
+                    <li class="26">
+                        <div class="addOrDel del" classid="59">
+                            <w class="btj">
+                                <d>-</d>
+                            </w>
+                        </div>
+
+                        <div class="examCategory">周测6</div>
+
+                        <div class="examContent" flag="0" classindex="59" title="">
+                            圆的应用周测
+                        </div>
+                        <div class="examDetails">
+                            <div class="addExamsSub1" classindex="59">试卷<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>
+                                                2                                            </label>份</t>
+                                        </n>
+                                        <br>
+                                        <p class="btn"><i>+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub2" classid="59">批语<br>
+                                <span>
+                                        <n class="btw"><t>
+                                            <label>10</label>条</t>
+                                        </n><br>
+                                        <p class="btn"><i class="modifyCorrect">+</i></p>
+                                    </span>
+                            </div>
+
+                            <div class="addExamsSub3">缺陷<br>
+                                <span>
+                                    <n class="btw"><t>
+                                        <label>0</label>种</t>
+                                    </n><br>
+                                    <p class="btn"><i>+</i></p>
+                                </span>
+                            </div>
+                            <div class="addExamsSub4">班组评价</div>
+                            <div class="addExamsSub5">
+                                <n class="btm">
+                                    <m>建议</m>
+                                </n>
+                            </div>
+                        </div>
+                    </li>
+                    <li capterid="26" class="26">
+                        <div class="addOrDel add" classid="26">
+                            <w class="btc">
+                                <c>+</c>
+                            </w>
                         </div>
                     </li>
                 </ul>

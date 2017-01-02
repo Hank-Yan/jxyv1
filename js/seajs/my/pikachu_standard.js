@@ -40,7 +40,6 @@ define(function (require, exports, module) {
                 // delta 代表鼠标滚轮滚动的方向，取两个值 1 或者 -1
                 delta > 0 ? arrStandardIndex-- : arrStandardIndex++;
 
-                console.log(arrStandardIndex);
 
                 // 如果 arrExamIndex<0 说明需要恢复课时级状态
                 if (arrStandardIndex < 0) {

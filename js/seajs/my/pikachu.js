@@ -145,7 +145,6 @@ define(function (require, exports, module) {
         addHomeWork: function () {
             $('.addHomework').click(function () {
                 var index = $(this).attr('classIndex');
-                console.log(index);
                 if (index < 120) {
                     location.href = '../../../../../homework/firsthalf/' + index + '_A_1.pdf';
                 } else {
@@ -697,7 +696,6 @@ define(function (require, exports, module) {
                 topWidth = topWidth > topWidthArr[9] / 100 ? topWidthArr[9] / 100 : topWidth;
                 topWidth = topWidth <= topWidthArr[0] / 100 ? topWidthArr[0] / 100 : topWidth;
                 $('.topMask').animate({'width': topWidth + 'px'}, animateTime);
-                console.log(arrIndex);
                 // 鼠标滚动后，顶部遮罩的左边距
                 var toTopLeft;//收缩后顶部遮罩左边距
                 // 向左移动多少呢？ 6 之前，每次移动半个章节宽度大小
@@ -2282,8 +2280,6 @@ define(function (require, exports, module) {
                     }
                 } else if(arrIndex == 9) {
                     $(".capterDetailKnowledge").css({'background-position': '45% 1.3%', 'background-size': '68.5% 2%'});
-                } else if (arrIndex == 10) {
-
                 }
 
                 //调整章节的字体大小
@@ -2300,11 +2296,7 @@ define(function (require, exports, module) {
 
                 //上调横穿章节名称的底边线
                 if (arrIndex != 0) {
-                    if (arrIndex == 10) {
-                        $('.mainContent').css('background-position', '0 3.8%');
-                    } else {
-                        $('.mainContent').css('background-position', '0 5.8%');
-                    }
+                    $('.mainContent').css('background-position', '0 5.8%');
 
                     $(".classContent").css({'width': '2vw', 'margin': '0 -7%', 'padding-top': '55%'});
                     $('.addOrDel.add').css('width', '2vw');
@@ -2422,6 +2414,11 @@ define(function (require, exports, module) {
             // 让课标级隐藏， 评测级显示
             $('.mainContent').css('display', 'none');
             $('.examMainContent').css('display', 'block');
+
+            // TODO
+            // 这里之后可以设置评测级的 遮罩位置以及主体部分的位置
+            // 可以传递一个距离左侧的百分比，然后同时设置下一个层级的遮罩和主体
+            $(".examMainContent").animate({scrollLeft:  48/100 * (6*screenWidth) + 'px'}, 10);
 
             // 状态变化之后，重置鼠标滚轮数值（这也是将隐藏函数写到本页面的原因，可以控制状态变量）
             arrIndex = 9;

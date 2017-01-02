@@ -13,10 +13,12 @@ define(function (require, exports, module) {
             var weekNumHtml = '<div class="weekExamNum">';
             for (var i = 0; i < 24; i++) {
                 // i=12 代表中间第13周
-                if (i==10 || i==11 || i==12||i==13) {
-                    weekNumHtml += '<span flag="0" flag1="0" class="selected" style="width:4.60%;font-size:1.6vw;">' + (i + 1) + '</span>';
+                if (i==10 || i==12||i==13) {
+                    weekNumHtml += '<span flag="0" flag1="0" class="selected">' + (i + 1) + '</span>';
+                }else if(i==11){
+                    weekNumHtml += '<span flag="0" flag1="0" class="selected curCenter">' + (i + 1) + '</span>';
                 } else {
-                    weekNumHtml += '<span flag="0" flag1="0" style="width:4.08%;">' + (i + 1) + '</span>';
+                    weekNumHtml += '<span flag="0" flag1="0">' + (i + 1) + '</span>';
                 }
             }
             weekNumHtml += '</div>';
