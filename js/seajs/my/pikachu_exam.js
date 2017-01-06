@@ -47,10 +47,9 @@ define(function (require, exports, module) {
     screenWidth = $(window).width();//当前屏幕有效宽度
     console.log(screenWidth);
     baseWeekWidth = (WEEK_WIDTH_RATE + 0.1) * screenWidth;
-    topMaskWidthArr = [4 * baseWeekWidth, 6 * baseWeekWidth, 8 * baseWeekWidth, 10 * baseWeekWidth, 12 * baseWeekWidth, 14 * baseWeekWidth, 16 * baseWeekWidth, 20 * baseWeekWidth, 24 * baseWeekWidth];
+    topMaskWidthArr = [4 * baseWeekWidth, 6 * baseWeekWidth, 8 * baseWeekWidth, 10 * baseWeekWidth, 16 * baseWeekWidth, 24 * baseWeekWidth];
 
-    bottomWidthArr = [6.527 * screenWidth, 4 * screenWidth, 3.05 * screenWidth, 2.5 * screenWidth, 2 * screenWidth,
-        1.8 * screenWidth, 1.7 * screenWidth, 1.5 * screenWidth, screenWidth];
+    bottomWidthArr = [6.527 * screenWidth, 4 * screenWidth, 3.05 * screenWidth, 2.5 * screenWidth, 1.73 * screenWidth, screenWidth];
 
     // 引入其他依赖库
     var wheelUtils = require('./wheelUtils.js');
@@ -166,7 +165,7 @@ define(function (require, exports, module) {
                 }
 
                 // 跳到下一层
-                if (arrExamIndex > 8) {
+                if (arrExamIndex > 5) {
                     pikachu_exam.examHideAndStandardShow();
                 }
                 // ==================================换层边界判断 end===========================================
@@ -175,15 +174,15 @@ define(function (require, exports, module) {
 
                 // ====================判断缩放后应该哪些周处于选中状态 begin=====================
                 curCenter = $('.weekExamNum span.curCenter').index();
-                if (arrExamIndex < 7) {
+                if (arrExamIndex < 4) {
                     distanceLeft = arrExamIndex + 1;
                     distanceRight = arrExamIndex + 2;
-                } else if (arrExamIndex == 7) {
-                    distanceLeft = arrExamIndex + 2;
-                    distanceRight = arrExamIndex + 3;
-                } else if (arrExamIndex == 8) {
+                } else if (arrExamIndex == 4) {
                     distanceLeft = arrExamIndex + 3;
                     distanceRight = arrExamIndex + 4;
+                } else if (arrExamIndex == 5) {
+                    distanceLeft = arrExamIndex + 6;
+                    distanceRight = arrExamIndex + 7;
                 }
                 var fromSelectedWeekIndex = curCenter - distanceLeft;//黑色字体周次的起始索引
                 // 左边界越界处理
@@ -199,12 +198,12 @@ define(function (require, exports, module) {
                     fromSelectedWeekIndex = curCenter - distanceLeft - step;
                 }
 
-                // console.log('arrExamIndex: ' + arrExamIndex);
-                // console.log('curCenter' + curCenter);
-                // console.log('distanceLeft' + distanceLeft);
-                // console.log('distanceRight' + distanceRight);
-                // console.log('fromSelectedWeekIndex: ' + fromSelectedWeekIndex);
-                // console.log('toSelectedWeekIndex: ' + toSelectedWeekIndex);
+                console.log('arrExamIndex: ' + arrExamIndex);
+                console.log('curCenter' + curCenter);
+                console.log('distanceLeft' + distanceLeft);
+                console.log('distanceRight' + distanceRight);
+                console.log('fromSelectedWeekIndex: ' + fromSelectedWeekIndex);
+                console.log('toSelectedWeekIndex: ' + toSelectedWeekIndex);
 
                 $(".weekExamNum span").siblings().removeClass("selected").removeAttr("style");
                 for (var i = fromSelectedWeekIndex; i <= toSelectedWeekIndex; i++) {
@@ -226,12 +225,12 @@ define(function (require, exports, module) {
                 selectedWeekIndex = $('.weekExamNum span.selected').index();
                 // 百分制表示距离左侧的宽度
                 // 噪声控制
-                if (arrExamIndex < 5) {
+                if (arrExamIndex < 4) {
                     topMaskLeftNoise = 0.6;
-                } else if (arrExamIndex < 7) {
+                } else if (arrExamIndex ==4) {
                     topMaskLeftNoise = 0.2;
                 } else {
-                    topMaskLeftNoise = 0;
+                    topMaskLeftNoise = -0.1;
                 }
                 maskToTopLeft = (HEAD_STATE_CONTROL_WIDTH + selectedWeekIndex * WEEK_WIDTH_RATE + topMaskLeftNoise) * screenWidth / 100;
                 // console.log('maskToTopLeft: ' + maskToTopLeft / screenWidth);
@@ -258,13 +257,6 @@ define(function (require, exports, module) {
 
 
                 // ==================== 其他需要微调的项begin =============================================
-                // capterTitle 表示第几章，第几章（第24章 圆）
-                // capterTitle .shengzi 表示章节下面的小方块
-                if (arrExamIndex < 7) {
-                    // $('.examTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-2%'});
-                } else if (arrExamIndex == 8) {
-                    // $('.examTitle .shengzi').css({'display': 'inline-block', 'margin-top': '-3%'});
-                }
 
                 // maskCapterTitle 刚进来时候顶部显示的章节信息
                 if (arrExamIndex == 0 || arrExamIndex == 1) {
@@ -282,12 +274,9 @@ define(function (require, exports, module) {
 
 
                 // 调整章节的字体大小
-                if (arrExamIndex < 7) {
+                if (arrExamIndex < 5) {
                     $('.examUl li').css({'margin': '0 auto'});
                     $(".examName").css('font-size', '1.7vw');
-                } else if (arrExamIndex == 9) {
-                    $('.examUl li').css({'margin': '0 auto'});
-                    $(".examName").css('font-size', '1.3vw');
                 }
 
                 console.log(arrExamIndex);
@@ -296,6 +285,27 @@ define(function (require, exports, module) {
                     // 到0级的时候，恢复原来样式
                     // 恢复到 arrExamIndex 为0 时候的初始状态
                     $('.examMainContent').css('background-position', '0 4%');
+
+                    $(".exam > .examTitle > .examName").css('width', '30%');
+                    $(".exam > .examTitle > .toLeft").css({
+                        'margin-left': '27%',
+                        'margin-right': '3%',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '4%'
+                    });
+                    $(".exam > .examTitle > .toRight").css({
+                        'margin-left': '3%',
+                        'margin-right': '0',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '4%'
+                    });
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '42%'
+                    });
+
                     $('.examDetail').css('background-position', '23% 1.3%');
                     $(".examCategory").css({'width': '20%', 'margin': '-6% -7% 0'});
                     $(".examContent").css({'width': '20%', 'margin': '0 -7%', 'padding-top': '14%'});
@@ -310,9 +320,35 @@ define(function (require, exports, module) {
                     // 调贯穿章节名称的线， 越小越靠上，越大越靠下
                     $('.examMainContent').css('background-position', '0 3.8%');
 
+                    $(".exam > .examTitle > .examName").css('width', '30%');
+                    $(".exam > .examTitle > .toLeft").css({
+                        'margin-left': '27%',
+                        'margin-right': '3%',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '4%'
+                    });
+                    $(".exam > .examTitle > .toRight").css({
+                        'margin-left': '3%',
+                        'margin-right': '0',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '4%'
+                    });
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '42%'
+                    });
+
                     // 添加删除样式控制
                     $('.examUl .addOrDel.add').css('width', '2vw');
                     $('.examUl .addOrDel.del').css('width', '2vw');
+
+                    // 下部细节控制
+                    $('.examDetail').css({
+                        'background-size': '86% 2%',
+                        'background-position': '38% 1.3%'
+                    });
 
                     // 新课，复习等类别的调控
                     $(".examCategory").css({'width': '30%', 'margin': '-9% -7% 0'});
@@ -345,10 +381,20 @@ define(function (require, exports, module) {
                         'height': '4vh',
                         'width': '4%'
                     });
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '42%'
+                    });
 
                     // 添加删除样式控制
                     $('.examUl .addOrDel.add').css('width', '2vw');
                     $('.examUl .addOrDel.del').css('width', '2vw');
+
+                    // 下部细节控制
+                    $('.examDetail').css({
+                        'background-size': '84% 2%',
+                        'background-position': '38% 1.3%'
+                    });
 
                     // 新课，复习等类别的调控
                     $(".examCategory").css({'width': '38%', 'margin': '-9% -6% 0px -6%'});
@@ -381,9 +427,20 @@ define(function (require, exports, module) {
                         'width': '5%'
                     });
 
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '42%'
+                    });
+
                     // 添加删除样式控制
                     $('.examUl .addOrDel.add').css('width', '2vw');
                     $('.examUl .addOrDel.del').css('width', '2vw');
+
+                    // 下部细节控制
+                    $('.examDetail').css({
+                        'background-size': '84% 2%',
+                        'background-position': '44% 1.3%'
+                    });
 
                     // 新课，复习等类别的调控
                     $(".examCategory").css({'width': '46%', 'margin': '-12% -5% 0px -5%'});
@@ -400,57 +457,101 @@ define(function (require, exports, module) {
                     // 调贯穿章节名称的线， 越小越靠上，越大越靠下
                     $('.examMainContent').css('background-position', '0 5.8%');
 
-                    // 箭头调控
-                    $(".exam > .examTitle > .examName").css('width', '30%');
+                    $(".exam > .examTitle > .examName").css({
+                        'width': '30%',
+                        'font-size': '1.4vw'
+                    });
                     $(".exam > .examTitle > .toLeft").css({
                         'margin-left': '27%',
                         'margin-right': '3%',
                         'top': '2%',
                         'height': '4vh',
-                        'width': '5%'
+                        'width': '7%'
                     });
                     $(".exam > .examTitle > .toRight").css({
                         'margin-left': '3%',
                         'margin-right': '0',
                         'top': '2%',
                         'height': '4vh',
-                        'width': '5%'
+                        'width': '7%'
+                    });
+
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '45%'
                     });
 
                     // 添加删除样式控制
                     $('.examUl .addOrDel.add').css('width', '2vw');
                     $('.examUl .addOrDel.del').css('width', '2vw');
 
+                    // 下部细节控制
+                    $('.examDetail').css({
+                        'background-size': '78% 2%',
+                        'background-position': '65% 1.3%'
+                    });
+
                     // 新课，复习等类别的调控
-                    $(".examCategory").css({'width': '38%', 'margin': '-9% -6% 0px -6%'});
+                    $(".examCategory").css({'width': '60%', 'margin': '-12% -4% 0px -5%'});
 
                     // 竖条内容控制（比如：随机事件与概率）
-                    $(".examContent").css({'width': '38%', 'margin': '0 -6%', 'padding-top': '20%'});
+                    $(".examContent").css({'width': '60%', 'margin': '0 -5%', 'padding-top': '20%'});
                     // 细节样式控制
-                    $('.addExamsSub1').css({'width': '53%', 'margin-left': '-12%'});
-                    $('.addExamsSub2').css({'width': '53%', 'margin-left': '-12%'});
-                    $('.addExamsSub3').css({'width': '53%', 'margin-left': '-12%'});
-                    $('.addExamsSub4').css({'width': '53%', 'margin-left': '-12%', 'margin-bottom': '-22%'});
-                    $('.addExamsSub5').css({'width': '53%', 'margin-left': '-12%'});
+                    $('.addExamsSub1').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub2').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub3').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub4').css({'width': '88%', 'margin-left': '-17%', 'margin-bottom': '-46%'});
+                    $('.addExamsSub5').css({'width': '88%', 'margin-left': '-17%'});
                 } else if (arrExamIndex == 5){
                     // 调贯穿章节名称的线， 越小越靠上，越大越靠下
-                    $('.examMainContent').css('background-position', '0 3.8%');
+                    $('.examMainContent').css('background-position', '0 5.8%');
+
+                    $(".exam > .examTitle > .examName").css({
+                        'width': '30%',
+                        'font-size': '1.4vw'
+                    });
+                    $(".exam > .examTitle > .toLeft").css({
+                        'margin-left': '27%',
+                        'margin-right': '3%',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '7%'
+                    });
+                    $(".exam > .examTitle > .toRight").css({
+                        'margin-left': '3%',
+                        'margin-right': '0',
+                        'top': '2%',
+                        'height': '4vh',
+                        'width': '7%'
+                    });
+
+                    // 绳子控制
+                    $(".exam > .examTitle > .shengzi").css({
+                        'margin-left': '45%'
+                    });
 
                     // 添加删除样式控制
                     $('.examUl .addOrDel.add').css('width', '2vw');
                     $('.examUl .addOrDel.del').css('width', '2vw');
+                    $('.examUl li').css('margin', '1 -1%');
+
+                    // 下部细节控制
+                    $('.examDetail').css({
+                        'background-size': '78% 2%',
+                        'background-position': '65% 1.3%'
+                    });
 
                     // 新课，复习等类别的调控
-                    $(".examCategory").css({'width': '30%', 'margin': '-9% -7% 0'});
+                    $(".examCategory").css({'width': '60%', 'margin': '-12% -4% 0px -5%'});
 
                     // 竖条内容控制（比如：随机事件与概率）
-                    $(".examContent").css({'width': '30%', 'margin': '0 -7%', 'padding-top': '25%'});
+                    $(".examContent").css({'width': '60%', 'margin': '0 -5%', 'padding-top': '20%'});
                     // 细节样式控制
-                    $('.addExamsSub1').css({'width': '40%', 'margin-left': '-12%'});
-                    $('.addExamsSub2').css({'width': '40%', 'margin-left': '-12%'});
-                    $('.addExamsSub3').css({'width': '40%', 'margin-left': '-12%'});
-                    $('.addExamsSub4').css({'width': '40%', 'margin-left': '-12%'});
-                    $('.addExamsSub5').css({'width': '40%', 'margin-left': '-12%'});
+                    $('.addExamsSub1').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub2').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub3').css({'width': '88%', 'margin-left': '-17%'});
+                    $('.addExamsSub4').css({'width': '88%', 'margin-left': '-17%', 'margin-bottom': '-46%'});
+                    $('.addExamsSub5').css({'width': '88%', 'margin-left': '-17%'});
                 }
 
                 // ==================== 其他需要微调的项end =============================================
@@ -491,7 +592,7 @@ define(function (require, exports, module) {
             $('.standardMainContent').css('display', 'block');
 
             // 状态变化之后，保存鼠标滚轮数值, 往上变化，存储向上的最大值
-            arrExamIndex = 8;
+            arrExamIndex = 5;
         },
         // 移动遮罩的时候，设置标题
         setMaskExamTitle: function (selectedWeekIndex) {

@@ -46,7 +46,7 @@ define(function (require, exports, module) {
                     // 向下换层
                     pikachu_standard.standardHideAndExamShow();
                 }
-                arrStandardIndex = arrStandardIndex > 10 ? 10 : arrStandardIndex;
+                arrStandardIndex = arrStandardIndex > 1 ? 1 : arrStandardIndex;
             }, {passive: true});
         },
         // 评测级隐藏, 课标级显示

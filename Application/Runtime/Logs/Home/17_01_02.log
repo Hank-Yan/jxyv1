@@ -830,3 +830,1979 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001685s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002845s ]
 
+[ 2017-01-02T15:44:26+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0060s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0074s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002226s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.611149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.611894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002982s ]
+
+[ 2017-01-02T15:44:51+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0087s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002090s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.623867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.624674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003690s ]
+
+[ 2017-01-02T15:45:50+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0068s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0072s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001946s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.605533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.606432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005437s ]
+
+[ 2017-01-02T15:48:44+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002157s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0056s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0055s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002323s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.598319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.599061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002875s ]
+
+[ 2017-01-02T15:50:00+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0062s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0089s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0071s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002096s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.598384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.599181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007927s ]
+
+[ 2017-01-02T15:51:22+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0080s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003532s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.703086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.704972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003885s ]
+
+[ 2017-01-02T15:51:45+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001990s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0063s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0055s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002200s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.684555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.685366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007595s ]
+
+[ 2017-01-02T15:56:01+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0058s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0456s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0072s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002092s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.583179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.584031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004911s ]
+
+[ 2017-01-02T15:57:31+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002132s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0059s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0057s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001608s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002835s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.610338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.611166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005784s ]
+
+[ 2017-01-02T15:58:12+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002727s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0072s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0050s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002332s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.585396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.586352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002837s ]
+
+[ 2017-01-02T15:59:42+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0059s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0073s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001976s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.580412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.581241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007696s ]
+
+[ 2017-01-02T16:00:19+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0069s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0055s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002135s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.585111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.585855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004876s ]
+
+[ 2017-01-02T16:00:41+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002711s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0067s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0052s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002078s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.577061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.577998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006248s ]
+
+[ 2017-01-02T16:01:29+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0061s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0056s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002081s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.684740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.686356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003808s ]
+
+[ 2017-01-02T16:03:06+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0061s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0062s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003619s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.628877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.629667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007766s ]
+
+[ 2017-01-02T16:11:40+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002070s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0055s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0062s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002570s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004139s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.689782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.690802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005696s ]
+
+[ 2017-01-02T16:15:12+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003824s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0075s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0105s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0067s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003394s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.701778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.702726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006056s ]
+
+[ 2017-01-02T16:16:12+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002797s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0055s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002084s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.596891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.597684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006201s ]
+
+[ 2017-01-02T16:16:45+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0062s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0056s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002402s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.584063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.584896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006204s ]
+
+[ 2017-01-02T16:16:48+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0067s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0074s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0105s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002061s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.581782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.582531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004795s ]
+
+[ 2017-01-02T16:17:42+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0059s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0058s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001427s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002288s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.736743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.738029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013185s ]
+
+[ 2017-01-02T16:19:45+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0054s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0050s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002448s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.584244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.585255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005153s ]
+
+[ 2017-01-02T16:20:21+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003510s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0078s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0091s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0456s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0088s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001663s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002692s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.676896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.677789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003380s ]
+
+[ 2017-01-02T16:20:33+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0058s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0070s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001469s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002264s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.572505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.573306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004675s ]
+
+[ 2017-01-02T16:22:38+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002195s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0075s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0057s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002012s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003056s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.595263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.596068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006086s ]
+
+[ 2017-01-02T16:23:28+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002180s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0062s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0092s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0061s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002199s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.607948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.608931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005678s ]
+
+[ 2017-01-02T16:25:04+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002576s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0059s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0057s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001356s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002179s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.580798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.581682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006552s ]
+
+[ 2017-01-02T16:27:17+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0059s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0062s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0061s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001527s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002486s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.591885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.592920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005204s ]
+
+[ 2017-01-02T16:29:36+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0060s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0057s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002342s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.579199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.580018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003430s ]
+
+[ 2017-01-02T16:30:23+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003150s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.1553s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0064s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0058s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001452s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002628s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.575293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.576110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005808s ]
+
+[ 2017-01-02T16:31:40+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003384s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0066s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0056s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002086s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.590233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.591141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002996s ]
+
+[ 2017-01-02T16:36:36+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002174s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0068s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0056s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002132s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.590975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.591844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003489s ]
+
+[ 2017-01-02T16:46:06+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0055s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0073s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001431s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002575s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.590370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.591174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004770s ]
+
+[ 2017-01-02T16:53:50+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000249s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0056s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0060s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002439s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.588658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.589418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007388s ]
+
+[ 2017-01-02T21:47:20+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0086s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0054s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001664s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002750s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.590608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.591409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018197s ]
+
+[ 2017-01-02T21:57:06+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0051s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0058s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0065s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001629s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002464s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.619817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.620810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004366s ]
+
+[ 2017-01-02T22:00:19+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0433s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0062s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001789s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003245s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.582026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.582874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006416s ]
+
+[ 2017-01-02T22:25:07+08:00 ] ::1 /jxyv1/index.php/Home/Index/main/cap/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+SQL: SHOW COLUMNS FROM `wl_hwimages` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `wl_commts` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wl_commts` ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wl_capter` [ RunTime:0.0082s ]
+SQL: SELECT `capter_num`,`capter_name` FROM `wl_capter` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wl_class` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`capter_id`,`class_flag`,`class_name`,`add_flag`,`task_count`,`week_num` FROM `wl_class` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `wl_knowledge` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`capter_id`,`class_num`,`class_name`,`class_flag`,`add_flag`,`task_count`,`week_num` FROM `wl_knowledge` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wl_category1` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`capter_id`,`newclass_num`,`activityclass_num`,`reviewclass_num`,`examclass_num` FROM `wl_category1` WHERE `id` IN (1,2,3,4,5,6,7,8,9,10,11) ORDER BY id asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wl_addclass` [ RunTime:0.0057s ]
+SQL: SELECT `capter_id`,`class_name` FROM `wl_addclass` WHERE `capter_id` < 32 ORDER BY id asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wl_students` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 1 ORDER BY studentid asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wl_students` WHERE `classnum` = 2 ORDER BY studentid asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001809s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003022s ]
+NOTIC: [8] Undefined index: capterId C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classNum C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: addShow1 C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: classConWidth C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 214 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+NOTIC: [8] Undefined index: id C:\codefile\xampp\htdocs\jxyv1\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 638 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.806005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.807151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018554s ]
+
