@@ -51,9 +51,6 @@ define(function (require, exports, module) {
 
     bottomWidthArr = [6.527 * screenWidth, 4 * screenWidth, 3.05 * screenWidth, 2.5 * screenWidth, 1.73 * screenWidth, screenWidth];
 
-    // 引入其他依赖库
-    var wheelUtils = require('./wheelUtils.js');
-
     // 执行总逻辑
     var pikachu_exam = {
         run: function () {
@@ -145,7 +142,8 @@ define(function (require, exports, module) {
                     topMaskLeftNoise,
                     // 底部内容宽度
                     bottomWidth,
-                    animateTime = 100
+                    animateTime = 100,
+                    fadeTime = 100
                     ;
                 // 阻止事件冒泡
                 event.stopPropagation();
@@ -162,6 +160,15 @@ define(function (require, exports, module) {
                     recovery.run();
                     // 防止事件后续事件执行
                     return;
+                }
+
+                // 中间状态切换控制
+                if (arrExamIndex < 5) {
+                    $(".examDetail").fadeIn(fadeTime);
+                    $(".examSummary").fadeOut(fadeTime);
+                } else if (arrExamIndex == 5) {
+                    $(".examDetail").fadeOut(fadeTime);
+                    $(".examSummary").fadeIn(fadeTime);
                 }
 
                 // 跳到下一层
@@ -507,33 +514,29 @@ define(function (require, exports, module) {
                     $('.examMainContent').css('background-position', '0 5.8%');
 
                     $(".exam > .examTitle > .examName").css({
-                        'width': '30%',
-                        'font-size': '1.4vw'
+                        'width': '43%',
+                        'font-size': '1.2vw'
                     });
                     $(".exam > .examTitle > .toLeft").css({
                         'margin-left': '27%',
                         'margin-right': '3%',
-                        'top': '2%',
-                        'height': '4vh',
-                        'width': '7%'
+                        'top': '6%',
+                        'height': '3vh',
+                        'width': '12%'
                     });
                     $(".exam > .examTitle > .toRight").css({
                         'margin-left': '3%',
                         'margin-right': '0',
-                        'top': '2%',
-                        'height': '4vh',
-                        'width': '7%'
+                        'top': '6%',
+                        'height': '3.2vh',
+                        'width': '11%'
                     });
 
                     // 绳子控制
                     $(".exam > .examTitle > .shengzi").css({
-                        'margin-left': '45%'
+                        'margin-left': '53%',
+                        'width': '20%',
                     });
-
-                    // 添加删除样式控制
-                    $('.examUl .addOrDel.add').css('width', '2vw');
-                    $('.examUl .addOrDel.del').css('width', '2vw');
-                    $('.examUl li').css('margin', '1 -1%');
 
                     // 下部细节控制
                     $('.examDetail').css({
@@ -550,7 +553,7 @@ define(function (require, exports, module) {
                     $('.addExamsSub1').css({'width': '88%', 'margin-left': '-17%'});
                     $('.addExamsSub2').css({'width': '88%', 'margin-left': '-17%'});
                     $('.addExamsSub3').css({'width': '88%', 'margin-left': '-17%'});
-                    $('.addExamsSub4').css({'width': '88%', 'margin-left': '-17%', 'margin-bottom': '-46%'});
+                    $('.addExamsSub4').css({'width': '88%', 'margin-left': '-17%', 'margin-bottom': '-35%'});
                     $('.addExamsSub5').css({'width': '88%', 'margin-left': '-17%'});
                 }
 
